@@ -41,7 +41,7 @@
 *, *::before, *::after { box-sizing: border-box; }
 html { overscroll-behavior-y: none; -webkit-text-size-adjust: 100%; scroll-behavior: smooth; }
 @media (prefers-reduced-motion: reduce) { html { scroll-behavior: auto; } }
-body { margin: 0; font-family: var(--font); font-size: 17px; line-height: 1.55; color: var(--ink); background: var(--navy); }
+body { margin: 0; font-family: var(--font); font-size: 1.0625rem; line-height: 1.55; color: var(--ink); background: var(--navy); }
 img { max-width: 100%; display: block; }
 a { color: inherit; }
 ::selection { background: var(--sun); color: var(--ink); }
@@ -92,7 +92,7 @@ p { margin: 0; }
 /* Services */
 .types { margin-top: 14px; color: var(--ink-soft); font-size: 17px; }
 .types span { white-space: nowrap; }
-.types span + span::before { content: "·"; margin: 0 .5em 0 0; color: var(--royal); }
+.types span:not(:last-child)::after { content: "·"; margin-left: .45em; color: var(--royal); }
 .rows { list-style: none; margin: 28px 0 0; padding: 0; border-top: 1px solid rgba(13, 36, 65, .14); }
 .rows li { border-bottom: 1px solid rgba(13, 36, 65, .14); }
 .row { display: flex; align-items: center; justify-content: space-between; gap: 16px; min-height: 60px; padding: 10px 2px; text-decoration: none; color: var(--ink); font-weight: 700; font-size: 20px; }
@@ -106,9 +106,7 @@ p { margin: 0; }
 .dark { background: var(--navy); color: var(--on-navy); }
 .about p { margin-top: 18px; font-size: 17px; color: var(--on-navy-soft); max-width: 60ch; }
 .about p strong { color: var(--on-navy); font-weight: 700; }
-.facts { list-style: none; margin: 26px 0 0; padding: 0; display: grid; gap: 10px; }
-.facts li { display: flex; gap: 12px; align-items: baseline; font-weight: 700; font-size: 17px; }
-.facts li::before { content: ""; width: 10px; height: 10px; border-radius: 50%; background: var(--sun); flex: none; transform: translateY(-1px); }
+.about-badge { width: min(72vw, 300px); height: auto; border-radius: 50%; margin: 36px auto 0; box-shadow: 0 24px 40px -18px rgba(2, 12, 28, .75); }
 .fb { display: flex; align-items: center; gap: 16px; margin-top: 36px; padding: 18px 20px; border-radius: var(--radius); background: #1877f2; color: #fff; text-decoration: none; font-weight: 800; font-size: 20px; line-height: 1.25; box-shadow: 0 14px 30px -16px rgba(0, 0, 0, .6); transition: background-color .2s, transform .15s; }
 .fb:hover { background: #2d86f7; }
 .fb:active { transform: scale(.99); }
@@ -152,6 +150,7 @@ input:focus, textarea:focus { outline: 2px solid var(--sky); outline-offset: 2px
 /* Small splash when a choice is ticked */
 .chip span::after { content: ""; position: absolute; inset: -2px; border-radius: inherit; border: 2px solid var(--sky); opacity: 0; pointer-events: none; }
 .chip span.splash::after { animation: splash .55s cubic-bezier(.2, .7, .3, 1); }
+@media (prefers-reduced-motion: reduce) { .chip span.splash::after { animation: none; } }
 @keyframes splash { from { opacity: .9; transform: scale(1); } to { opacity: 0; transform: scale(1.35, 1.6); } }
 
 .send { margin-top: 6px; width: 100%; }
@@ -176,6 +175,8 @@ input:focus, textarea:focus { outline: 2px solid var(--sky); outline-offset: 2px
 .foot a:hover { color: var(--sun); }
 .foot small { font-size: 14px; }
 
+.top, .wrap, .hero-copy { padding-left: max(var(--gutter), env(safe-area-inset-left)); padding-right: max(var(--gutter), env(safe-area-inset-right)); }
+
 /* ---------- Wider screens ---------- */
 @media (min-width: 640px) {
   .actions { display: flex; flex-wrap: wrap; }
@@ -189,7 +190,7 @@ input:focus, textarea:focus { outline: 2px solid var(--sky); outline-offset: 2px
   .call { font-size: 20px; }
   .hero-copy { padding-top: 48px; }
   .promise { font-size: 20px; }
-  .badge { display: block; position: absolute; z-index: 2; right: max(40px, calc(50% - 560px)); bottom: calc(clamp(300px, 36svh, 420px) - 84px); width: clamp(300px, 28vw, 400px); height: auto; border-radius: 50%; box-shadow: 0 24px 40px -18px rgba(2, 12, 28, .75); pointer-events: none; }
+  .badge { display: block; position: absolute; z-index: 2; right: max(40px, calc(50% - 560px)); bottom: calc(clamp(300px, 36svh, 420px) - 66px); width: clamp(240px, 21vw, 310px); height: auto; border-radius: 50%; box-shadow: 0 24px 40px -18px rgba(2, 12, 28, .75); pointer-events: none; }
   .pool-band { height: clamp(300px, 36svh, 420px); }
   .seam { height: 48px; top: -47px; }
   .section { padding: 88px 0 104px; }
@@ -198,6 +199,7 @@ input:focus, textarea:focus { outline: 2px solid var(--sky); outline-offset: 2px
   .row { font-size: 22px; min-height: 66px; }
   .about .wrap { display: grid; grid-template-columns: 7fr 5fr; gap: 64px; align-items: end; }
   .fb { margin-top: 0; }
+  .about-badge { display: none; }
   .steps { grid-template-columns: repeat(3, 1fr); gap: 40px; }
   .book .wrap { display: grid; grid-template-columns: 4fr 8fr; gap: 64px; align-items: start; }
   .book h2 { position: sticky; top: 40px; }
@@ -224,7 +226,7 @@ FINISH: unreviewed and undocumented is unfinished; this build ends with the fini
 <div class="hero" id="top">
   <header class="top">
     <a class="brand" href="#top" aria-label="Ideal Pools, LLC home">
-      <img src="img/logo.webp" width="52" height="52" alt="Ideal Pools, LLC logo">
+      <img src="img/logo-sm.webp" width="52" height="52" alt="Ideal Pools, LLC logo">
       <span class="word">Ideal<br>Pools</span>
     </a>
     <a class="call" href="tel:+18484803729"><svg class="icon" aria-hidden="true"><use href="#i-phone"/></svg>(848) 480-3729</a>
@@ -232,14 +234,14 @@ FINISH: unreviewed and undocumented is unfinished; this build ends with the fini
 
   <div class="hero-copy">
     <h1>Your pool, safe all winter.</h1>
-    <p class="promise">It's not too late to close your pool. Tell us about it and we'll find you a day before the freeze.</p>
+    <p class="promise">It's not too late. We'll find you a day before the freeze.</p>
     <div class="actions">
       <a class="btn btn-sun" href="#book">Check availability</a>
-      <a class="btn btn-line" href="https://www.facebook.com/profile.php?id=61572061220492">Message us on Facebook</a>
+      <a class="btn btn-line" href="https://m.me/61572061220492">Message us on Facebook</a>
     </div>
   </div>
 
-  <img class="badge" src="img/logo-lg.webp" width="640" height="640" alt="" aria-hidden="true">
+  <img class="badge" src="img/logo-lg.webp" width="640" height="640" alt="" aria-hidden="true" loading="lazy">
   <div class="pool-band">
     <canvas id="pool" role="img" aria-label="A pool with autumn leaves floating on it. Drag across the water to skim them off with the net."></canvas>
   </div>
@@ -251,7 +253,7 @@ FINISH: unreviewed and undocumented is unfinished; this build ends with the fini
     <div class="wrap">
       <div>
         <h2>We service all types of pools.</h2>
-        <p class="types"><span>Above ground</span> <span>In-ground</span> <span>Fiberglass</span> <span>Vinyl liner</span></p>
+        <p class="types"><span>Above-ground</span> <span>In-ground</span> <span>Fiberglass</span> <span>Vinyl liner</span></p>
       </div>
       <ul class="rows">
         <li><a class="row" href="#book" data-svc="Closing"><span>Pool closings &amp; winterization</span><span class="arrow"><svg class="icon" aria-hidden="true"><use href="#i-arrow"/></svg></span></a></li>
@@ -272,19 +274,17 @@ FINISH: unreviewed and undocumented is unfinished; this build ends with the fini
     <div class="wrap">
       <div>
         <h2>New company. Ten years of pools.</h2>
-        <p>Ideal Pools started in 2026, but we've been opening, closing and repairing pools professionally for more than ten years. Above-ground pools are our specialty.</p>
+        <p>Ideal Pools is new this year. We're not new to pools: we've been opening, closing and repairing them professionally for more than ten years, and above-ground pools are our specialty.</p>
         <p><strong>We close your pool like we'll be the ones opening it in spring,</strong> because we'd like to be. Covered properly, equipment protected, nothing left to find in April.</p>
-        <ul class="facts">
-          <li>10+ years of professional experience</li>
-          <li>Above-ground pool specialists</li>
-          <li>Reliable and affordable</li>
-        </ul>
       </div>
+      <div class="proof">
+      <img class="about-badge" src="img/logo-lg.webp" width="640" height="640" alt="Ideal Pools, LLC logo: we service all types of pools, 10+ years of professional experience" loading="lazy">
       <a class="fb" href="https://www.facebook.com/profile.php?id=61572061220492">
         <svg class="fbmark" viewBox="0 0 24 24" aria-hidden="true"><path fill="#fff" d="M24 12a12 12 0 1 0-13.9 11.9v-8.4H7.1V12h3V9.4c0-3 1.8-4.7 4.5-4.7 1.3 0 2.7.2 2.7.2v3h-1.5c-1.5 0-2 .9-2 1.9V12h3.4l-.5 3.5h-2.9v8.4A12 12 0 0 0 24 12"/></svg>
-        <span>Click to see more of our work.</span>
+        <span>Visit our Facebook to see more.</span>
         <svg class="icon go" aria-hidden="true"><use href="#i-arrow"/></svg>
       </a>
+      </div>
     </div>
   </section>
 
@@ -295,7 +295,7 @@ FINISH: unreviewed and undocumented is unfinished; this build ends with the fini
       <ol class="steps">
         <li><h3>Tell us about your pool</h3><p>What kind it is, where it is, and when you'd like it done.</p></li>
         <li><h3>We get back to you with a day</h3><p>Last-minute is fine. That's what we're here for.</p></li>
-        <li><h3>We close it up right</h3><p>Your pool and equipment are protected until spring.</p></li>
+        <li><h3>We do it right</h3><p>We treat your pool and equipment like our own.</p></li>
       </ol>
     </div>
   </section>
@@ -305,7 +305,7 @@ FINISH: unreviewed and undocumented is unfinished; this build ends with the fini
     <div class="wrap">
       <h2>Check availability.</h2>
       <form class="form" id="bookForm" novalidate>
-        <fieldset class="field full" id="f-svc">
+        <fieldset class="field full" id="f-svc" aria-describedby="e-svc">
           <legend class="legend">What do you need?</legend>
           <div class="chips">
             <label class="chip"><input type="checkbox" name="svc" value="Closing" checked><span>Closing</span></label>
@@ -318,17 +318,17 @@ FINISH: unreviewed and undocumented is unfinished; this build ends with the fini
             <label class="chip"><input type="checkbox" name="svc" value="Deck coating"><span>Deck coating</span></label>
             <label class="chip"><input type="checkbox" name="svc" value="New above-ground pool"><span>New above-ground pool</span></label>
           </div>
-          <p class="err">Pick at least one.</p>
+          <p class="err" id="e-svc">Pick at least one.</p>
         </fieldset>
 
-        <fieldset class="field full" id="f-type">
+        <fieldset class="field full" id="f-type" aria-describedby="e-type">
           <legend class="legend">Your pool</legend>
           <div class="chips">
             <label class="chip"><input type="radio" name="type" value="Above-ground"><span>Above-ground</span></label>
             <label class="chip"><input type="radio" name="type" value="In-ground"><span>In-ground</span></label>
             <label class="chip"><input type="radio" name="type" value="Not sure"><span>Not sure</span></label>
           </div>
-          <p class="err">Pick one, or "Not sure".</p>
+          <p class="err" id="e-type">Pick one, or "Not sure".</p>
         </fieldset>
 
         <fieldset class="field full" id="f-when">
@@ -343,18 +343,18 @@ FINISH: unreviewed and undocumented is unfinished; this build ends with the fini
 
         <div class="field" id="f-name">
           <label for="name">Your name</label>
-          <input type="text" id="name" name="name" autocomplete="name">
-          <p class="err">Add your name so we know who's asking.</p>
+          <input type="text" id="name" name="name" autocomplete="name" aria-describedby="e-name">
+          <p class="err" id="e-name">Add your name so we know who's asking.</p>
         </div>
         <div class="field" id="f-phone">
           <label for="phone">Your phone</label>
-          <input type="tel" id="phone" name="phone" autocomplete="tel" inputmode="tel" placeholder="(555) 555-5555">
-          <p class="err">Add a 10-digit number so we can reach you.</p>
+          <input type="tel" id="phone" name="phone" autocomplete="tel" inputmode="tel" placeholder="(555) 555-5555" aria-describedby="e-phone">
+          <p class="err" id="e-phone">Add a 10-digit number so we can reach you.</p>
         </div>
         <div class="field full" id="f-town">
           <label for="town">Town where the pool is</label>
-          <input type="text" id="town" name="town" autocomplete="address-level2">
-          <p class="err">Add the town so we can plan the trip.</p>
+          <input type="text" id="town" name="town" autocomplete="address-level2" aria-describedby="e-town">
+          <p class="err" id="e-town">Add the town so we can plan the trip.</p>
         </div>
         <div class="field full">
           <label for="notes">Anything else? <span class="opt">(optional)</span></label>
@@ -365,11 +365,11 @@ FINISH: unreviewed and undocumented is unfinished; this build ends with the fini
           <button class="btn btn-sun send" type="submit">Text this to Ideal Pools</button>
           <p class="note">Opens your messages with this already written. Rather talk? Call <a href="tel:+18484803729">(848) 480-3729</a>.</p>
           <div class="ready" id="ready" aria-live="polite">
-            <p><strong>Your message is ready.</strong> If your messages didn't open, copy it and send it to us on Facebook.</p>
+            <p><strong>Your message is ready.</strong> If your messages didn't open, copy it and send it to us on Messenger.</p>
             <pre id="msg"></pre>
             <div class="row2">
               <button class="btn btn-line" type="button" id="copy">Copy message</button>
-              <a class="btn btn-line" href="https://www.facebook.com/profile.php?id=61572061220492">Open our Facebook</a>
+              <a class="btn btn-line" href="https://m.me/61572061220492">Send it on Messenger</a>
             </div>
           </div>
         </div>
@@ -381,7 +381,7 @@ FINISH: unreviewed and undocumented is unfinished; this build ends with the fini
 <footer class="foot">
   <svg class="seam" viewBox="0 0 1440 48" preserveAspectRatio="none" aria-hidden="true" data-fill="#081f38" data-line="#1aa0dc"><path class="fill"/><path class="line"/></svg>
   <div class="wrap">
-    <div class="name"><img src="img/logo.webp" width="56" height="56" alt="" loading="lazy">Ideal Pools, LLC</div>
+    <div class="name"><img src="img/logo-sm.webp" width="56" height="56" alt="" loading="lazy">Ideal Pools, LLC</div>
     <ul>
       <li><a href="tel:+18484803729">(848) 480-3729</a></li>
       <li><a href="https://www.facebook.com/profile.php?id=61572061220492">Facebook</a></li>
@@ -401,8 +401,10 @@ const Loop = (function () {
     last = now;
     let any = false;
     for (const j of jobs) if (j.on) { j.fn(now / 1000, dt); any = true; }
-    raf = any ? requestAnimationFrame(frame) : 0;
+    raf = any && (!reduce || now < until) ? requestAnimationFrame(frame) : 0;
   }
+  let until = 0;
+  function wake(ms) { until = performance.now() + ms; if (!raf) { last = performance.now(); raf = requestAnimationFrame(frame); } }
   function kick() { if (!raf && !reduce) { last = performance.now(); raf = requestAnimationFrame(frame); } }
   function add(el, fn) {
     const job = { fn, on: false };
@@ -410,7 +412,7 @@ const Loop = (function () {
     fn(performance.now() / 1000, 0); /* first frame drawn even under reduced motion */
     new IntersectionObserver(es => { job.on = es[0].isIntersecting; if (job.on) kick(); }).observe(el);
   }
-  return { add, reduce };
+  return { add, reduce, wake };
 })();
 
 /* ---------- The pool: water, leaves, skimmer net ---------- */
@@ -464,6 +466,19 @@ const Loop = (function () {
     }
     c.closePath();
   }
+  /* Blurred shadow that works in Safari too (canvas filter is unsupported there):
+     draw the shape far off canvas and let shadowBlur paint only its shadow back in place */
+  function softShadow(c, k, color, blur, path) {
+    c.save(); c.shadowColor = color; c.shadowBlur = blur * 2 * k; c.shadowOffsetX = 4000 * k;
+    c.translate(-4000, 0); path(); c.fillStyle = '#000'; c.fill(); c.restore();
+  }
+  let netShadow;
+  function makeNetShadow() {
+    const w = CFG.NET_W, h = CFG.NET_H, pad = 14;
+    netShadow = document.createElement('canvas'); netShadow.width = (w + pad * 2) * dpr; netShadow.height = (h + pad * 2) * dpr;
+    const c = netShadow.getContext('2d'); c.scale(dpr, dpr); c.translate(pad + w / 2, pad + h / 2);
+    softShadow(c, dpr, 'rgba(4,40,80,.3)', 3, () => roundRect(-w / 2, -h / 2, w, h, 12, c));
+  }
   function makeSprites() {
     sprites = [];
     const L = CFG.LEAF_SIZE, S = Math.ceil(L * 1.5), k = dpr;
@@ -489,7 +504,7 @@ const Loop = (function () {
       c.stroke();
       const sh = document.createElement('canvas'); sh.width = sh.height = S * k;
       const s2 = sh.getContext('2d'); s2.scale(k, k); s2.translate(S / 2, S / 2);
-      s2.filter = 'blur(2.5px)'; leafPath(s2, kind, L * 0.98); s2.fillStyle = 'rgba(4,40,80,.32)'; s2.fill();
+      softShadow(s2, k, 'rgba(4,40,80,.34)', 2.5, () => leafPath(s2, kind, L * 0.98));
       sprites.push({ img: sc, shadow: sh, S });
     }
   }
@@ -512,7 +527,6 @@ const Loop = (function () {
       const tint = 0.85 + rnd() * 0.3;
       c.fillStyle = `rgb(${Math.round(24 * tint)},${Math.round(92 * tint)},${Math.round(170 * tint)})`;
       c.fillRect(x + 1, ty + 1, ts - 2, th - 2);
-      c.fillStyle = 'rgba(255,255,255,.18)'; c.fillRect(x + 1, ty + 1, ts - 2, 2);
     }
     c.fillStyle = 'rgba(0,0,0,.25)'; c.fillRect(0, y1, W, 2); /* coping overhang shadow */
   }
@@ -530,7 +544,7 @@ const Loop = (function () {
     a = new Float32Array(gw * gh); b = new Float32Array(gw * gh);
     off = document.createElement('canvas'); off.width = gw; off.height = gh;
     offCtx = off.getContext('2d'); img = offCtx.createImageData(gw, gh);
-    makeEdge();
+    makeEdge(); makeNetShadow();
     if (fresh || !sprites.length) makeSprites();
     const n = W < 700 ? CFG.LEAVES_PHONE : CFG.LEAVES_DESK;
     leaves = [];
@@ -609,7 +623,7 @@ const Loop = (function () {
     const sp = sprites[l.k], S = sp.S * l.s;
     ctx.save();
     ctx.globalAlpha = l.alpha;
-    if (shadow) ctx.translate(l.x + 7 * l.s, l.y + 10 * l.s); else ctx.translate(l.x, l.y);
+    if (shadow) { const [sx, sy] = slopeAt(l.x, l.y); ctx.translate(l.x + (7 + sx * 40) * l.s, l.y + (10 + sy * 40) * l.s); } else ctx.translate(l.x, l.y);
     ctx.rotate(l.a);
     ctx.drawImage(shadow ? sp.shadow : sp.img, -S / 2, -S / 2, S, S);
     ctx.restore();
@@ -620,8 +634,7 @@ const Loop = (function () {
     const w = CFG.NET_W, h = CFG.NET_H, ang = Math.atan2(net.vy * 0.002, 1) * 0.6 - 0.18;
     ctx.save();
     ctx.translate(net.x, net.y); ctx.rotate(ang);
-    ctx.save(); ctx.translate(6, 9); ctx.filter = 'blur(3px)'; ctx.fillStyle = 'rgba(4,40,80,.28)';
-    roundRect(-w / 2, -h / 2, w, h, 12); ctx.fill(); ctx.restore();
+    ctx.drawImage(netShadow, 6 - w / 2 - 14, 9 - h / 2 - 14, w + 28, h + 28);
     const pg = ctx.createLinearGradient(0, -3, 0, 3); pg.addColorStop(0, '#f1f4f7'); pg.addColorStop(0.5, '#a9b4c0'); pg.addColorStop(1, '#6e7b89');
     ctx.save(); ctx.rotate(0.62); ctx.fillStyle = pg; ctx.fillRect(w / 2 - 6, -3.5, 900, 7);
     ctx.fillStyle = '#1d4f9e'; ctx.fillRect(w / 2 - 8, -5, 20, 10); ctx.restore(); /* collar */
@@ -637,7 +650,7 @@ const Loop = (function () {
     ctx.lineWidth = 1.5; ctx.strokeStyle = '#0f3c86'; roundRect(-w / 2 + 2.5, -h / 2 + 2.5, w - 5, h - 5, 10); ctx.stroke();
     ctx.restore();
   }
-  function roundRect(x, y, w, h, r) { ctx.beginPath(); ctx.moveTo(x + r, y); ctx.arcTo(x + w, y, x + w, y + h, r); ctx.arcTo(x + w, y + h, x, y + h, r); ctx.arcTo(x, y + h, x, y, r); ctx.arcTo(x, y, x + w, y, r); ctx.closePath(); }
+  function roundRect(x, y, w, h, r, c = ctx) { c.beginPath(); c.moveTo(x + r, y); c.arcTo(x + w, y, x + w, y + h, r); c.arcTo(x + w, y + h, x, y + h, r); c.arcTo(x, y + h, x, y, r); c.arcTo(x, y, x + w, y, r); c.closePath(); }
 
   function update(t, dt) {
     const r = cv.getBoundingClientRect(); /* read every frame: the page scrolls under the finger */
@@ -715,7 +728,7 @@ const Loop = (function () {
   }
 
   /* Pointer: finger drags in every direction (touch-action: none on the canvas), mouse hovers */
-  function setPtr(e) { ptr.cx = e.clientX; ptr.cy = e.clientY; ptr.last = performance.now() / 1000; ptr.active = true; }
+  function setPtr(e) { if (Loop.reduce) Loop.wake(CFG.IDLE * 1000); ptr.cx = e.clientX; ptr.cy = e.clientY; ptr.last = performance.now() / 1000; ptr.active = true; }
   cv.addEventListener('pointerdown', e => { e.preventDefault(); ptr.down = true; setPtr(e); try { cv.setPointerCapture(e.pointerId); } catch (_) {} const r = cv.getBoundingClientRect(); disturb(e.clientX - r.left, e.clientY - r.top, 14, 2.5); });
   cv.addEventListener('pointermove', e => { if (e.pointerType === 'mouse' || ptr.down) setPtr(e); });
   const up = () => { ptr.down = false; };
@@ -756,7 +769,10 @@ const Loop = (function () {
   /* Service rows pick their service in the form */
   document.querySelectorAll('.row[data-svc]').forEach(row => row.addEventListener('click', () => {
     const box = form.querySelector(`input[name=svc][value="${row.dataset.svc}"]`);
-    if (box && !box.checked) { box.checked = true; box.dispatchEvent(new Event('change', { bubbles: true })); }
+    if (!box) return;
+    box.checked = true; clearBad(document.getElementById('f-svc'));
+    const s = box.nextElementSibling; /* splash once the scroll lands, so it's seen */
+    setTimeout(() => { s.classList.remove('splash'); void s.offsetWidth; s.classList.add('splash'); }, Loop.reduce ? 0 : 700);
   }));
 
   form.addEventListener('change', e => {
@@ -764,9 +780,11 @@ const Loop = (function () {
     if (inp.matches('.chip input') && inp.checked) {
       const s = inp.nextElementSibling; s.classList.remove('splash'); void s.offsetWidth; s.classList.add('splash');
     }
-    const f = inp.closest('.field'); if (f) f.classList.remove('bad');
+    clearBad(inp.closest('.field'));
   });
-  form.addEventListener('input', e => { const f = e.target.closest('.field'); if (f) f.classList.remove('bad'); });
+  form.addEventListener('input', e => clearBad(e.target.closest('.field')));
+  function setBad(f) { f.classList.add('bad'); f.querySelectorAll('input, textarea').forEach(i => i.setAttribute('aria-invalid', 'true')); }
+  function clearBad(f) { if (!f) return; f.classList.remove('bad'); f.querySelectorAll('[aria-invalid]').forEach(i => i.removeAttribute('aria-invalid')); }
 
   function compose() {
     const v = n => form.elements[n].value.trim();
@@ -796,10 +814,10 @@ const Loop = (function () {
 
   form.addEventListener('submit', e => {
     e.preventDefault();
-    form.querySelectorAll('.field.bad').forEach(f => f.classList.remove('bad'));
+    form.querySelectorAll('.field.bad').forEach(clearBad);
     const r = compose();
     if (r.bad) {
-      r.bad.forEach(id => document.getElementById(id).classList.add('bad'));
+      r.bad.forEach(id => setBad(document.getElementById(id)));
       const first = document.getElementById(r.bad[0]);
       first.scrollIntoView({ block: 'center', behavior: Loop.reduce ? 'auto' : 'smooth' });
       const inp = first.querySelector('input'); if (inp) inp.focus({ preventScroll: true });
