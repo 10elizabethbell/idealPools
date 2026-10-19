@@ -1,0 +1,825 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Ideal Pools, LLC | Pool closings, openings and repairs</title>
+<meta name="description" content="Ideal Pools, LLC: last-minute pool closings and winterization for above-ground and in-ground pools, plus openings, cleaning, liners and repairs. Call (848) 480-3729.">
+<meta name="theme-color" content="#0b2a4a">
+<meta property="og:type" content="website">
+<meta property="og:title" content="Ideal Pools, LLC | Your pool, safe all winter">
+<meta property="og:description" content="Last-minute pool closings for above-ground and in-ground pools. Check availability in a minute.">
+<meta property="og:url" content="https://10elizabethbell.github.io/idealPools/">
+<meta property="og:image" content="https://10elizabethbell.github.io/idealPools/img/og.jpg">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<link rel="icon" type="image/png" href="img/favicon.png">
+<link rel="apple-touch-icon" href="img/apple-touch-icon.png">
+<style>
+/* ---------- Tokens ---------- */
+:root {
+  --navy: #0b2a4a;      /* page ground, from the logo's band */
+  --navy-2: #0e355e;
+  --navy-deep: #081f38;
+  --royal: #1a63c9;     /* logo royal blue: form outlines, links on light */
+  --pool: #1aa0dc;
+  --sky: #7fd0f5;
+  --frost: #eef5fb;     /* light sections */
+  --frost-2: #dcebf6;
+  --ink: #0d2441;
+  --ink-soft: #3c5672;
+  --on-navy: #ffffff;
+  --on-navy-soft: #c4d9ee;
+  --sun: #ffc83d;       /* logo sun: primary buttons */
+  --sun-hover: #ffd76b;
+  --radius: 14px;
+  --gutter: 16px;
+  --font: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+}
+
+/* ---------- Base ---------- */
+*, *::before, *::after { box-sizing: border-box; }
+html { overscroll-behavior-y: none; -webkit-text-size-adjust: 100%; scroll-behavior: smooth; }
+@media (prefers-reduced-motion: reduce) { html { scroll-behavior: auto; } }
+body { margin: 0; font-family: var(--font); font-size: 17px; line-height: 1.55; color: var(--ink); background: var(--navy); }
+img { max-width: 100%; display: block; }
+a { color: inherit; }
+::selection { background: var(--sun); color: var(--ink); }
+:focus-visible { outline: 3px solid var(--sun); outline-offset: 3px; }
+h1, h2, h3 { font-weight: 900; text-transform: uppercase; letter-spacing: -0.01em; line-height: 1.02; margin: 0; text-wrap: balance; }
+h2 { font-size: clamp(1.9rem, 8vw, 3.2rem); }
+p { margin: 0; }
+.wrap { width: 100%; max-width: 1180px; margin: 0 auto; padding: 0 var(--gutter); }
+.icon { width: 22px; height: 22px; flex: none; fill: none; stroke: currentColor; stroke-width: 2; stroke-linecap: round; stroke-linejoin: round; }
+
+/* ---------- Header ---------- */
+.top { display: flex; align-items: center; justify-content: space-between; gap: 12px; padding: 14px var(--gutter) 0; max-width: 1180px; margin: 0 auto; }
+.brand { display: flex; align-items: center; gap: 10px; text-decoration: none; color: var(--on-navy); }
+.brand img { width: 52px; height: 52px; border-radius: 50%; }
+.brand .word { font-weight: 900; text-transform: uppercase; font-size: 15px; line-height: 1; letter-spacing: 0.02em; }
+.call { display: inline-flex; align-items: center; gap: 8px; min-height: 44px; color: var(--on-navy); font-weight: 800; font-size: 16px; text-decoration: none; white-space: nowrap; font-variant-numeric: tabular-nums; }
+.call .icon { width: 20px; height: 20px; color: var(--sun); }
+.call:hover { color: var(--sun); }
+
+/* ---------- Hero ---------- */
+.hero { position: relative; background: var(--navy); color: var(--on-navy); }
+.hero-copy { padding: 26px var(--gutter) 0; max-width: 1180px; margin: 0 auto; }
+.hero h1 { font-size: clamp(2.6rem, 12.4vw, 5.6rem); max-width: 11ch; }
+.promise { margin-top: 16px; font-size: clamp(17px, 4.6vw, 20px); color: var(--on-navy-soft); max-width: 34ch; }
+.actions { display: grid; gap: 12px; margin-top: 24px; }
+.btn { display: inline-flex; align-items: center; justify-content: center; gap: 10px; min-height: 56px; padding: 0 24px; border-radius: 999px; font: inherit; font-weight: 800; font-size: 17px; text-decoration: none; border: 2px solid transparent; cursor: pointer; transition: background-color .2s, color .2s, border-color .2s, transform .15s; }
+.btn:active { transform: scale(.98); }
+.btn-sun { background: var(--sun); color: var(--ink); border-color: var(--sun); box-shadow: 0 6px 14px -6px rgba(3, 14, 30, .55); }
+.btn-sun:hover { background: var(--sun-hover); border-color: var(--sun-hover); }
+.btn-line { color: var(--on-navy); border-color: rgba(255, 255, 255, .7); }
+.btn-line:hover { border-color: var(--sun); color: var(--sun); }
+
+/* The pool: the living element. Static gradient shows before JS runs. */
+.badge { display: none; }
+.pool-band { position: relative; margin-top: 4px; height: clamp(250px, 36svh, 440px); }
+.pool-band::before { content: ""; position: absolute; left: 0; right: 0; top: 56px; bottom: 0; background: linear-gradient(#0b72b6, #22aee4 60%, #1d9fd8); }
+#pool { position: absolute; inset: 0; width: 100%; height: 100%; touch-action: none; cursor: none; -webkit-user-select: none; user-select: none; -webkit-tap-highlight-color: transparent; }
+
+/* ---------- Seams: moving waterlines between sections ---------- */
+.section, .foot { position: relative; }
+.seam { position: absolute; left: 0; top: -33px; display: block; width: 100%; height: 34px; z-index: 1; pointer-events: none; }
+.seam path.line { fill: none; stroke-width: 2.5; vector-effect: non-scaling-stroke; }
+
+/* ---------- Light sections ---------- */
+.light { background: var(--frost); color: var(--ink); }
+.section { padding: 56px 0 72px; }
+
+/* Services */
+.types { margin-top: 14px; color: var(--ink-soft); font-size: 17px; }
+.types span { white-space: nowrap; }
+.types span + span::before { content: "·"; margin: 0 .5em 0 0; color: var(--royal); }
+.rows { list-style: none; margin: 28px 0 0; padding: 0; border-top: 1px solid rgba(13, 36, 65, .14); }
+.rows li { border-bottom: 1px solid rgba(13, 36, 65, .14); }
+.row { display: flex; align-items: center; justify-content: space-between; gap: 16px; min-height: 60px; padding: 10px 2px; text-decoration: none; color: var(--ink); font-weight: 700; font-size: 18px; }
+.row:hover, .row:focus-visible { outline: none; background: none; box-shadow: none; }
+.arrow { display: grid; place-items: center; width: 40px; height: 40px; border-radius: 50%; background: var(--frost-2); color: var(--ink); flex: none; transition: background-color .2s, color .2s, transform .2s; }
+.arrow .icon { width: 18px; height: 18px; }
+.row:hover .arrow, .row:focus-visible .arrow { background: var(--royal); color: #fff; transform: translateX(2px); }
+.row:focus-visible .arrow { outline: 3px solid var(--royal); outline-offset: 3px; }
+
+/* About (navy) */
+.dark { background: var(--navy); color: var(--on-navy); }
+.about p { margin-top: 18px; font-size: 18px; color: var(--on-navy-soft); max-width: 60ch; }
+.about p strong { color: var(--on-navy); font-weight: 700; }
+.facts { list-style: none; margin: 26px 0 0; padding: 0; display: grid; gap: 10px; }
+.facts li { display: flex; gap: 12px; align-items: baseline; font-weight: 700; font-size: 18px; }
+.facts li::before { content: ""; width: 10px; height: 10px; border-radius: 50%; background: var(--sun); flex: none; transform: translateY(-1px); }
+.fb { display: flex; align-items: center; gap: 16px; margin-top: 36px; padding: 18px 20px; border-radius: var(--radius); background: #1877f2; color: #fff; text-decoration: none; font-weight: 800; font-size: 19px; line-height: 1.25; box-shadow: 0 14px 30px -16px rgba(0, 0, 0, .6); transition: background-color .2s, transform .15s; }
+.fb:hover { background: #2d86f7; }
+.fb:active { transform: scale(.99); }
+.fb svg.fbmark { width: 34px; height: 34px; flex: none; }
+.fb .go { margin-left: auto; width: 22px; height: 22px; }
+
+/* Steps */
+.steps { list-style: none; margin: 30px 0 0; padding: 0; display: grid; gap: 22px; counter-reset: s; }
+.steps li { display: grid; grid-template-columns: 44px 1fr; gap: 4px 16px; counter-increment: s; }
+.steps li::before { content: counter(s); grid-row: span 2; width: 44px; height: 44px; border-radius: 50%; display: grid; place-items: center; background: var(--royal); color: #fff; font-weight: 900; font-size: 19px; }
+.steps h3 { font-size: 20px; text-transform: none; letter-spacing: 0; line-height: 1.2; align-self: center; }
+.steps p { color: var(--ink-soft); }
+
+/* ---------- Booking form ---------- */
+.book { background: var(--navy-2); color: var(--on-navy); }
+.form { margin-top: 26px; display: grid; gap: 22px; }
+.field { display: grid; gap: 8px; }
+.field > label, .field > .legend { font-weight: 800; font-size: 17px; }
+.field .opt { font-weight: 500; color: var(--on-navy-soft); }
+fieldset.field { border: 0; margin: 0; padding: 0; min-width: 0; }
+fieldset.field legend { padding: 0; margin-bottom: 8px; }
+input[type=text], input[type=tel], textarea {
+  width: 100%; font: inherit; font-size: 17px; color: var(--ink); background: #fff; border: 2px solid transparent; border-radius: 12px; padding: 13px 14px; min-height: 52px; transition: border-color .15s;
+}
+textarea { min-height: 96px; resize: vertical; }
+input::placeholder, textarea::placeholder { color: #61758c; }
+input:hover, textarea:hover { border-color: var(--sky); }
+input:focus, textarea:focus { outline: 2px solid var(--sky); outline-offset: 2px; border-color: var(--sky); }
+.field.bad input, .field.bad textarea { border-color: #ff9b8a; }
+.err { color: #ffb4a6; font-size: 15px; font-weight: 600; display: none; }
+.field.bad .err { display: block; }
+
+.chips { display: flex; flex-wrap: wrap; gap: 10px; }
+.chip { position: relative; }
+.chip input { position: absolute; opacity: 0; width: 1px; height: 1px; }
+.chip span { position: relative; display: inline-flex; align-items: center; min-height: 46px; padding: 0 18px; border-radius: 999px; border: 2px solid rgba(255, 255, 255, .35); color: var(--on-navy); font-weight: 700; font-size: 16px; cursor: pointer; transition: background-color .15s, border-color .15s, color .15s; -webkit-tap-highlight-color: transparent; }
+.chip span:hover { border-color: var(--sky); }
+.chip input:focus-visible + span { outline: 2px solid var(--sky); outline-offset: 2px; border-color: var(--sky); }
+.chip input:checked + span { background: var(--sky); border-color: var(--sky); color: var(--ink); }
+.chip input:checked + span:hover { border-color: #fff; }
+/* Small splash when a choice is ticked */
+.chip span::after { content: ""; position: absolute; inset: -2px; border-radius: inherit; border: 2px solid var(--sky); opacity: 0; pointer-events: none; }
+.chip span.splash::after { animation: splash .55s cubic-bezier(.2, .7, .3, 1); }
+@keyframes splash { from { opacity: .9; transform: scale(1); } to { opacity: 0; transform: scale(1.35, 1.6); } }
+
+.send { margin-top: 6px; width: 100%; }
+.send:hover { outline: 3px solid var(--sky); outline-offset: 2px; }
+.send:focus-visible { outline: 3px solid var(--sky); outline-offset: 2px; }
+.note { margin-top: 10px; color: var(--on-navy-soft); font-size: 16px; }
+.note a { display: inline-block; padding: 12px 0; margin: -12px 0; color: var(--on-navy); font-weight: 700; white-space: nowrap; }
+.ready { display: none; margin-top: 8px; padding: 18px; border-radius: var(--radius); background: rgba(255, 255, 255, .07); }
+.ready.show { display: grid; gap: 12px; }
+.ready pre { margin: 0; white-space: pre-wrap; font: inherit; font-size: 16px; color: var(--on-navy-soft); }
+.ready .row2 { display: flex; flex-wrap: wrap; gap: 10px; }
+.ready .btn { min-height: 48px; font-size: 16px; }
+.ready .btn-line:hover { outline: 3px solid var(--sky); outline-offset: 2px; }
+
+/* ---------- Footer ---------- */
+.foot { background: var(--navy-deep); color: var(--on-navy-soft); padding: 40px 0 44px; font-size: 16px; }
+.foot .wrap { display: grid; gap: 18px; }
+.foot .name { display: flex; align-items: center; gap: 12px; color: #fff; font-weight: 900; text-transform: uppercase; font-size: 18px; }
+.foot .name img { width: 56px; height: 56px; border-radius: 50%; }
+.foot ul { list-style: none; margin: 0; padding: 0; display: grid; gap: 6px; }
+.foot a { display: inline-flex; align-items: center; min-height: 44px; color: #fff; font-weight: 700; text-decoration: none; }
+.foot a:hover { color: var(--sun); }
+.foot small { font-size: 14px; }
+
+/* ---------- Wider screens ---------- */
+@media (min-width: 640px) {
+  .actions { display: flex; flex-wrap: wrap; }
+  .actions .btn { min-width: 230px; }
+}
+@media (min-width: 1024px) {
+  :root { --gutter: 40px; }
+  .top { padding-top: 22px; }
+  .brand img { width: 60px; height: 60px; }
+  .brand .word { font-size: 17px; }
+  .call { font-size: 19px; }
+  .hero-copy { padding-top: 48px; }
+  .promise { font-size: 20px; }
+  .badge { display: block; position: absolute; z-index: 2; right: max(40px, calc(50% - 560px)); bottom: calc(clamp(300px, 36svh, 420px) - 84px); width: clamp(300px, 28vw, 400px); height: auto; border-radius: 50%; box-shadow: 0 24px 40px -18px rgba(2, 12, 28, .75); pointer-events: none; }
+  .pool-band { height: clamp(300px, 36svh, 420px); }
+  .seam { height: 48px; top: -47px; }
+  .section { padding: 88px 0 104px; }
+  .services .wrap { display: grid; grid-template-columns: 5fr 7fr; gap: 64px; align-items: start; }
+  .rows { margin-top: 6px; }
+  .row { font-size: 20px; min-height: 66px; }
+  .about .wrap { display: grid; grid-template-columns: 7fr 5fr; gap: 64px; align-items: end; }
+  .fb { margin-top: 0; }
+  .steps { grid-template-columns: repeat(3, 1fr); gap: 40px; }
+  .book .wrap { display: grid; grid-template-columns: 4fr 8fr; gap: 64px; align-items: start; }
+  .book h2 { position: sticky; top: 40px; }
+  .form { margin-top: 0; grid-template-columns: 1fr 1fr; }
+  .form .full { grid-column: 1 / -1; }
+  .foot .wrap { grid-template-columns: 1fr auto; align-items: center; }
+}
+</style>
+</head>
+<body>
+<!--
+THESIS: The pool at closing time is the page. Refuses the generic "blue swoosh + stock pool photo + card grid" contractor template.
+OWN-WORLD: Logo navy ground, sun-yellow buttons, frost-white light bands, royal blue cues. A real pool edge (stone coping, waterline tile), clear water with moving light, autumn leaves; a skimmer net. Moving waterlines divide every section.
+STORY: A pool owner sees it isn't too late, believes this crew will close it carefully, and checks availability by text in under a minute.
+FIRST VIEWPORT (phone): logo + name left, phone number top-right; huge "Your pool, safe all winter."; one-line promise; Check availability (sun) + Message us on Facebook (outline); the pool band below, a net skimming leaves until a finger takes it.
+FORM: Single long phone-first page; code-led (no image generation); signature interaction: skim leaves off the water.
+FINISH: unreviewed and undocumented is unfinished; this build ends with the finish review, the verdict, DESIGN.md, and every shipping raster carrying its provenance
+-->
+<svg width="0" height="0" style="position:absolute" aria-hidden="true">
+  <symbol id="i-phone" viewBox="0 0 24 24"><path d="M5 4h4l2 5-2.5 1.5a11 11 0 0 0 5 5L15 13l5 2v4a2 2 0 0 1-2 2A16 16 0 0 1 3 6a2 2 0 0 1 2-2"/></symbol>
+  <symbol id="i-arrow" viewBox="0 0 24 24"><path d="M5 12h14M13 6l6 6-6 6"/></symbol>
+</svg>
+
+<div class="hero" id="top">
+  <header class="top">
+    <a class="brand" href="#top" aria-label="Ideal Pools, LLC home">
+      <img src="img/logo.webp" width="52" height="52" alt="Ideal Pools, LLC logo">
+      <span class="word">Ideal<br>Pools</span>
+    </a>
+    <a class="call" href="tel:+18484803729"><svg class="icon" aria-hidden="true"><use href="#i-phone"/></svg>(848) 480-3729</a>
+  </header>
+
+  <div class="hero-copy">
+    <h1>Your pool, safe all winter.</h1>
+    <p class="promise">It's not too late to close your pool. Tell us about it and we'll find you a day before the freeze.</p>
+    <div class="actions">
+      <a class="btn btn-sun" href="#book">Check availability</a>
+      <a class="btn btn-line" href="https://www.facebook.com/profile.php?id=61572061220492">Message us on Facebook</a>
+    </div>
+  </div>
+
+  <img class="badge" src="img/logo-lg.webp" width="640" height="640" alt="" aria-hidden="true">
+  <div class="pool-band">
+    <canvas id="pool" role="img" aria-label="A pool with autumn leaves floating on it. Drag across the water to skim them off with the net."></canvas>
+  </div>
+</div>
+
+<main>
+  <section class="light section services" id="services">
+    <svg class="seam" viewBox="0 0 1440 48" preserveAspectRatio="none" aria-hidden="true" data-fill="#eef5fb" data-line="#7fd0f5"><path class="fill"/><path class="line"/></svg>
+    <div class="wrap">
+      <div>
+        <h2>We service all types of pools.</h2>
+        <p class="types"><span>Above ground</span> <span>In-ground</span> <span>Fiberglass</span> <span>Vinyl liner</span></p>
+      </div>
+      <ul class="rows">
+        <li><a class="row" href="#book" data-svc="Closing"><span>Pool closings &amp; winterization</span><span class="arrow"><svg class="icon" aria-hidden="true"><use href="#i-arrow"/></svg></span></a></li>
+        <li><a class="row" href="#book" data-svc="Opening"><span>Pool openings</span><span class="arrow"><svg class="icon" aria-hidden="true"><use href="#i-arrow"/></svg></span></a></li>
+        <li><a class="row" href="#book" data-svc="Cleaning"><span>Cleaning</span><span class="arrow"><svg class="icon" aria-hidden="true"><use href="#i-arrow"/></svg></span></a></li>
+        <li><a class="row" href="#book" data-svc="Liner replacement"><span>Liner replacement</span><span class="arrow"><svg class="icon" aria-hidden="true"><use href="#i-arrow"/></svg></span></a></li>
+        <li><a class="row" href="#book" data-svc="Equipment repair"><span>Equipment repairs</span><span class="arrow"><svg class="icon" aria-hidden="true"><use href="#i-arrow"/></svg></span></a></li>
+        <li><a class="row" href="#book" data-svc="Acid wash"><span>Acid washes</span><span class="arrow"><svg class="icon" aria-hidden="true"><use href="#i-arrow"/></svg></span></a></li>
+        <li><a class="row" href="#book" data-svc="Leak detection"><span>Leak detection</span><span class="arrow"><svg class="icon" aria-hidden="true"><use href="#i-arrow"/></svg></span></a></li>
+        <li><a class="row" href="#book" data-svc="Deck coating"><span>Deck coatings</span><span class="arrow"><svg class="icon" aria-hidden="true"><use href="#i-arrow"/></svg></span></a></li>
+        <li><a class="row" href="#book" data-svc="New above-ground pool"><span>Above-ground pool builds</span><span class="arrow"><svg class="icon" aria-hidden="true"><use href="#i-arrow"/></svg></span></a></li>
+      </ul>
+    </div>
+  </section>
+
+  <section class="dark section about" id="about">
+    <svg class="seam" viewBox="0 0 1440 48" preserveAspectRatio="none" aria-hidden="true" data-fill="#0b2a4a" data-line="#1aa0dc"><path class="fill"/><path class="line"/></svg>
+    <div class="wrap">
+      <div>
+        <h2>New company. Ten years of pools.</h2>
+        <p>Ideal Pools started in 2026, but we've been opening, closing and repairing pools professionally for more than ten years. Above-ground pools are our specialty.</p>
+        <p><strong>We close your pool like we'll be the ones opening it in spring,</strong> because we'd like to be. Covered properly, equipment protected, nothing left to find in April.</p>
+        <ul class="facts">
+          <li>10+ years of professional experience</li>
+          <li>Above-ground pool specialists</li>
+          <li>Reliable and affordable</li>
+        </ul>
+      </div>
+      <a class="fb" href="https://www.facebook.com/profile.php?id=61572061220492">
+        <svg class="fbmark" viewBox="0 0 24 24" aria-hidden="true"><path fill="#fff" d="M24 12a12 12 0 1 0-13.9 11.9v-8.4H7.1V12h3V9.4c0-3 1.8-4.7 4.5-4.7 1.3 0 2.7.2 2.7.2v3h-1.5c-1.5 0-2 .9-2 1.9V12h3.4l-.5 3.5h-2.9v8.4A12 12 0 0 0 24 12"/></svg>
+        <span>Click to see more of our work.</span>
+        <svg class="icon go" aria-hidden="true"><use href="#i-arrow"/></svg>
+      </a>
+    </div>
+  </section>
+
+  <section class="light section" id="how">
+    <svg class="seam" viewBox="0 0 1440 48" preserveAspectRatio="none" aria-hidden="true" data-fill="#eef5fb" data-line="#7fd0f5"><path class="fill"/><path class="line"/></svg>
+    <div class="wrap">
+      <h2>Booking takes a minute.</h2>
+      <ol class="steps">
+        <li><h3>Tell us about your pool</h3><p>What kind it is, where it is, and when you'd like it done.</p></li>
+        <li><h3>We get back to you with a day</h3><p>Last-minute is fine. That's what we're here for.</p></li>
+        <li><h3>We close it up right</h3><p>Your pool and equipment are protected until spring.</p></li>
+      </ol>
+    </div>
+  </section>
+
+  <section class="book section" id="book">
+    <svg class="seam" viewBox="0 0 1440 48" preserveAspectRatio="none" aria-hidden="true" data-fill="#0e355e" data-line="#1aa0dc"><path class="fill"/><path class="line"/></svg>
+    <div class="wrap">
+      <h2>Check availability.</h2>
+      <form class="form" id="bookForm" novalidate>
+        <fieldset class="field full" id="f-svc">
+          <legend class="legend">What do you need?</legend>
+          <div class="chips">
+            <label class="chip"><input type="checkbox" name="svc" value="Closing" checked><span>Closing</span></label>
+            <label class="chip"><input type="checkbox" name="svc" value="Opening"><span>Opening</span></label>
+            <label class="chip"><input type="checkbox" name="svc" value="Cleaning"><span>Cleaning</span></label>
+            <label class="chip"><input type="checkbox" name="svc" value="Liner replacement"><span>Liner</span></label>
+            <label class="chip"><input type="checkbox" name="svc" value="Equipment repair"><span>Equipment repair</span></label>
+            <label class="chip"><input type="checkbox" name="svc" value="Acid wash"><span>Acid wash</span></label>
+            <label class="chip"><input type="checkbox" name="svc" value="Leak detection"><span>Leak detection</span></label>
+            <label class="chip"><input type="checkbox" name="svc" value="Deck coating"><span>Deck coating</span></label>
+            <label class="chip"><input type="checkbox" name="svc" value="New above-ground pool"><span>New above-ground pool</span></label>
+          </div>
+          <p class="err">Pick at least one.</p>
+        </fieldset>
+
+        <fieldset class="field full" id="f-type">
+          <legend class="legend">Your pool</legend>
+          <div class="chips">
+            <label class="chip"><input type="radio" name="type" value="Above-ground"><span>Above-ground</span></label>
+            <label class="chip"><input type="radio" name="type" value="In-ground"><span>In-ground</span></label>
+            <label class="chip"><input type="radio" name="type" value="Not sure"><span>Not sure</span></label>
+          </div>
+          <p class="err">Pick one, or "Not sure".</p>
+        </fieldset>
+
+        <fieldset class="field full" id="f-when">
+          <legend class="legend">When?</legend>
+          <div class="chips">
+            <label class="chip"><input type="radio" name="when" value="As soon as possible" checked><span>As soon as possible</span></label>
+            <label class="chip"><input type="radio" name="when" value="This week"><span>This week</span></label>
+            <label class="chip"><input type="radio" name="when" value="Next week"><span>Next week</span></label>
+            <label class="chip"><input type="radio" name="when" value="I'm flexible"><span>I'm flexible</span></label>
+          </div>
+        </fieldset>
+
+        <div class="field" id="f-name">
+          <label for="name">Your name</label>
+          <input type="text" id="name" name="name" autocomplete="name">
+          <p class="err">Add your name so we know who's asking.</p>
+        </div>
+        <div class="field" id="f-phone">
+          <label for="phone">Your phone</label>
+          <input type="tel" id="phone" name="phone" autocomplete="tel" inputmode="tel" placeholder="(555) 555-5555">
+          <p class="err">Add a 10-digit number so we can reach you.</p>
+        </div>
+        <div class="field full" id="f-town">
+          <label for="town">Town where the pool is</label>
+          <input type="text" id="town" name="town" autocomplete="address-level2">
+          <p class="err">Add the town so we can plan the trip.</p>
+        </div>
+        <div class="field full">
+          <label for="notes">Anything else? <span class="opt">(optional)</span></label>
+          <textarea id="notes" name="notes" placeholder="Pool size, cover, anything we should know"></textarea>
+        </div>
+
+        <div class="full">
+          <button class="btn btn-sun send" type="submit">Text this to Ideal Pools</button>
+          <p class="note">Opens your messages with this already written. Rather talk? Call <a href="tel:+18484803729">(848) 480-3729</a>.</p>
+          <div class="ready" id="ready" aria-live="polite">
+            <p><strong>Your message is ready.</strong> If your messages didn't open, copy it and send it to us on Facebook.</p>
+            <pre id="msg"></pre>
+            <div class="row2">
+              <button class="btn btn-line" type="button" id="copy">Copy message</button>
+              <a class="btn btn-line" href="https://www.facebook.com/profile.php?id=61572061220492">Open our Facebook</a>
+            </div>
+          </div>
+        </div>
+      </form>
+    </div>
+  </section>
+</main>
+
+<footer class="foot">
+  <svg class="seam" viewBox="0 0 1440 48" preserveAspectRatio="none" aria-hidden="true" data-fill="#081f38" data-line="#1aa0dc"><path class="fill"/><path class="line"/></svg>
+  <div class="wrap">
+    <div class="name"><img src="img/logo.webp" width="56" height="56" alt="" loading="lazy">Ideal Pools, LLC</div>
+    <ul>
+      <li><a href="tel:+18484803729">(848) 480-3729</a></li>
+      <li><a href="https://www.facebook.com/profile.php?id=61572061220492">Facebook</a></li>
+      <li><small>© 2026 Ideal Pools, LLC</small></li>
+    </ul>
+  </div>
+</footer>
+
+<script>
+/* ---------- Shared animation loop: one rAF, modules pause off screen ---------- */
+const Loop = (function () {
+  const jobs = [];
+  let raf = 0, last = 0;
+  const reduce = matchMedia('(prefers-reduced-motion: reduce)').matches;
+  function frame(now) {
+    const dt = Math.min(0.05, (now - last) / 1000 || 0.016);
+    last = now;
+    let any = false;
+    for (const j of jobs) if (j.on) { j.fn(now / 1000, dt); any = true; }
+    raf = any ? requestAnimationFrame(frame) : 0;
+  }
+  function kick() { if (!raf && !reduce) { last = performance.now(); raf = requestAnimationFrame(frame); } }
+  function add(el, fn) {
+    const job = { fn, on: false };
+    jobs.push(job);
+    fn(performance.now() / 1000, 0); /* first frame drawn even under reduced motion */
+    new IntersectionObserver(es => { job.on = es[0].isIntersecting; if (job.on) kick(); }).observe(el);
+  }
+  return { add, reduce };
+})();
+
+/* ---------- The pool: water, leaves, skimmer net ---------- */
+(function pool() {
+  const CFG = {
+    AIR: 56,            /* px of open air above the pool edge, where leaves fall */
+    COPING: 16,         /* stone edge */
+    TILE: 13,           /* waterline tile band */
+    CELL_PHONE: 3,      /* water grid cell size in px */
+    CELL_DESK: 4,
+    DAMP: 0.984,        /* ripple decay per step */
+    LEAVES_PHONE: 9,
+    LEAVES_DESK: 18,
+    LEAF_SIZE: 38,      /* px, leaf length */
+    RESPAWN_MIN: 3, RESPAWN_MAX: 7,   /* seconds before a skimmed leaf falls back in */
+    NET_W: 64, NET_H: 44,
+    AUTO_SPEED: 120,    /* px/s, net speed when it skims by itself */
+    IDLE: 3.5,          /* seconds after the last touch before the net goes back to auto */
+    SCOOP_SPEED: 30,    /* net must move at least this fast to scoop */
+    CURRENT: 6,         /* gentle drift, px/s */
+  };
+  const cv = document.getElementById('pool');
+  const ctx = cv.getContext('2d');
+  let W = 0, H = 0, dpr = 1, waterY = 0, cell = 3, gw = 0, gh = 0;
+  let a, b, off, offCtx, img, edge;
+  let leaves = [], sprites = [];
+  const net = { x: 0, y: 0, vx: 0, vy: 0, tx: 0, ty: 0 };
+  const ptr = { cx: 0, cy: 0, active: false, down: false, last: -99 };
+  let started = false;
+
+  /* Leaf sprites: maple and oak-ish shapes in autumn colors, plus a soft shadow */
+  const COLORS = [['#e8792a', '#b5441b'], ['#f2b43a', '#c47a17'], ['#c9472a', '#8e2a1a'], ['#d99a34', '#9a5a1c'], ['#b8b13f', '#7a6e1e']];
+  function leafPath(c, kind, L) {
+    c.beginPath();
+    if (kind === 0) { /* maple: five pointed lobes with small teeth */
+      const R = L * 0.5;
+      for (let i = 0; i <= 120; i++) {
+        const t = i / 120 * Math.PI * 2;
+        const lobe = Math.pow(Math.abs(Math.cos(2.5 * (t + Math.PI / 2))), 0.7);
+        const teeth = 0.06 * Math.abs(Math.sin(t * 15));
+        let r = R * (0.42 + 0.58 * lobe - teeth);
+        if (Math.abs(t - Math.PI * 1.5) < 0.35) r *= 0.55; /* notch where the stem joins */
+        const x = Math.cos(t) * r, y = Math.sin(t) * r * 0.95;
+        i ? c.lineTo(x, y) : c.moveTo(x, y);
+      }
+    } else { /* oval leaf with a pointed tip, slightly wavy edge */
+      const l = L * 0.5, w = L * (kind === 1 ? 0.24 : 0.3);
+      c.moveTo(0, -l);
+      for (let i = 0; i <= 24; i++) { const s = i / 24, y = -l + s * 2 * l, wob = 1 + (kind === 1 ? 0.12 * Math.sin(s * 22) : 0); c.lineTo(Math.sin(Math.PI * Math.pow(s, 0.85)) * w * wob, y); }
+      for (let i = 24; i >= 0; i--) { const s = i / 24, y = -l + s * 2 * l, wob = 1 + (kind === 1 ? 0.12 * Math.sin(s * 22 + 1) : 0); c.lineTo(-Math.sin(Math.PI * Math.pow(s, 0.85)) * w * wob, y); }
+    }
+    c.closePath();
+  }
+  function makeSprites() {
+    sprites = [];
+    const L = CFG.LEAF_SIZE, S = Math.ceil(L * 1.5), k = dpr;
+    for (let kind = 0; kind < 3; kind++) for (let ci = 0; ci < COLORS.length; ci++) {
+      const [light, dark] = COLORS[(ci + kind * 2) % COLORS.length];
+      const sc = document.createElement('canvas'); sc.width = sc.height = S * k;
+      const c = sc.getContext('2d'); c.scale(k, k); c.translate(S / 2, S / 2);
+      leafPath(c, kind, L);
+      const g = c.createRadialGradient(-L * 0.12, -L * 0.15, 1, 0, 0, L * 0.6);
+      g.addColorStop(0, light); g.addColorStop(1, dark);
+      c.fillStyle = g; c.fill();
+      c.save(); c.clip();
+      c.strokeStyle = 'rgba(255,235,190,.45)'; c.lineWidth = 1; c.lineCap = 'round';
+      c.beginPath();
+      if (kind === 0) { for (let i = 0; i < 5; i++) { const t = -Math.PI / 2 + i * Math.PI * 2 / 5 + Math.PI; c.moveTo(0, L * 0.12); c.lineTo(Math.cos(t) * L * 0.42, Math.sin(t) * L * 0.42); } }
+      else { c.moveTo(0, L * 0.5); c.lineTo(0, -L * 0.45); for (let i = 1; i < 5; i++) { const y = L * 0.4 - i * L * 0.17; c.moveTo(0, y); c.lineTo(L * 0.16, y - L * 0.1); c.moveTo(0, y); c.lineTo(-L * 0.16, y - L * 0.1); } }
+      c.stroke();
+      c.fillStyle = 'rgba(70,25,5,.18)'; c.fillRect(-S, 0, S * 2, S); /* underside shade */
+      c.restore();
+      c.strokeStyle = dark; c.lineWidth = 1.6; c.beginPath(); /* stem */
+      if (kind === 0) { c.moveTo(0, L * 0.12); c.quadraticCurveTo(L * 0.04, L * 0.4, -L * 0.03, L * 0.62); }
+      else { c.moveTo(0, L * 0.48); c.lineTo(0, L * 0.64); }
+      c.stroke();
+      const sh = document.createElement('canvas'); sh.width = sh.height = S * k;
+      const s2 = sh.getContext('2d'); s2.scale(k, k); s2.translate(S / 2, S / 2);
+      s2.filter = 'blur(2.5px)'; leafPath(s2, kind, L * 0.98); s2.fillStyle = 'rgba(4,40,80,.32)'; s2.fill();
+      sprites.push({ img: sc, shadow: sh, S });
+    }
+  }
+
+  /* Static pool edge: stone coping and waterline tiles, drawn once per size */
+  function makeEdge() {
+    edge = document.createElement('canvas'); edge.width = W * dpr; edge.height = waterY * dpr;
+    const c = edge.getContext('2d'); c.scale(dpr, dpr);
+    const y0 = CFG.AIR, y1 = y0 + CFG.COPING;
+    const g = c.createLinearGradient(0, y0, 0, y1);
+    g.addColorStop(0, '#f4f1ea'); g.addColorStop(0.55, '#e3ddd0'); g.addColorStop(1, '#b9b2a3');
+    c.fillStyle = g; c.fillRect(0, y0, W, CFG.COPING);
+    let seed = 7; const rnd = () => (seed = (seed * 16807) % 2147483647) / 2147483647;
+    for (let i = 0; i < W * 0.6; i++) { c.fillStyle = `rgba(90,80,60,${rnd() * 0.18})`; c.fillRect(rnd() * W, y0 + rnd() * CFG.COPING, 1.2, 1.2); }
+    c.fillStyle = 'rgba(90,80,60,.25)';
+    for (let x = 70 + rnd() * 40; x < W; x += 120 + rnd() * 40) c.fillRect(x, y0 + 1, 1, CFG.COPING - 2); /* coping stone joints */
+    const ty = y1, th = CFG.TILE, ts = th;
+    c.fillStyle = '#0d3f7a'; c.fillRect(0, ty, W, th);
+    for (let x = 0; x < W; x += ts) {
+      const tint = 0.85 + rnd() * 0.3;
+      c.fillStyle = `rgb(${Math.round(24 * tint)},${Math.round(92 * tint)},${Math.round(170 * tint)})`;
+      c.fillRect(x + 1, ty + 1, ts - 2, th - 2);
+      c.fillStyle = 'rgba(255,255,255,.18)'; c.fillRect(x + 1, ty + 1, ts - 2, 2);
+    }
+    c.fillStyle = 'rgba(0,0,0,.25)'; c.fillRect(0, y1, W, 2); /* coping overhang shadow */
+  }
+
+  function size() {
+    const r = cv.getBoundingClientRect();
+    const w = Math.round(r.width), h = Math.round(r.height);
+    if (w === W && h === H) return false; /* phones fire resize when the address bar moves: ignore */
+    const fresh = !W;
+    W = w; H = h; dpr = Math.min(2, window.devicePixelRatio || 1);
+    cv.width = W * dpr; cv.height = H * dpr;
+    waterY = CFG.AIR + CFG.COPING + CFG.TILE;
+    cell = W < 700 ? CFG.CELL_PHONE : CFG.CELL_DESK;
+    gw = Math.ceil(W / cell) + 2; gh = Math.ceil((H - waterY) / cell) + 2;
+    a = new Float32Array(gw * gh); b = new Float32Array(gw * gh);
+    off = document.createElement('canvas'); off.width = gw; off.height = gh;
+    offCtx = off.getContext('2d'); img = offCtx.createImageData(gw, gh);
+    makeEdge();
+    if (fresh || !sprites.length) makeSprites();
+    const n = W < 700 ? CFG.LEAVES_PHONE : CFG.LEAVES_DESK;
+    leaves = [];
+    for (let i = 0; i < n; i++) leaves.push(newLeaf(true));
+    net.x = net.tx = W * 0.7; net.y = net.ty = waterY + (H - waterY) * 0.55;
+    return true;
+  }
+
+  function newLeaf(floating) {
+    const l = { k: (Math.random() * sprites.length) | 0, x: 20 + Math.random() * (W - 40), y: 0, vx: 0, vy: 0,
+      a: Math.random() * 6.28, va: (Math.random() - 0.5) * 0.4, s: 0.75 + Math.random() * 0.45, ph: Math.random() * 6.28,
+      state: floating ? 'float' : 'wait', t: 0, ox: 0, oy: 0, alpha: 1 };
+    if (floating) l.y = waterY + 14 + Math.random() * (H - waterY - 80);
+    else l.t = CFG.RESPAWN_MIN + Math.random() * (CFG.RESPAWN_MAX - CFG.RESPAWN_MIN);
+    return l;
+  }
+
+  function disturb(x, y, rad, amt) {
+    const gx = x / cell + 1, gy = (y - waterY) / cell + 1, rr = rad / cell;
+    const x0 = Math.max(1, Math.floor(gx - rr)), x1 = Math.min(gw - 2, Math.ceil(gx + rr));
+    const y0 = Math.max(1, Math.floor(gy - rr)), y1 = Math.min(gh - 2, Math.ceil(gy + rr));
+    for (let j = y0; j <= y1; j++) for (let i = x0; i <= x1; i++) {
+      const d = Math.hypot(i - gx, j - gy) / rr;
+      if (d < 1) a[j * gw + i] += amt * (1 - d * d);
+    }
+  }
+  function slopeAt(x, y) {
+    const i = Math.round(x / cell + 1), j = Math.round((y - waterY) / cell + 1);
+    if (i < 2 || j < 2 || i > gw - 3 || j > gh - 3) return [0, 0];
+    const k = j * gw + i;
+    return [a[k + 1] - a[k - 1], a[k + gw] - a[k - gw]];
+  }
+
+  function stepWater() {
+    for (let j = 1; j < gh - 1; j++) {
+      const row = j * gw;
+      for (let i = 1; i < gw - 1; i++) {
+        const k = row + i;
+        b[k] = ((a[k - 1] + a[k + 1] + a[k - gw] + a[k + gw]) * 0.5 - b[k]) * CFG.DAMP;
+      }
+    }
+    const t = a; a = b; b = t;
+  }
+
+  function paintWater(t) {
+    const d = img.data, rows = gh;
+    for (let j = 0; j < gh; j++) {
+      const yN = j / rows, py0 = (j - 1) * cell;
+      const r0 = 14 + 26 * yN, g0 = 128 + 52 * yN, b0 = 196 + 34 * yN;
+      for (let i = 0; i < gw; i++) {
+        const k = j * gw + i;
+        const hx = (i > 0 && i < gw - 1) ? a[k + 1] - a[k - 1] : 0;
+        const hy = (j > 0 && j < gh - 1) ? a[k + gw] - a[k - gw] : 0;
+        const px = (i - 1) * cell + hx * 7, py = py0 + hy * 7;
+        const n = Math.sin(px * 0.043 + t * 0.9 + 1.7 * Math.sin(py * 0.052 - t * 0.6))
+                + Math.sin(py * 0.058 - t * 0.75 + 1.9 * Math.sin(px * 0.036 + t * 0.5));
+        let c = 1 - Math.abs(n) * 0.85; c = c < 0 ? 0 : c * c * c;
+        const l = (-hx * 0.55 - hy * 0.85) * 26;
+        const shade = 0.92 + 0.08 * Math.sin(px * 0.006 + t * 0.15) * Math.sin(py * 0.01 - t * 0.1);
+        const o = k * 4;
+        d[o] = r0 * shade + c * 120 + l;
+        d[o + 1] = g0 * shade + c * 95 + l;
+        d[o + 2] = b0 * shade + c * 50 + l;
+        d[o + 3] = 255;
+      }
+    }
+    offCtx.putImageData(img, 0, 0);
+    ctx.imageSmoothingEnabled = true; ctx.imageSmoothingQuality = 'high';
+    ctx.drawImage(off, 1, 1, gw - 2, gh - 2, 0, waterY, W, (gh - 2) * cell);
+    const sg = ctx.createLinearGradient(0, waterY, 0, waterY + 26); /* shade under the pool wall */
+    sg.addColorStop(0, 'rgba(3,30,70,.45)'); sg.addColorStop(1, 'rgba(3,30,70,0)');
+    ctx.fillStyle = sg; ctx.fillRect(0, waterY, W, 26);
+  }
+
+  function drawLeaf(l, shadow) {
+    const sp = sprites[l.k], S = sp.S * l.s;
+    ctx.save();
+    ctx.globalAlpha = l.alpha;
+    if (shadow) ctx.translate(l.x + 7 * l.s, l.y + 10 * l.s); else ctx.translate(l.x, l.y);
+    ctx.rotate(l.a);
+    ctx.drawImage(shadow ? sp.shadow : sp.img, -S / 2, -S / 2, S, S);
+    ctx.restore();
+  }
+
+  /* Skimmer net: blue frame, mesh, aluminium pole running off the bottom right */
+  function drawNet() {
+    const w = CFG.NET_W, h = CFG.NET_H, ang = Math.atan2(net.vy * 0.002, 1) * 0.6 - 0.18;
+    ctx.save();
+    ctx.translate(net.x, net.y); ctx.rotate(ang);
+    ctx.save(); ctx.translate(6, 9); ctx.filter = 'blur(3px)'; ctx.fillStyle = 'rgba(4,40,80,.28)';
+    roundRect(-w / 2, -h / 2, w, h, 12); ctx.fill(); ctx.restore();
+    const pg = ctx.createLinearGradient(0, -3, 0, 3); pg.addColorStop(0, '#f1f4f7'); pg.addColorStop(0.5, '#a9b4c0'); pg.addColorStop(1, '#6e7b89');
+    ctx.save(); ctx.rotate(0.62); ctx.fillStyle = pg; ctx.fillRect(w / 2 - 6, -3.5, 900, 7);
+    ctx.fillStyle = '#1d4f9e'; ctx.fillRect(w / 2 - 8, -5, 20, 10); ctx.restore(); /* collar */
+    roundRect(-w / 2, -h / 2, w, h, 12);
+    ctx.fillStyle = 'rgba(225,240,250,.16)'; ctx.fill();
+    ctx.save(); ctx.clip();
+    ctx.strokeStyle = 'rgba(240,248,255,.42)'; ctx.lineWidth = 1;
+    ctx.beginPath();
+    for (let x = -w; x < w; x += 5) { ctx.moveTo(x, -h); ctx.lineTo(x + h * 1.2, h); ctx.moveTo(x, h); ctx.lineTo(x + h * 1.2, -h); }
+    ctx.stroke(); ctx.restore();
+    roundRect(-w / 2, -h / 2, w, h, 12);
+    ctx.lineWidth = 4.5; ctx.strokeStyle = '#1f5fc4'; ctx.stroke();
+    ctx.lineWidth = 1.5; ctx.strokeStyle = '#0f3c86'; roundRect(-w / 2 + 2.5, -h / 2 + 2.5, w - 5, h - 5, 10); ctx.stroke();
+    ctx.restore();
+  }
+  function roundRect(x, y, w, h, r) { ctx.beginPath(); ctx.moveTo(x + r, y); ctx.arcTo(x + w, y, x + w, y + h, r); ctx.arcTo(x + w, y + h, x, y + h, r); ctx.arcTo(x, y + h, x, y, r); ctx.arcTo(x, y, x + w, y, r); ctx.closePath(); }
+
+  function update(t, dt) {
+    const r = cv.getBoundingClientRect(); /* read every frame: the page scrolls under the finger */
+    const userOn = ptr.active && (t - ptr.last) < CFG.IDLE;
+    const floor = H - (W < 1024 ? 34 : 48); /* the waterline seam overlaps the bottom of the pool */
+    const minY = waterY + CFG.NET_H / 2 + 8, maxY = floor - CFG.NET_H / 2 - 4;
+    if (userOn) {
+      net.tx = ptr.cx - r.left; net.ty = Math.max(minY, Math.min(maxY, ptr.cy - r.top));
+    } else {
+      let best = null, bd = 1e9; /* auto: glide to the nearest floating leaf */
+      for (const l of leaves) if (l.state === 'float') { const dd = Math.hypot(l.x - net.x, l.y - net.y); if (dd < bd) { bd = dd; best = l; } }
+      const wx = best ? best.x : W * (0.5 + 0.35 * Math.sin(t * 0.21)), wy = best ? best.y : minY + (maxY - minY) * (0.5 + 0.4 * Math.sin(t * 0.33));
+      const dx = wx - net.tx, dy = wy - net.ty, dl = Math.hypot(dx, dy) || 1, step = Math.min(dl, CFG.AUTO_SPEED * dt);
+      net.tx += dx / dl * step + Math.sin(t * 1.3) * 0.3; net.ty += dy / dl * step;
+    }
+    net.tx = Math.max(10, Math.min(W - 10, net.tx)); net.ty = Math.max(minY, Math.min(maxY, net.ty));
+    const k = 1 - Math.exp(-dt * (userOn ? 20 : 8));
+    const nx = net.x + (net.tx - net.x) * k, ny = net.y + (net.ty - net.y) * k;
+    if (dt > 0) { net.vx = (nx - net.x) / dt; net.vy = (ny - net.y) / dt; }
+    net.x = nx; net.y = ny;
+    const speed = Math.hypot(net.vx, net.vy);
+    if (speed > 4) disturb(net.x, net.y, CFG.NET_W * 0.36, Math.min(1.4, speed * 0.0045));
+
+    for (const l of leaves) {
+      if (l.state === 'wait') { l.t -= dt; if (l.t <= 0) { l.state = 'air'; l.x = 30 + Math.random() * (W - 60); l.y = -20; l.vy = 26 + Math.random() * 16; l.land = waterY + 18 + Math.random() * (H - waterY - 90); l.alpha = 1; } continue; }
+      if (l.state === 'air') {
+        l.y += l.vy * dt; l.x += Math.sin(t * 2.2 + l.ph) * 28 * dt; l.a += Math.sin(t * 1.7 + l.ph) * 2.2 * dt;
+        if (l.y >= l.land) { l.state = 'float'; l.vx = l.vy = 0; disturb(l.x, l.y, 16, 3); }
+        continue;
+      }
+      if (l.state === 'net') {
+        l.t += dt; l.x = net.x + l.ox; l.y = net.y + l.oy;
+        if (l.t > 0.9) l.alpha = Math.max(0, 1 - (l.t - 0.9) / 0.45);
+        if (l.alpha <= 0) Object.assign(l, newLeaf(false), { k: l.k });
+        continue;
+      }
+      /* floating */
+      const [sx, sy] = slopeAt(l.x, l.y);
+      l.vx += (-sx * 260 + Math.sin(t * 0.25 + l.ph) * CFG.CURRENT) * dt;
+      l.vy += (-sy * 260 + Math.cos(t * 0.21 + l.ph) * CFG.CURRENT * 0.6) * dt;
+      const dx = l.x - net.x, dy = l.y - net.y, dist = Math.hypot(dx, dy), reach = CFG.NET_W * 0.5;
+      if (dist < reach) {
+        if (speed > CFG.SCOOP_SPEED && (net.vx * dx + net.vy * dy) <= speed * dist * 0.2) { /* in front of a moving net: scooped */
+          l.state = 'net'; l.t = 0; l.ox = dx * 0.6; l.oy = dy * 0.5; disturb(l.x, l.y, 12, -2);
+          continue;
+        }
+        const push = (1 - dist / reach) * 160 * dt;
+        l.vx += dx / (dist || 1) * push + net.vx * 0.04 * dt * 10; l.vy += dy / (dist || 1) * push + net.vy * 0.04 * dt * 10;
+      }
+      const damp = Math.exp(-dt * 1.6); l.vx *= damp; l.vy *= damp;
+      l.x += l.vx * dt; l.y += l.vy * dt; l.a += (l.va + l.vx * 0.004) * dt;
+      if (l.x < 12) { l.x = 12; l.vx = Math.abs(l.vx) * 0.5; }
+      if (l.x > W - 12) { l.x = W - 12; l.vx = -Math.abs(l.vx) * 0.5; }
+      if (l.y < waterY + 12) { l.y = waterY + 12; l.vy = Math.abs(l.vy) * 0.5; }
+      if (l.y > floor - 12) { l.y = floor - 12; l.vy = -Math.abs(l.vy) * 0.5; }
+    }
+  }
+
+  function draw(t) {
+    ctx.setTransform(dpr, 0, 0, dpr, 0, 0);
+    ctx.clearRect(0, 0, W, H);
+    paintWater(t);
+    ctx.drawImage(edge, 0, 0, W, waterY);
+    for (const l of leaves) if (l.state === 'float') drawLeaf(l, true);
+    for (const l of leaves) if (l.state === 'float') drawLeaf(l, false);
+    drawNet();
+    for (const l of leaves) if (l.state === 'net') drawLeaf(l, false);
+    for (const l of leaves) if (l.state === 'air') drawLeaf(l, false);
+  }
+
+  function tick(t, dt) {
+    if (!started) { size(); started = true; }
+    if (dt > 0) { stepWater(); update(t, dt); }
+    draw(t);
+  }
+
+  /* Pointer: finger drags in every direction (touch-action: none on the canvas), mouse hovers */
+  function setPtr(e) { ptr.cx = e.clientX; ptr.cy = e.clientY; ptr.last = performance.now() / 1000; ptr.active = true; }
+  cv.addEventListener('pointerdown', e => { e.preventDefault(); ptr.down = true; setPtr(e); try { cv.setPointerCapture(e.pointerId); } catch (_) {} const r = cv.getBoundingClientRect(); disturb(e.clientX - r.left, e.clientY - r.top, 14, 2.5); });
+  cv.addEventListener('pointermove', e => { if (e.pointerType === 'mouse' || ptr.down) setPtr(e); });
+  const up = () => { ptr.down = false; };
+  cv.addEventListener('pointerup', up); cv.addEventListener('pointercancel', up);
+  cv.addEventListener('pointerleave', e => { if (e.pointerType === 'mouse') ptr.active = false; });
+  window.addEventListener('resize', () => { if (size() && Loop.reduce) tick(0, 0); });
+  window.__pool = { leaves: () => leaves, net };
+
+  Loop.add(cv, tick);
+})();
+
+/* ---------- Seams: waterlines that keep moving ---------- */
+(function seams() {
+  const SPEED = 1.6, AMP = 7;
+  document.querySelectorAll('.seam').forEach((svg, n) => {
+    const fill = svg.querySelector('.fill'), line = svg.querySelector('.line');
+    fill.setAttribute('fill', svg.dataset.fill); line.setAttribute('stroke', svg.dataset.line);
+    const ph = n * 1.7;
+    Loop.add(svg, t => {
+      const tt = t * SPEED; let d = '';
+      for (let x = 0; x <= 1440; x += 20) {
+        const y = 22 + AMP * Math.sin(x * 0.0052 + tt * 0.55 + ph) + AMP * 0.55 * Math.sin(x * 0.013 - tt * 0.9 + ph * 2) + 2.5 * Math.sin(x * 0.031 + tt * 1.4);
+        d += (x ? 'L' : 'M') + x + ' ' + y.toFixed(1);
+      }
+      line.setAttribute('d', d);
+      fill.setAttribute('d', d + 'L1440 48L0 48Z');
+    });
+  });
+})();
+
+/* ---------- Booking form: compose a text message ---------- */
+(function booking() {
+  const PHONE = '+18484803729';
+  const form = document.getElementById('bookForm');
+  const ready = document.getElementById('ready'), msgEl = document.getElementById('msg');
+
+  /* Service rows pick their service in the form */
+  document.querySelectorAll('.row[data-svc]').forEach(row => row.addEventListener('click', () => {
+    const box = form.querySelector(`input[name=svc][value="${row.dataset.svc}"]`);
+    if (box && !box.checked) { box.checked = true; box.dispatchEvent(new Event('change', { bubbles: true })); }
+  }));
+
+  form.addEventListener('change', e => {
+    const inp = e.target;
+    if (inp.matches('.chip input') && inp.checked) {
+      const s = inp.nextElementSibling; s.classList.remove('splash'); void s.offsetWidth; s.classList.add('splash');
+    }
+    const f = inp.closest('.field'); if (f) f.classList.remove('bad');
+  });
+  form.addEventListener('input', e => { const f = e.target.closest('.field'); if (f) f.classList.remove('bad'); });
+
+  function compose() {
+    const v = n => form.elements[n].value.trim();
+    const svc = [...form.querySelectorAll('input[name=svc]:checked')].map(i => i.value);
+    const type = (form.querySelector('input[name=type]:checked') || {}).value;
+    const when = (form.querySelector('input[name=when]:checked') || {}).value;
+    const digits = v('phone').replace(/\D/g, '').replace(/^1(?=\d{10}$)/, '');
+    const bad = [];
+    if (!svc.length) bad.push('f-svc');
+    if (!type) bad.push('f-type');
+    if (!v('name')) bad.push('f-name');
+    if (digits.length !== 10) bad.push('f-phone');
+    if (!v('town')) bad.push('f-town');
+    if (bad.length) return { bad };
+    const lines = [
+      "Hi Ideal Pools! I'd like to check availability.",
+      'Service: ' + svc.join(', '),
+      'Pool: ' + type,
+      'When: ' + when,
+      'Town: ' + v('town'),
+      'Name: ' + v('name'),
+      'Phone: ' + v('phone'),
+    ];
+    if (v('notes')) lines.push('Notes: ' + v('notes'));
+    return { text: lines.join('\n') };
+  }
+
+  form.addEventListener('submit', e => {
+    e.preventDefault();
+    form.querySelectorAll('.field.bad').forEach(f => f.classList.remove('bad'));
+    const r = compose();
+    if (r.bad) {
+      r.bad.forEach(id => document.getElementById(id).classList.add('bad'));
+      const first = document.getElementById(r.bad[0]);
+      first.scrollIntoView({ block: 'center', behavior: Loop.reduce ? 'auto' : 'smooth' });
+      const inp = first.querySelector('input'); if (inp) inp.focus({ preventScroll: true });
+      return;
+    }
+    msgEl.textContent = r.text;
+    ready.classList.add('show');
+    window.location.href = 'sms:' + PHONE + '?&body=' + encodeURIComponent(r.text);
+  });
+
+  document.getElementById('copy').addEventListener('click', async e => {
+    const btn = e.currentTarget;
+    try { await navigator.clipboard.writeText(msgEl.textContent); btn.textContent = 'Copied'; }
+    catch (_) {
+      const range = document.createRange(); range.selectNodeContents(msgEl);
+      const sel = getSelection(); sel.removeAllRanges(); sel.addRange(range);
+      btn.textContent = 'Selected: copy it now';
+    }
+    setTimeout(() => { btn.textContent = 'Copy message'; }, 2500);
+  });
+})();
+</script>
+</body>
+</html>
