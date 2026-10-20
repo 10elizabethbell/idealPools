@@ -1,0 +1,468 @@
+{
+  "schemaVersion": 2,
+  "generatedAt": "2026-10-20T00:01:29+00:00",
+  "title": "Design System: Ideal Pools, LLC",
+  "extensions": {
+    "colorMeta": {
+      "sun": {
+        "role": "primary",
+        "displayName": "Sun Yellow",
+        "canonical": "#ffc83d",
+        "tonalRamp": [
+          "oklch(15% 0.120 85.8)",
+          "oklch(26% 0.158 85.8)",
+          "oklch(37% 0.158 85.8)",
+          "oklch(48% 0.158 85.8)",
+          "oklch(59% 0.158 85.8)",
+          "oklch(70% 0.158 85.8)",
+          "oklch(82% 0.158 85.8)",
+          "oklch(95% 0.120 85.8)"
+        ]
+      },
+      "sun-hover": {
+        "role": "primary",
+        "displayName": "Sun Yellow Hover",
+        "canonical": "#ffd76b",
+        "tonalRamp": [
+          "oklch(15% 0.120 89.2)",
+          "oklch(26% 0.134 89.2)",
+          "oklch(37% 0.134 89.2)",
+          "oklch(48% 0.134 89.2)",
+          "oklch(59% 0.134 89.2)",
+          "oklch(70% 0.134 89.2)",
+          "oklch(82% 0.134 89.2)",
+          "oklch(95% 0.120 89.2)"
+        ]
+      },
+      "royal": {
+        "role": "secondary",
+        "displayName": "Royal Blue",
+        "canonical": "#1a63c9",
+        "tonalRamp": [
+          "oklch(15% 0.120 258.4)",
+          "oklch(26% 0.174 258.4)",
+          "oklch(37% 0.174 258.4)",
+          "oklch(48% 0.174 258.4)",
+          "oklch(59% 0.174 258.4)",
+          "oklch(70% 0.174 258.4)",
+          "oklch(82% 0.174 258.4)",
+          "oklch(95% 0.120 258.4)"
+        ]
+      },
+      "sky": {
+        "role": "secondary",
+        "displayName": "Sky Blue",
+        "canonical": "#7fd0f5",
+        "tonalRamp": [
+          "oklch(15% 0.095 229.0)",
+          "oklch(26% 0.095 229.0)",
+          "oklch(37% 0.095 229.0)",
+          "oklch(48% 0.095 229.0)",
+          "oklch(59% 0.095 229.0)",
+          "oklch(70% 0.095 229.0)",
+          "oklch(82% 0.095 229.0)",
+          "oklch(95% 0.095 229.0)"
+        ]
+      },
+      "pool": {
+        "role": "tertiary",
+        "displayName": "Pool Blue",
+        "canonical": "#1aa0dc",
+        "tonalRamp": [
+          "oklch(15% 0.120 235.4)",
+          "oklch(26% 0.137 235.4)",
+          "oklch(37% 0.137 235.4)",
+          "oklch(48% 0.137 235.4)",
+          "oklch(59% 0.137 235.4)",
+          "oklch(70% 0.137 235.4)",
+          "oklch(82% 0.137 235.4)",
+          "oklch(95% 0.120 235.4)"
+        ]
+      },
+      "navy": {
+        "role": "neutral",
+        "displayName": "Logo Navy",
+        "canonical": "#0b2a4a",
+        "tonalRamp": [
+          "oklch(15% 0.069 252.3)",
+          "oklch(26% 0.069 252.3)",
+          "oklch(37% 0.069 252.3)",
+          "oklch(48% 0.069 252.3)",
+          "oklch(59% 0.069 252.3)",
+          "oklch(70% 0.069 252.3)",
+          "oklch(82% 0.069 252.3)",
+          "oklch(95% 0.069 252.3)"
+        ]
+      },
+      "navy-2": {
+        "role": "neutral",
+        "displayName": "Booking Navy",
+        "canonical": "#0e355e",
+        "tonalRamp": [
+          "oklch(15% 0.085 252.9)",
+          "oklch(26% 0.085 252.9)",
+          "oklch(37% 0.085 252.9)",
+          "oklch(48% 0.085 252.9)",
+          "oklch(59% 0.085 252.9)",
+          "oklch(70% 0.085 252.9)",
+          "oklch(82% 0.085 252.9)",
+          "oklch(95% 0.085 252.9)"
+        ]
+      },
+      "navy-deep": {
+        "role": "neutral",
+        "displayName": "Deep Navy",
+        "canonical": "#081f38",
+        "tonalRamp": [
+          "oklch(15% 0.056 252.8)",
+          "oklch(26% 0.056 252.8)",
+          "oklch(37% 0.056 252.8)",
+          "oklch(48% 0.056 252.8)",
+          "oklch(59% 0.056 252.8)",
+          "oklch(70% 0.056 252.8)",
+          "oklch(82% 0.056 252.8)",
+          "oklch(95% 0.056 252.8)"
+        ]
+      },
+      "frost": {
+        "role": "neutral",
+        "displayName": "Frost",
+        "canonical": "#eef5fb",
+        "tonalRamp": [
+          "oklch(15% 0.011 243.7)",
+          "oklch(26% 0.011 243.7)",
+          "oklch(37% 0.011 243.7)",
+          "oklch(48% 0.011 243.7)",
+          "oklch(59% 0.011 243.7)",
+          "oklch(70% 0.011 243.7)",
+          "oklch(82% 0.011 243.7)",
+          "oklch(95% 0.011 243.7)"
+        ]
+      },
+      "frost-2": {
+        "role": "neutral",
+        "displayName": "Frost Deep",
+        "canonical": "#dcebf6",
+        "tonalRamp": [
+          "oklch(15% 0.022 239.4)",
+          "oklch(26% 0.022 239.4)",
+          "oklch(37% 0.022 239.4)",
+          "oklch(48% 0.022 239.4)",
+          "oklch(59% 0.022 239.4)",
+          "oklch(70% 0.022 239.4)",
+          "oklch(82% 0.022 239.4)",
+          "oklch(95% 0.022 239.4)"
+        ]
+      },
+      "ink": {
+        "role": "neutral",
+        "displayName": "Ink",
+        "canonical": "#0d2441",
+        "tonalRamp": [
+          "oklch(15% 0.062 255.5)",
+          "oklch(26% 0.062 255.5)",
+          "oklch(37% 0.062 255.5)",
+          "oklch(48% 0.062 255.5)",
+          "oklch(59% 0.062 255.5)",
+          "oklch(70% 0.062 255.5)",
+          "oklch(82% 0.062 255.5)",
+          "oklch(95% 0.062 255.5)"
+        ]
+      },
+      "ink-soft": {
+        "role": "neutral",
+        "displayName": "Ink Soft",
+        "canonical": "#3c5672",
+        "tonalRamp": [
+          "oklch(15% 0.056 251.0)",
+          "oklch(26% 0.056 251.0)",
+          "oklch(37% 0.056 251.0)",
+          "oklch(48% 0.056 251.0)",
+          "oklch(59% 0.056 251.0)",
+          "oklch(70% 0.056 251.0)",
+          "oklch(82% 0.056 251.0)",
+          "oklch(95% 0.056 251.0)"
+        ]
+      },
+      "on-navy": {
+        "role": "neutral",
+        "displayName": "White",
+        "canonical": "#ffffff",
+        "tonalRamp": [
+          "oklch(15% 0.000 89.9)",
+          "oklch(26% 0.000 89.9)",
+          "oklch(37% 0.000 89.9)",
+          "oklch(48% 0.000 89.9)",
+          "oklch(59% 0.000 89.9)",
+          "oklch(70% 0.000 89.9)",
+          "oklch(82% 0.000 89.9)",
+          "oklch(95% 0.000 89.9)"
+        ]
+      },
+      "on-navy-soft": {
+        "role": "neutral",
+        "displayName": "Mist",
+        "canonical": "#c4d9ee",
+        "tonalRamp": [
+          "oklch(15% 0.037 248.2)",
+          "oklch(26% 0.037 248.2)",
+          "oklch(37% 0.037 248.2)",
+          "oklch(48% 0.037 248.2)",
+          "oklch(59% 0.037 248.2)",
+          "oklch(70% 0.037 248.2)",
+          "oklch(82% 0.037 248.2)",
+          "oklch(95% 0.037 248.2)"
+        ]
+      },
+      "error-line": {
+        "role": "error",
+        "displayName": "Error Coral Line",
+        "canonical": "#ff9b8a",
+        "tonalRamp": [
+          "oklch(15% 0.120 30.4)",
+          "oklch(26% 0.123 30.4)",
+          "oklch(37% 0.123 30.4)",
+          "oklch(48% 0.123 30.4)",
+          "oklch(59% 0.123 30.4)",
+          "oklch(70% 0.123 30.4)",
+          "oklch(82% 0.123 30.4)",
+          "oklch(95% 0.120 30.4)"
+        ]
+      },
+      "error-text": {
+        "role": "error",
+        "displayName": "Error Coral Text",
+        "canonical": "#ffb4a6",
+        "tonalRamp": [
+          "oklch(15% 0.090 30.8)",
+          "oklch(26% 0.090 30.8)",
+          "oklch(37% 0.090 30.8)",
+          "oklch(48% 0.090 30.8)",
+          "oklch(59% 0.090 30.8)",
+          "oklch(70% 0.090 30.8)",
+          "oklch(82% 0.090 30.8)",
+          "oklch(95% 0.090 30.8)"
+        ]
+      }
+    },
+    "typographyMeta": {
+      "display": {
+        "displayName": "Display",
+        "purpose": "Hero headline only; uppercase, max 11ch."
+      },
+      "headline": {
+        "displayName": "Headline",
+        "purpose": "One uppercase section heading per section."
+      },
+      "title": {
+        "displayName": "Title",
+        "purpose": "Service rows (22px desktop) and step headings; sentence case."
+      },
+      "body": {
+        "displayName": "Body",
+        "purpose": "Paragraphs and hero promise."
+      },
+      "label": {
+        "displayName": "Label",
+        "purpose": "Buttons, form labels, header phone number."
+      },
+      "small": {
+        "displayName": "Small",
+        "purpose": "Chips, notes, errors, footer."
+      }
+    },
+    "shadows": [
+      {
+        "name": "button-lift",
+        "value": "0 6px 14px -6px rgba(3,14,30,.55)",
+        "purpose": "Sun buttons only."
+      },
+      {
+        "name": "badge-drop",
+        "value": "0 24px 40px -18px rgba(2,12,28,.75)",
+        "purpose": "Round logo badge (desktop hero, phone About)."
+      },
+      {
+        "name": "card-drop",
+        "value": "0 14px 30px -16px rgba(0,0,0,.6)",
+        "purpose": "Facebook card."
+      }
+    ],
+    "motion": [
+      {
+        "name": "control",
+        "value": ".15s-.2s ease (background, color, border, transform)",
+        "purpose": "Button, chip, field and arrow feedback."
+      },
+      {
+        "name": "press",
+        "value": "transform: scale(.98)",
+        "purpose": "Button press."
+      },
+      {
+        "name": "chip-splash",
+        "value": "550ms cubic-bezier(.2,.7,.3,1), ring scales to (1.35,1.6) and fades",
+        "purpose": "Chip ticked, including via service row (700ms delay after scroll)."
+      },
+      {
+        "name": "seam-wave",
+        "value": "SPEED 1.6, AMP 7px, three summed sines, phase 1.7 per seam",
+        "purpose": "Continuously moving waterlines between sections."
+      },
+      {
+        "name": "pool-net",
+        "value": "auto 120px/s; idle 3.5s returns to auto; scoop above 30px/s; leaf respawn 3-7s; ripple damp 0.984",
+        "purpose": "Hero canvas tunables (CFG block)."
+      },
+      {
+        "name": "reduced-motion",
+        "value": "one still frame; brief wake on touch; no splash; no smooth scroll",
+        "purpose": "prefers-reduced-motion: reduce."
+      }
+    ],
+    "breakpoints": [
+      {
+        "name": "row",
+        "value": "640px"
+      },
+      {
+        "name": "desk",
+        "value": "1024px"
+      },
+      {
+        "name": "pool-grid-desk",
+        "value": "700px (canvas cell size and leaf count only)"
+      }
+    ]
+  },
+  "components": [
+    {
+      "name": "Sun Button",
+      "kind": "button",
+      "refersTo": "button-sun",
+      "description": "Primary action: Check availability, Text this to Ideal Pools.",
+      "html": "<div class=\"ds-navy\"><button class=\"ds-btn ds-btn-sun\">Check availability</button></div>",
+      "css": ".ds-navy{background:#0b2a4a;padding:24px} .ds-btn{display:inline-flex;align-items:center;justify-content:center;min-height:56px;padding:0 24px;border-radius:999px;font-family:-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;font-weight:800;font-size:17px;border:2px solid transparent;cursor:pointer;transition:background-color .2s,color .2s,border-color .2s,transform .15s} .ds-btn:active{transform:scale(.98)} .ds-btn:focus-visible{outline:3px solid #ffc83d;outline-offset:3px} .ds-btn-sun{background:#ffc83d;border-color:#ffc83d;color:#0d2441;box-shadow:0 6px 14px -6px rgba(3,14,30,.55)} .ds-btn-sun:hover{background:#ffd76b;border-color:#ffd76b}"
+    },
+    {
+      "name": "Line Button",
+      "kind": "button",
+      "refersTo": "button-line",
+      "description": "Secondary action on navy: Message us on Facebook, Copy message.",
+      "html": "<div class=\"ds-navy\"><button class=\"ds-btn ds-btn-line\">Message us on Facebook</button></div>",
+      "css": ".ds-navy{background:#0b2a4a;padding:24px} .ds-btn{display:inline-flex;align-items:center;justify-content:center;min-height:56px;padding:0 24px;border-radius:999px;font-family:-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;font-weight:800;font-size:17px;border:2px solid rgba(255,255,255,.7);background:transparent;color:#fff;cursor:pointer;transition:color .2s,border-color .2s,transform .15s} .ds-btn:hover{border-color:#ffc83d;color:#ffc83d} .ds-btn:active{transform:scale(.98)} .ds-btn:focus-visible{outline:3px solid #ffc83d;outline-offset:3px}"
+    },
+    {
+      "name": "Choice Chips",
+      "kind": "chip",
+      "refersTo": "chip",
+      "description": "Form choices (checkbox/radio) on booking navy; sky when selected.",
+      "html": "<div class=\"ds-book\"><div class=\"ds-chips\"><label class=\"ds-chip\"><input type=\"radio\" name=\"t\" checked><span>Above-ground</span></label><label class=\"ds-chip\"><input type=\"radio\" name=\"t\"><span>In-ground</span></label><label class=\"ds-chip\"><input type=\"radio\" name=\"t\"><span>Not sure</span></label></div></div>",
+      "css": ".ds-book{background:#0e355e;padding:24px;font-family:-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif} .ds-chips{display:flex;flex-wrap:wrap;gap:10px} .ds-chip{position:relative} .ds-chip input{position:absolute;opacity:0;width:1px;height:1px} .ds-chip span{display:inline-flex;align-items:center;min-height:46px;padding:0 18px;border-radius:999px;border:2px solid rgba(255,255,255,.35);color:#fff;font-weight:700;font-size:15px;cursor:pointer;transition:background-color .15s,border-color .15s,color .15s} .ds-chip span:hover{border-color:#7fd0f5} .ds-chip input:focus-visible+span{outline:2px solid #7fd0f5;outline-offset:2px;border-color:#7fd0f5} .ds-chip input:checked+span{background:#7fd0f5;border-color:#7fd0f5;color:#0d2441} .ds-chip input:checked+span:hover{border-color:#fff}"
+    },
+    {
+      "name": "Text Field",
+      "kind": "input",
+      "refersTo": "input",
+      "description": "White field on booking navy with bold label above; sky hover/focus, coral error.",
+      "html": "<div class=\"ds-book\"><label class=\"ds-label\" for=\"ds-n\">Your name</label><input class=\"ds-input\" id=\"ds-n\" type=\"text\"></div>",
+      "css": ".ds-book{background:#0e355e;padding:24px;font-family:-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;display:grid;gap:8px} .ds-label{color:#fff;font-weight:800;font-size:17px} .ds-input{width:100%;font-family:inherit;font-size:17px;color:#0d2441;background:#fff;border:2px solid transparent;border-radius:12px;padding:13px 14px;min-height:52px;transition:border-color .15s} .ds-input:hover{border-color:#7fd0f5} .ds-input:focus{outline:2px solid #7fd0f5;outline-offset:2px;border-color:#7fd0f5}"
+    },
+    {
+      "name": "Service Row",
+      "kind": "custom",
+      "refersTo": "service-row",
+      "description": "Tappable service list row; only the arrow highlights on hover/focus.",
+      "html": "<div class=\"ds-frost\"><ul class=\"ds-rows\"><li><a class=\"ds-row\" href=\"#\"><span>Pool closings &amp; winterization</span><span class=\"ds-arrow\"><svg viewBox=\"0 0 24 24\" width=\"18\" height=\"18\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\" aria-hidden=\"true\"><path d=\"M5 12h14M13 6l6 6-6 6\"/></svg></span></a></li><li><a class=\"ds-row\" href=\"#\"><span>Pool openings</span><span class=\"ds-arrow\"><svg viewBox=\"0 0 24 24\" width=\"18\" height=\"18\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\" aria-hidden=\"true\"><path d=\"M5 12h14M13 6l6 6-6 6\"/></svg></span></a></li></ul></div>",
+      "css": ".ds-frost{background:#eef5fb;padding:24px;font-family:-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif} .ds-rows{list-style:none;margin:0;padding:0;border-top:1px solid rgba(13,36,65,.14)} .ds-rows li{border-bottom:1px solid rgba(13,36,65,.14)} .ds-row{display:flex;align-items:center;justify-content:space-between;gap:16px;min-height:60px;padding:10px 2px;text-decoration:none;color:#0d2441;font-weight:700;font-size:20px} .ds-row:hover,.ds-row:focus-visible{outline:none;background:none;box-shadow:none} .ds-arrow{display:grid;place-items:center;width:40px;height:40px;border-radius:50%;background:#dcebf6;color:#0d2441;flex:none;transition:background-color .2s,color .2s,transform .2s} .ds-row:hover .ds-arrow,.ds-row:focus-visible .ds-arrow{background:#1a63c9;color:#fff;transform:translateX(2px)} .ds-row:focus-visible .ds-arrow{outline:3px solid #1a63c9;outline-offset:3px}"
+    },
+    {
+      "name": "Header",
+      "kind": "nav",
+      "refersTo": "",
+      "description": "Round logo mark + uppercase wordmark left, tap-to-call number top-right.",
+      "html": "<header class=\"ds-top\"><a class=\"ds-brand\" href=\"#\"><span class=\"ds-mark\"></span><span class=\"ds-word\">Ideal<br>Pools</span></a><a class=\"ds-call\" href=\"#\"><svg viewBox=\"0 0 24 24\" width=\"20\" height=\"20\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\" aria-hidden=\"true\"><path d=\"M5 4h4l2 5-2.5 1.5a11 11 0 0 0 5 5L15 13l5 2v4a2 2 0 0 1-2 2A16 16 0 0 1 3 6a2 2 0 0 1 2-2\"/></svg>(848) 480-3729</a></header>",
+      "css": ".ds-top{display:flex;align-items:center;justify-content:space-between;gap:12px;padding:14px 16px;background:#0b2a4a;font-family:-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif} .ds-brand{display:flex;align-items:center;gap:10px;text-decoration:none;color:#fff} .ds-mark{width:52px;height:52px;border-radius:50%;background:radial-gradient(circle at 50% 40%,#ffc83d 0 18%,#1a63c9 19% 62%,#0b2a4a 63%);box-shadow:inset 0 0 0 3px #fff} .ds-word{font-weight:900;text-transform:uppercase;font-size:15px;line-height:1;letter-spacing:.02em} .ds-call{display:inline-flex;align-items:center;gap:8px;min-height:44px;color:#fff;font-weight:800;font-size:17px;text-decoration:none;font-variant-numeric:tabular-nums} .ds-call svg{color:#ffc83d} .ds-call:hover{color:#ffc83d} .ds-call:focus-visible{outline:3px solid #ffc83d;outline-offset:3px}"
+    },
+    {
+      "name": "Facebook Card",
+      "kind": "card",
+      "refersTo": "facebook-card",
+      "description": "Proof link in About; repeated as a plain footer link.",
+      "html": "<div class=\"ds-navy\"><a class=\"ds-fb\" href=\"#\"><svg viewBox=\"0 0 24 24\" width=\"34\" height=\"34\" aria-hidden=\"true\"><path fill=\"#fff\" d=\"M24 12a12 12 0 1 0-13.9 11.9v-8.4H7.1V12h3V9.4c0-3 1.8-4.7 4.5-4.7 1.3 0 2.7.2 2.7.2v3h-1.5c-1.5 0-2 .9-2 1.9V12h3.4l-.5 3.5h-2.9v8.4A12 12 0 0 0 24 12\"/></svg><span>Visit our Facebook to see more.</span><svg viewBox=\"0 0 24 24\" width=\"22\" height=\"22\" class=\"ds-go\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\" aria-hidden=\"true\"><path d=\"M5 12h14M13 6l6 6-6 6\"/></svg></a></div>",
+      "css": ".ds-navy{background:#0b2a4a;padding:24px;font-family:-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif} .ds-fb{display:flex;align-items:center;gap:16px;padding:18px 20px;border-radius:14px;background:#1877f2;color:#fff;text-decoration:none;font-weight:800;font-size:20px;line-height:1.25;box-shadow:0 14px 30px -16px rgba(0,0,0,.6);transition:background-color .2s,transform .15s} .ds-fb:hover{background:#2d86f7} .ds-fb:active{transform:scale(.99)} .ds-fb:focus-visible{outline:3px solid #ffc83d;outline-offset:3px} .ds-go{margin-left:auto}"
+    },
+    {
+      "name": "Waterline Seam",
+      "kind": "custom",
+      "refersTo": "",
+      "description": "Wave edge opening each section, filled in the section ground with a 2.5px line; animated in the build by three summed sines.",
+      "html": "<div class=\"ds-seamwrap\"><svg class=\"ds-seam\" viewBox=\"0 0 1440 48\" preserveAspectRatio=\"none\" aria-hidden=\"true\"><path d=\"M0 22C180 12 360 32 540 22S900 10 1080 22 1320 30 1440 20L1440 48L0 48Z\" fill=\"#eef5fb\"/><path d=\"M0 22C180 12 360 32 540 22S900 10 1080 22 1320 30 1440 20\" fill=\"none\" stroke=\"#7fd0f5\" stroke-width=\"2.5\" vector-effect=\"non-scaling-stroke\"/></svg><div class=\"ds-band\">Section content</div></div>",
+      "css": ".ds-seamwrap{background:#0b2a4a;padding-top:24px;font-family:-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif} .ds-seam{display:block;width:100%;height:34px} .ds-band{background:#eef5fb;color:#0d2441;padding:16px 24px 32px;font-weight:700}"
+    }
+  ],
+  "narrative": {
+    "northStar": "The Pool at Closing Time",
+    "overview": "The page is the pool on the last warm weekend: logo-navy ground, a real pool edge (stone coping, blue waterline tile), clear water with moving light, autumn leaves on the surface, and a skimmer net working them off. Every section boundary is a moving waterline, so the whole scroll reads as going down through water bands. The palette comes straight from the logo badge (navy band, royal and sky blue, yellow sun, white lettering); the frost-white light bands come from the closing-season flyer.\n\nThe voice is the type, not the face: heavy (900) uppercase headlines on the system sans stack, sentence-case body and labels. The system stack is deliberate house style for this build (fast in Facebook's in-app browser, no font requests). Density is phone-first and generous: 56px buttons, 17px body, one long single column that splits into two-column grids at 1024px.\n\nThis build was code-led: no image generation and no concept-roll seed key exists for it. The direction contract lives as the HTML comment at the top of `<body>` in `index.html`; this file records what shipped. Future edits are also bound by the pitch-site finishing rules (`~/.claude/skills/pitch-site/references/finishing-rules.md`); the ones that touch this system are cited inline below.",
+    "keyCharacteristics": [
+      "Logo-derived palette: navy grounds, sun-yellow primary action, royal/sky for cues and form focus.",
+      "Heavy uppercase display, sentence-case everything else, system sans.",
+      "One living hero (canvas pool) plus moving SVG waterline seams; nothing else animates beyond control feedback.",
+      "Pill buttons and chips, circle markers, softly rounded cards; flat surfaces otherwise.",
+      "Contact flows by text message (SMS composed from the form) with Messenger as fallback."
+    ],
+    "rules": [
+      {
+        "name": "The Accent-On-Hover Rule",
+        "body": "Accents appear on interaction, not at rest: the service arrow is neutral frost until hovered, links turn sun only on hover (finishing rules: \"Accent color on hover, not by default\").",
+        "section": "colors"
+      },
+      {
+        "name": "The One Form Accent Rule",
+        "body": "Inside the form every control outlines in sky on hover and focus. Never sun there; sun is already the button fill.",
+        "section": "colors"
+      },
+      {
+        "name": "The Shout-Only-Headlines Rule",
+        "body": "Uppercase is for h1/h2 and the wordmark. Body, labels, chips, rows and step titles stay sentence case.",
+        "section": "typography"
+      },
+      {
+        "name": "The Header Number Rule",
+        "body": "The phone number lives top-right in the header as a `tel:` link and is the only number on the first screen; no Call button under the hero title, at most two hero buttons (finishing rules: contact buttons).",
+        "section": "layout"
+      },
+      {
+        "name": "The Real-Material Rule",
+        "body": "Depth inside the pool is physical: blurred leaf and net shadows that shift with the water slope, shade under the coping. No sheens, films or glints (finishing rules: \"Every effect must read as a real thing\").",
+        "section": "elevation"
+      },
+      {
+        "name": "The Arrow-Only Rule",
+        "body": "A tappable row never gets an outline, border, ring or tint. Only its arrow highlights (finishing rules, quoted from Ellie).",
+        "section": "components"
+      },
+      {
+        "name": "The Moving Waterline Rule",
+        "body": "Section changes are waterlines, never straight rules or slanted cuts. Seams stay clear of text (finishing rules: nothing runs through text).",
+        "section": "components"
+      }
+    ],
+    "dos": [
+      "**Do** use sun for primary fills only, sky for every form hover/focus outline, royal for cues on frost.",
+      "**Do** keep headlines uppercase 900 and short; keep all other text sentence case.",
+      "**Do** give every new section a seam in its own ground colour and alternate navy and frost grounds.",
+      "**Do** keep the hero to one focal point: headline, promise, at most two buttons, the pool band.",
+      "**Do** tune the pool through `CFG`, and keep the net working by itself until touched.",
+      "**Do** keep the phone-first sizes: 56px buttons, 46px chips, 44px minimum tap targets."
+    ],
+    "donts": [
+      "**Don't** highlight a service row; only its arrow changes on hover.",
+      "**Don't** show accents at rest on interactive cues; they arrive on hover.",
+      "**Don't** add a Call button under the hero, a second phone number on the first screen, or a sticky bottom bar.",
+      "**Don't** put towns or non-interactive labels in pills or chips; use plain dot-separated text like the pool-types line.",
+      "**Don't** lay sheens, glints or ruler-straight \"nature\" lines over the scene; every effect must read as the real thing.",
+      "**Don't** add animation beyond the pool, the seams and control feedback. If this audience is ever confirmed 40+, the older-audience rules apply: draw the pool once as a still and stop the seams."
+    ]
+  }
+}
