@@ -28,6 +28,7 @@
 
 ## Placeholders and gaps
 - **No real job photos anywhere** (Facebook has only promo graphics). There's no photo/proof section; the logo badge and Facebook link stand in. This is the first thing to add.
+- **Why the hero has no photo** (photo-hero rule, 2026-10-19): there are none to use. The only images are the logo badge and an AI-made promo flyer. The flyer's snowy pool scene isn't their work, so putting it behind the hero would pass off a fake as a real job. When the owner sends a real photo (a closing, a liner job, the truck), put it behind the hero under a navy overlay. Crop it so the text sits on a quiet area, and sample for 4.5:1 white text. The animated pool band can stay below it, or replace it if Ellie prefers.
 - **No service area** (the brief says don't infer one), so there's no area section. The form asks for the town.
 - **No hours, email, owner name, license/insurance, reviews or prices** on the page.
 - **Header logo:** the badge is detailed and unreadable at 52px. The favicon and home-screen icon use a crop of its sun/wave/pool art.
