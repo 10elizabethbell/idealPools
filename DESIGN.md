@@ -1,268 +1,345 @@
 ---
 name: Ideal Pools, LLC
-description: Last-minute pool closings, told from the pool edge at closing time.
+description: Calm paper and navy bands with the logo's sun as the one warm fill, for a pool crew that closes pools late in the season.
 colors:
   sun: "#ffc83d"
   sun-hover: "#ffd76b"
-  royal: "#1a63c9"
-  pool: "#1aa0dc"
-  sky: "#7fd0f5"
-  navy: "#0b2a4a"
-  navy-2: "#0e355e"
-  navy-deep: "#081f38"
-  frost: "#eef5fb"
-  frost-2: "#dcebf6"
-  ink: "#0d2441"
-  ink-soft: "#3c5672"
-  on-navy: "#ffffff"
-  on-navy-soft: "#c4d9ee"
-  error-line: "#ff9b8a"
-  error-text: "#ffb4a6"
+  sun-ink: "#8a5a00"
+  navy: "#134a8e"
+  deep: "#0b2a4a"
+  ink: "#0b2a4a"
+  focus: "#1a63c9"
+  paper: "#f4f6fb"
+  card: "#ffffff"
+  field: "#e6ecf5"
+  body: "#28394d"
+  soft: "#4a5a6c"
+  on-dark: "#f4f7fb"
+  on-dark-soft: "#c9d8ec"
+  error: "#b3261e"
 typography:
   display:
-    fontFamily: "-apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Helvetica Neue, Arial, sans-serif"
-    fontSize: "clamp(2.6rem, 12.4vw, 5.6rem)"
-    fontWeight: 900
-    lineHeight: 1.02
-    letterSpacing: "-0.01em"
-  headline:
-    fontFamily: "-apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Helvetica Neue, Arial, sans-serif"
-    fontSize: "clamp(1.9rem, 8vw, 3.2rem)"
-    fontWeight: 900
-    lineHeight: 1.02
-    letterSpacing: "-0.01em"
-  title:
-    fontFamily: "-apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Helvetica Neue, Arial, sans-serif"
-    fontSize: "20px"
-    fontWeight: 700
-    lineHeight: 1.2
-  body:
-    fontFamily: "-apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Helvetica Neue, Arial, sans-serif"
-    fontSize: "1.0625rem"
+    fontFamily: "\"Cal Sans\", \"Avenir Next\", \"Segoe UI\", system-ui, sans-serif"
+    fontSize: "clamp(42px, 12vw, 80px)"
     fontWeight: 400
-    lineHeight: 1.55
+    lineHeight: 1.02
+    letterSpacing: "-0.005em"
+  headline:
+    fontFamily: "\"Cal Sans\", \"Avenir Next\", \"Segoe UI\", system-ui, sans-serif"
+    fontSize: "clamp(30px, 7.6vw, 48px)"
+    fontWeight: 400
+    lineHeight: 1.08
+    letterSpacing: "-0.005em"
+  callout:
+    fontFamily: "\"Cal Sans\", \"Avenir Next\", \"Segoe UI\", system-ui, sans-serif"
+    fontSize: "clamp(30px, 9vw, 52px)"
+    fontWeight: 400
+    lineHeight: 1
+  title:
+    fontFamily: "\"Cal Sans\", \"Avenir Next\", \"Segoe UI\", system-ui, sans-serif"
+    fontSize: "clamp(19px, 5.2vw, 22px)"
+    fontWeight: 400
+    lineHeight: 1.2
+  action:
+    fontFamily: "\"Cal Sans\", \"Avenir Next\", \"Segoe UI\", system-ui, sans-serif"
+    fontSize: "18px"
+    fontWeight: 400
+    lineHeight: 1
+  lede:
+    fontFamily: "-apple-system, BlinkMacSystemFont, \"Segoe UI\", \"Helvetica Neue\", Arial, sans-serif"
+    fontSize: "clamp(17px, 4.6vw, 19px)"
+    fontWeight: 400
+    lineHeight: 1.7
+  body:
+    fontFamily: "-apple-system, BlinkMacSystemFont, \"Segoe UI\", \"Helvetica Neue\", Arial, sans-serif"
+    fontSize: "16px"
+    fontWeight: 400
+    lineHeight: 1.7
   label:
-    fontFamily: "-apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Helvetica Neue, Arial, sans-serif"
-    fontSize: "17px"
-    fontWeight: 800
-    lineHeight: 1.25
-  small:
-    fontFamily: "-apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Helvetica Neue, Arial, sans-serif"
-    fontSize: "15px"
-    fontWeight: 600
-    lineHeight: 1.55
+    fontFamily: "-apple-system, BlinkMacSystemFont, \"Segoe UI\", \"Helvetica Neue\", Arial, sans-serif"
+    fontSize: "14px"
+    fontWeight: 500
+    lineHeight: 1
+    letterSpacing: "0.02em"
+  scale:
+    xxs: "11px"
+    xs: "14px"
+    sm: "15px"
+    base: "16px"
+    md: "17px"
+    lg: "18px"
+    lg-plus: "19px"
+    xl: "20px"
+    xl-plus: "21px"
+    xxl: "22px"
+    brand: "24px"
+    h-min: "30px"
+    h1-min: "42px"
+    h-max: "48px"
+    callout-max: "52px"
+    h1-max: "80px"
 rounded:
-  field: "12px"
-  card: "14px"
+  field: "10px"
+  focus: "6px"
+  panel: "16px"
+  feature: "20px"
+  card: "24px"
   pill: "999px"
-  circle: "50%"
 spacing:
-  gutter-phone: "16px"
-  gutter-desk: "40px"
-  section-phone: "56px 0 72px"
-  section-desk: "88px 0 104px"
-  column-gap: "64px"
+  chip-gap: "10px"
+  field-gap: "8px"
+  head-gap: "16px"
+  gutter: "20px"
+  gutter-desktop: "40px"
+  form-gap: "22px"
+  section: "64px"
+  section-desktop: "96px"
 components:
-  button-sun:
+  button-primary:
     backgroundColor: "{colors.sun}"
     textColor: "{colors.ink}"
-    typography: "{typography.label}"
+    typography: "{typography.action}"
     rounded: "{rounded.pill}"
-    padding: "0 24px"
+    padding: "0 26px"
     height: "56px"
-  button-sun-hover:
+  button-primary-hover:
     backgroundColor: "{colors.sun-hover}"
     textColor: "{colors.ink}"
+  button-ghost:
+    backgroundColor: "transparent"
+    textColor: "{colors.on-dark}"
+    typography: "{typography.action}"
+    rounded: "{rounded.pill}"
+    padding: "0 26px"
+    height: "56px"
   button-line:
     backgroundColor: "transparent"
-    textColor: "{colors.on-navy}"
+    textColor: "{colors.ink}"
+    typography: "{typography.action}"
+    rounded: "{rounded.pill}"
+    padding: "0 26px"
+    height: "56px"
+  eyebrow:
+    backgroundColor: "rgba(11,42,74,.06)"
+    textColor: "{colors.ink}"
     typography: "{typography.label}"
     rounded: "{rounded.pill}"
-    padding: "0 24px"
-    height: "56px"
-  button-line-hover:
-    textColor: "{colors.sun}"
+    padding: "9px 14px"
   chip:
-    backgroundColor: "transparent"
-    textColor: "{colors.on-navy}"
+    backgroundColor: "{colors.field}"
+    textColor: "{colors.ink}"
+    typography: "{typography.body}"
     rounded: "{rounded.pill}"
     padding: "0 18px"
-    height: "46px"
+    height: "48px"
   chip-selected:
-    backgroundColor: "{colors.sky}"
-    textColor: "{colors.ink}"
+    backgroundColor: "{colors.ink}"
+    textColor: "{colors.card}"
   input:
-    backgroundColor: "#ffffff"
+    backgroundColor: "{colors.field}"
     textColor: "{colors.ink}"
+    typography: "{typography.body}"
     rounded: "{rounded.field}"
     padding: "13px 14px"
     height: "52px"
-  service-row:
-    backgroundColor: "transparent"
+  form-card:
+    backgroundColor: "{colors.card}"
+    rounded: "{rounded.card}"
+    padding: "clamp(20px, 5vw, 32px)"
+  ready-panel:
+    backgroundColor: "{colors.paper}"
+    textColor: "{colors.ink}"
+    rounded: "{rounded.panel}"
+    padding: "18px"
+  facebook-card:
+    backgroundColor: "{colors.card}"
     textColor: "{colors.ink}"
     typography: "{typography.title}"
-    height: "60px"
-  service-row-arrow:
-    backgroundColor: "{colors.frost-2}"
+    rounded: "{rounded.feature}"
+    padding: "14px 16px 14px 22px"
+    height: "72px"
+  service-row:
+    textColor: "{colors.on-dark}"
+    typography: "{typography.title}"
+    height: "64px"
+  text-circle:
+    backgroundColor: "{colors.sun}"
     textColor: "{colors.ink}"
-    rounded: "{rounded.circle}"
-    size: "40px"
-  service-row-arrow-hover:
-    backgroundColor: "{colors.royal}"
-    textColor: "#ffffff"
-  step-number:
-    backgroundColor: "{colors.royal}"
-    textColor: "#ffffff"
-    rounded: "{rounded.circle}"
-    size: "44px"
-  facebook-card:
-    backgroundColor: "#1877f2"
-    textColor: "#ffffff"
-    rounded: "{rounded.card}"
-    padding: "18px 20px"
+    rounded: "{rounded.pill}"
+    size: "60px"
 ---
 
 # Design System: Ideal Pools, LLC
 
 ## Overview
 
-**Creative North Star: "The Pool at Closing Time"**
+**Creative North Star: "The Calm Band"**
 
-The page is the pool on the last warm weekend: logo-navy ground, a real pool edge (stone coping, blue waterline tile), clear water with moving light, autumn leaves on the surface, and a skimmer net working them off. Every section boundary is a moving waterline, so the whole scroll reads as going down through water bands. The palette comes straight from the logo badge (navy band, royal and sky blue, yellow sun, white lettering); the frost-white light bands come from the closing-season flyer.
+The page is a stack of full-bleed bands that alternate light and dark, so every new section is obvious on a phone without a single divider: paper header, navy hero, paper About, navy services, paper booking form, navy close, deep-navy footer. All the colour comes from the logo badge. Its royal blue, deepened, makes the main dark band. Its navy band makes the deepest one, with a faint diagonal-line texture. Its sun is the one warm note, and it only ever appears as a fill.
 
-The voice is the type, not the face: heavy (900) uppercase headlines on the system sans stack, sentence-case body and labels. The system stack is deliberate house style for this build (fast in Facebook's in-app browser, no font requests). Density is phone-first and generous: 56px buttons, 17px body, one long single column that splits into two-column grids at 1024px.
+This is the pitch-site calm band house style (after lpmr.co.uk) applied to Ideal Pools. Shapes are soft and borderless: a 24px card, full pills, tinted fields with no border. One display webfont (Cal Sans) carries every heading and action, and the system stack carries running text at 16/1.7. Motion is limited to three moments: the hero H1 bounces in letter by letter, content below the first screen fades up 12px once, and a floating sun-yellow text circle slides in after the hero. The hero is a plain navy band because no real job photos exist yet. A real photo under a navy overlay replaces it once one fits the band at both 390px and 1440px.
 
-This build was code-led: no image generation and no concept-roll seed key exists for it. The direction contract lives as the HTML comment at the top of `<body>` in `index.html`; this file records what shipped. Future edits are also bound by the pitch-site finishing rules (`~/.claude/skills/pitch-site/references/finishing-rules.md`); the ones that touch this system are cited inline below.
+There are no shadows apart from the floating circle, no gradients apart from the line texture, and no imagery apart from the logo badge.
 
 **Key Characteristics:**
-- Logo-derived palette: navy grounds, sun-yellow primary action, royal/sky for cues and form focus.
-- Heavy uppercase display, sentence-case everything else, system sans.
-- One living hero (canvas pool) plus moving SVG waterline seams; nothing else animates beyond control feedback.
-- Pill buttons and chips, circle markers, softly rounded cards; flat surfaces otherwise.
-- Contact flows by text message (SMS composed from the form) with Messenger as fallback.
+- Full-bleed paper and navy bands alternate down the page; the section boundary is the colour change.
+- The sun yellow is a fill (buttons, the text circle, the eyebrow dot, a hovered arrow). Any text on it is ink.
+- One display face (Cal Sans, weight 400) for headings, buttons, labels and phone numbers; system sans for everything else.
+- Soft, borderless shapes: 24px cards, full pills, 10px tinted fields.
+- Flat throughout. Depth comes from tone, and the floating circle is the only thing with a shadow.
+- Three motion moments, all switched off under reduced motion.
 
 ## Colors
 
-A logo palette on two grounds: deep navy bands and frost-white bands alternate, with one warm accent.
+Cool off-white paper, two logo navies, and one warm sun used as a fill.
 
 ### Primary
-- **Sun Yellow** (`sun`): the only fill for primary actions ("Check availability", "Text this to Ideal Pools"), the phone icon in the header, text selection, the global focus ring, and hover color for header/footer links. `sun-hover` is its lighter hover step.
+- **Sun Yellow** (sun): the logo's sun. Fills the primary pill button, the floating text circle, the eyebrow dot, the separators in the pool-type list, the text-selection highlight, and an arrow circle on hover or focus. On dark bands it also colours the accent phrase in a heading, the phone glyph and link hover. Any text on a sun fill is Ink.
+- **Sun Hover** (sun-hover): the lighter sun used for the primary button's hover fill and border. Only for hover.
+- **Sun Ink** (sun-ink): the sun darkened to 5.6:1 on paper, for when the accent has to be text or a glyph on a light ground: the accent phrase in a paper-band heading, the header phone icon, the header phone hover.
 
 ### Secondary
-- **Royal Blue** (`royal`): cues on light grounds. Service-row arrow on hover, step number discs, the dot separators in the pool-types line.
-- **Sky Blue** (`sky`): the form's single interaction accent on navy. Input/chip hover and focus outlines, the selected-chip fill, the chip splash ring, light-band seam lines.
-
-### Tertiary
-- **Pool Blue** (`pool`): seam line color on navy-ground sections and the footer. Water itself is drawn procedurally in the canvas, not from tokens.
+- **Logo Royal Navy** (navy): the logo's royal blue, deepened. The ground for the hero and the services and close bands. Also the Facebook glyph and the input caret.
+- **Band Navy** (deep): the logo's navy band. The footer ground, always under the diagonal-line texture.
+- **Focus Royal** (focus): a brighter logo blue, used for the outline on hover and focus of form controls and for focus rings on light bands. It is kept distinct from the yellow fill so that focus never looks like selection.
 
 ### Neutral
-- **Logo Navy** (`navy`): page ground, hero, About band.
-- **Booking Navy** (`navy-2`): the booking section only, one step lighter so the form reads as its own place.
-- **Deep Navy** (`navy-deep`): footer.
-- **Frost** (`frost`) and **Frost Deep** (`frost-2`): light section ground, and the resting arrow circle on it.
-- **Ink** (`ink`) and **Ink Soft** (`ink-soft`): headings/body and secondary copy on frost. Row dividers are ink at 14% alpha.
-- **White** (`on-navy`) and **Mist** (`on-navy-soft`): headings and secondary copy on navy.
-- **Error coral** (`error-line`, `error-text`): invalid field border and message on navy.
+- **Ink** (ink): headings on light bands, text on sun fills, the selected-chip fill, the outline button. It has the same value as Band Navy but a different role.
+- **Paper** (paper): the page ground, the header, the light bands and the ready panel inside the form.
+- **Card White** (card): the booking form card, the Facebook card and the message preview. Also pure white text: the hero H1 and selected chip labels.
+- **Field Tint** (field): the fill for inputs and unselected chips on the white form card. It exists because a paper fill on white measured about 1.08:1.
+- **Body Slate** (body): running text on light bands.
+- **Soft Slate** (soft): ledes, the "(optional)" tag, placeholders, the note under the submit button, the wordmark's "LLC".
+- **On-Dark** (on-dark): headings, service rows and links on navy bands.
+- **On-Dark Soft** (on-dark-soft): running text, ledes and the promise line on navy bands.
+- **Error Red** (error): inline error sentences, and the input border while a field is invalid.
+
+Translucent tints are derived from these colours, not added as tokens: ink at 6-7% (eyebrow and arrow-circle fills on paper, the outline button's hover) and white at 10-14% (eyebrow, arrow circle and hairline row dividers on navy, the ghost button's hover). On-Dark at 70% is the ghost button's border.
 
 ### Named Rules
-**The Accent-On-Hover Rule.** Accents appear on interaction, not at rest: the service arrow is neutral frost until hovered, links turn sun only on hover (finishing rules: "Accent color on hover, not by default").
+**The Sun Is A Fill Rule.** The sun yellow fills; it does not write on light. Text on a sun fill is Ink. When the accent has to be text on paper, it is Sun Ink. White on sun and sun on paper both fail contrast at about 2.2:1.
 
-**The One Form Accent Rule.** Inside the form every control outlines in sky on hover and focus. Never sun there; sun is already the button fill.
+**The Accent Phrase Rule.** In a heading, only the last phrase takes the accent colour ("safe all winter.", "all types of pools."): Sun on navy, Sun Ink on paper. At most one accent phrase per heading.
 
 ## Typography
 
-**Display Font:** system sans stack (-apple-system, Segoe UI, Roboto, Helvetica Neue, Arial)
-**Body Font:** same stack
+**Display Font:** Cal Sans (with "Avenir Next", "Segoe UI", system-ui, sans-serif), from Google Fonts with preconnect and `display=swap`
+**Body Font:** the system stack (-apple-system, BlinkMacSystemFont, "Segoe UI", "Helvetica Neue", Arial, sans-serif)
 
-**Character:** One family, two registers. Black-weight uppercase for headlines and the wordmark gives the flyer's urgency; plain sentence-case body keeps it a neighbour talking.
+**Character:** Cal Sans at weight 400 is rounded and friendly without looking childish, and it sets every heading, button, form label, service row and phone number. The system body face stays out of its way.
 
 ### Hierarchy
-- **Display** (900, clamp 2.6rem to 5.6rem, 1.02, uppercase, max 11ch, balanced): hero headline only.
-- **Headline** (900, clamp 1.9rem to 3.2rem, 1.02, uppercase, balanced): one per section, short and ending with a period.
-- **Title** (700, 20px, 1.2, sentence case): service rows (22px at desktop) and step headings (which override the uppercase h3 default).
-- **Body** (400, 17px, 1.55): paragraphs, max 60ch in About; hero promise 17-20px in mist, max 34ch.
-- **Label** (800, 17px): buttons, form labels, header phone number (tabular numerals, 20px at desktop).
-- **Small** (600-700, 15px): chips, form notes, errors, footer.
+- **Display** (display): the hero H1 only. White on navy, at most 11ch wide, letter-spacing -0.005em.
+- **Headline** (headline): section H2s, line-height 1.08, balanced wrapping.
+- **Callout** (callout): the big tap-to-call number in the close band.
+- **Title** (title): service rows on navy, and the Facebook card (18-20px).
+- **Action** (action): button labels, plus the header phone (17px, 20px on desktop), form labels and legends (17px), and the wordmark (21px, 24px on desktop).
+- **Lede** (lede): the intro paragraph under an H2 (38ch, 46ch in the About band on desktop). The hero promise line is the same voice at 17-20px and line-height 1.5, 30ch on phones.
+- **Body** (body): running text, inputs and chips. Never below 16px on a field, so iOS doesn't zoom.
+- **Label** (label): the eyebrow pill text. Smaller steps are 15px for error sentences, the after-submit note and the message preview, and 14px for the "(optional)" tag.
+- **Wordmark small**: the "LLC" under the name, 11px, weight 600, tracked 0.08em, uppercase. This is the only uppercase on the page.
 
 ### Named Rules
-**The Shout-Only-Headlines Rule.** Uppercase is for h1/h2 and the wordmark. Body, labels, chips, rows and step titles stay sentence case.
+**The One Display Face Rule.** Cal Sans is the only webfont and appears only at weight 400. Hierarchy comes from size and colour, never from a bold display weight or a second display family.
+
+**The Display Talks Rule.** Anything the user reads as a call or a thing to tap (buttons, rows, labels, phone numbers) is set in Cal Sans. Explanations and fine print are set in the system face.
 
 ## Layout
 
-Single long page, phone-first: header, hero with pool band, Services (frost), About (navy), How it works (frost), Booking (navy-2), footer (navy-deep). Content sits in a 1180px max container with a 16px gutter (40px from 1024px), padded by safe-area insets. Sections pad 56/72px on phones and 88/104px at desktop.
+The page is a single centred column, 1160px max, with a 20px phone gutter that widens to 40px from 760px. Bands are full-bleed; their content sits in the column. Vertical rhythm is 64px of section padding on phones and 96px from 760px. The hero has its own padding: 56/68px on phones, 96/112px on desktop.
 
-At 640px hero actions go from a stacked grid to a wrapping row (min 230px each). At 1024px sections become asymmetric two-column grids with a 64px gap: Services 5/7 (heading left, rows right), About 7/5 (copy left, Facebook card right, bottom-aligned), Booking 4/8 with a sticky heading and a two-column form (chip groups, town and notes span full). Steps become three columns.
+- **Phones first.** Everything stacks in one column. The hero's two buttons stack full width, and the form's submit button is always full width.
+- **From 760px:** the hero buttons sit side by side at 240px minimum, and the ready-panel buttons line up in a row.
+- **From 1024px:** the hero becomes text plus the 360px logo badge on the right. The services and booking bands become two columns (head 1fr against 1.6fr / 1.4fr), and their headings stick at 40px from the top while the rows or the form scroll. Service rows become two columns with a 40px gap. The close band puts the name on the left and the big number bottom-right.
+- **Internal gaps:** heading groups 16px, the form 22px between fields, 8px from a label to its field, 10px between chips.
+- **Below 380px:** chip side padding drops from 18px to 14px so short chips still pair up on a row.
 
-**The Header Number Rule.** The phone number lives top-right in the header as a `tel:` link and is the only number on the first screen; no Call button under the hero title, at most two hero buttons (finishing rules: contact buttons).
+**The Band Is The Divider Rule.** Sections are separated by a change of band colour, never by rules, borders or cards floating on one shared ground. The only hairlines are the dividers between service rows on navy (white at 14%).
 
 ## Elevation & Depth
 
-Flat by default; depth comes from alternating navy and frost bands and from the canvas scene's own lighting. Shadows are soft, downward and few.
+The system is flat. Depth comes from tone: a white card on paper, a tinted field on a white card, a paper panel inside the white form. There is one shadow, and it belongs to the one element that floats above the scroll.
 
 ### Shadow Vocabulary
-- **Button lift** (`0 6px 14px -6px rgba(3,14,30,.55)`): sun buttons only.
-- **Badge drop** (`0 24px 40px -18px rgba(2,12,28,.75)`): the round logo badge, both placements.
-- **Card drop** (`0 14px 30px -16px rgba(0,0,0,.6)`): the Facebook card.
+- **Float lift** (`box-shadow: 0 10px 28px rgba(6,22,42,.3)`): the floating text circle only. It is a soft, navy-tinted ambient lift so the yellow circle separates from whatever band is behind it.
 
-**The Real-Material Rule.** Depth inside the pool is physical: blurred leaf and net shadows that shift with the water slope, shade under the coping. No sheens, films or glints (finishing rules: "Every effect must read as a real thing").
+### Named Rules
+**The One Floating Thing Rule.** Only the fixed text circle casts a shadow. Cards, buttons, the header and hover states stay flat. Hover handlers on the Facebook card and the service rows explicitly cancel any shadow.
+
+**The Faint Lines Rule.** The diagonal-line texture (135deg, transparent for 22px then white at 3.5% for 1px) only appears on the dark bands: the hero and the footer. It stays at about 4% white or fainter so it never reads as lines through text.
 
 ## Shapes
 
-Water-smooth: pills (999px) for every button and chip, full circles for logo marks, arrow discs and step numbers, 12px on inputs, 14px on cards (Facebook card, composed-message panel). Lists use hairline ink dividers rather than boxes. The only non-rounded edges are the seams' organic wave lines and the pool's straight coping, which is a built edge and reads as one.
+Soft and borderless. Containers have a generous radius, every control is a pill or a soft tinted rectangle, and circles are reserved for the logo, the arrows and the floating button.
+
+- **Card** (card radius): the booking form card.
+- **Feature** (feature radius): the Facebook card in About. Slightly tighter than the form card because it is a single-row link.
+- **Panel** (panel radius): the "Your message is ready" panel nested inside the form card. It steps down from the card radius so the nesting reads.
+- **Field** (field radius): text inputs, the textarea and the message preview.
+- **Focus** (focus radius): the corner of the global focus outline on links and text.
+- **Pill** (pill radius): buttons, chips and the eyebrow.
+- **Circles** (50%): the logo badge (also clipped to a 48.5% circle to trim its edge), 44px arrow circles and the 60px floating text circle.
+
+Borders exist only as states: 2px transparent borders on buttons, fields and chips, coloured in on hover, focus or error. The outline and ghost buttons are the only components with a resting border.
 
 ## Components
 
 ### Buttons
-- **Shape:** pill, 56px tall, 2px border, label weight.
-- **Sun (primary):** sun fill, ink text, button lift; hover lightens to `sun-hover`.
-- **Line (secondary):** outlined in white at 70%, white text; hover turns border and text sun. Secondary hero buttons are always outlined, never filled (finishing rules).
-- **Press:** scale(.98). Inside the form, buttons also take a 3px sky outline on hover and focus.
+Full pills, 56px tall, set in Cal Sans. They press in slightly (scale .98) when tapped.
+- **Primary (sun):** a Sun Yellow fill with an Ink label. The hero's "Check availability" and the form's "Text this to Ideal Pools" (full width, with a chat glyph). On hover it takes the Sun Hover fill. Inside the form it also gets a 3px Focus Royal outline on hover and focus, offset by 3px.
+- **Ghost (on navy):** transparent, with an On-Dark label and a 2px On-Dark border at 70%. On hover the border turns full white over a 10% white fill. Used for "Message us on Facebook" in the hero.
+- **Line (on light):** transparent with an Ink label and border, and a 6% ink fill on hover. Used for the ready panel's "Copy message" and "Send it on Messenger".
+- **Limit:** at most two buttons in the hero (one primary, one ghost). There is no Call button; the number lives in the header.
 
-### Chips (form choices)
-- **Style:** 46px pill, 2px white-35% border, white 15px text on booking navy. Real checkbox/radio inputs, visually hidden.
-- **State:** hover/focus border sky; selected fills sky with ink text; a sky ring splashes outward (0.55s) when ticked, including when a service row pre-selects it. Chips are only for choices; never for non-interactive labels or towns (finishing rules).
+### Chips
+- **Style:** 48px pills with a Field Tint fill, Ink text in the 16px system face, and a 2px transparent border.
+- **State:** hovering colours the border Focus Royal. Selected chips take an Ink fill with white text. Keyboard focus is a 3px Focus Royal outline at a 2px offset, because a border on the ink fill measured only about 1.6:1. The same chip handles multi-select (services) and single-select (pool type, timing).
+
+### Cards / Containers
+- **Form card:** Card White, card radius, with padding that scales from 20px to 32px. There is no shadow and no border.
+- **Ready panel:** Paper inside the white card, panel radius, 18px padding. It holds the composed message in a white, field-radius preview block (15px/1.5) and two line buttons.
+- **Facebook card:** a Card White row 72px tall with feature radius, a Logo Royal Navy Facebook glyph, a Cal Sans label and an arrow circle on the right. Only the arrow changes on hover and focus.
 
 ### Inputs / Fields
-- **Style:** white field, 12px radius, 52px min height, 2px transparent border, bold 17px label above; "(optional)" in mist.
-- **Focus:** sky border plus 2px sky outline. **Error:** coral border and a 15px coral line under the field naming exactly what to add.
+- **Style:** a Field Tint fill with field radius, no visible border (2px transparent), 52px tall, 16px text in Ink, Soft Slate placeholders. The textarea is 110px minimum and resizes vertically.
+- **Hover / Focus:** the border turns Focus Royal. There is no glow.
+- **Error:** the border turns Error Red and stays red while focused (the rule is declared later and is more specific). A plain-sentence error appears in 15px Error Red under the field ("Add your name so we know who's asking.").
+- **Labels:** Cal Sans 17px in Ink, tied to fields with `for`. Optional fields carry a soft "(optional)" tag.
 
-### Service Rows
-- **Style:** full-width links, title type, hairline dividers, trailing 40px arrow disc in frost-2.
-- **Hover/Focus:** only the arrow changes (royal fill, white arrow, 2px nudge right); the focus ring sits on the arrow. Clicking a row ticks that service's chip and scrolls to the form.
+### Navigation
+- **Header:** a slim paper bar, 68px tall (80px on desktop). The round logo and the Cal Sans wordmark (with the small "LLC" beneath) sit on the left. The tap-to-call number sits top-right with a Sun Ink phone glyph and turns Sun Ink on hover. There is no menu.
+- **Footer:** Band Navy with the line texture. It holds the name and number, a Facebook link (44px tall, On-Dark, turning Sun on hover) and the copyright. The bottom padding clears the floating circle.
 
-**The Arrow-Only Rule.** A tappable row never gets an outline, border, ring or tint. Only its arrow highlights (finishing rules, quoted from Ellie).
+### Service Rows (signature)
+Each row on the navy band is a link: a Cal Sans service name with a 44px arrow circle on the right, at least 64px tall, separated by 14% white hairlines. They are one column on phones and two on desktop. Only the arrow changes: its circle goes from 10% white to a Sun Yellow fill with Ink arrow on hover, and on keyboard focus it also gets a Sun outline. Tapping a row pre-selects the matching chip in the booking form.
 
-### Booking flow (signature)
-Submitting validates, then composes a plain text message (service, pool, when, town, name, phone, notes) and opens `sms:` to the business. A "Your message is ready" panel (white 7% on navy, 14px radius) shows the text with two line buttons: Copy message and Send it on Messenger. The note under the button explains it opens a pre-written text and offers the call. No email anywhere except a footer email if one is ever supplied.
+### Eyebrow Pill (owner-mandated exception)
+A quiet 14px label pill above three headings only: the hero ("Last-minute pool closings"), services and the booking form. It has an ink fill at 6% (white at 12% on navy), a 7px sun dot before the text, no arrow, no hover state and no shadow. It is marked up as a `<p>`, never as a heading. Ellie chose these pills for the calm house style on 2026-10-19. Impeccable's craft floor flags eyebrows as an anti-pattern, so treat this as a recorded exception, not a pattern to extend: do not add eyebrows to further headings, and do not give one a strong sun fill.
 
-### Logo badge
-The round logo badge appears once per layout: on desktop it floats over the hero's pool edge on the right (240-310px, pointer-events off); on phones it sits centered in About above the Facebook card (max 300px). Header and footer carry the small round mark beside the wordmark.
+### Floating Text Circle (signature)
+A 60px Sun Yellow circle fixed 16px from the bottom-right corner (plus safe area), with an Ink chat glyph and the Float lift shadow. It opens `sms:` with a pre-filled greeting. It slides up from 120px below the screen (.35s, cubic-bezier(.2,.8,.2,1)) once the hero has scrolled away, and hides again while the booking form is on screen. While hidden it is `tabIndex=-1` and `aria-hidden`. It is one circle, never a bottom bar, and it does not exist without JS or when `CONFIG.FLOAT` is false.
 
-### Facebook card
-Facebook-brand-blue card with the f-mark, 20px bold "Visit our Facebook to see more.", trailing arrow. It sits in About where visitors look for proof, and Facebook is repeated in the footer (finishing rules: Facebook).
-
-### Pool hero canvas (signature)
-Below the hero copy, a canvas band (250-440px tall): 56px of open air where leaves fall, 16px stone coping with joints and speckle, 13px blue waterline tile, then water rendered from a damped ripple heightfield with sine-interference caustics. 9 leaves on phones, 18 at desktop, three leaf shapes in five autumn colours, each with a soft slope-shifted shadow. A skimmer net (blue frame, mesh, aluminium pole off the bottom right) auto-glides to the nearest leaf until touched; a finger or mouse takes it over in every direction (touch-action none, position read every frame) and it returns to auto 3.5s after the last touch. Leaves scooped by a moving net fade out and fall back in after 3-7s. Tunables live in the `CFG` block. One shared requestAnimationFrame loop drives the canvas and seams, pauses off screen, and under reduced motion draws one still frame (waking briefly on touch).
-
-### Waterline seams
-Each section and the footer opens with an SVG wave (34px, 48px at desktop) filled in the section's own ground colour, with a 2.5px line on top: sky over frost bands, pool blue over navy bands. Three summed sines move continuously, phase-offset per seam.
-
-**The Moving Waterline Rule.** Section changes are waterlines, never straight rules or slanted cuts. Seams stay clear of text (finishing rules: nothing runs through text).
+### Motion
+- **Hero H1 bounce-in:** the hero H1 only. JS splits it into letters inside nowrap word wrappers. Each letter goes from opacity 0 at translateX(50px) to rest over 1s on cubic-bezier(.34,1.56,.64,1), 20ms apart. When the last letter finishes, the original markup is restored. It is skipped without JS and under reduced motion.
+- **Fade-up:** blocks marked to rise move up 12px and fade in over .4s ease-out, and only if they start below the first screen. Everything is visible at rest, without JS, and under reduced motion.
+- **State transitions:** colour changes take .2s on buttons and arrows and .15s on fields and chips; a press scales to .98 over .12s.
 
 ## Do's and Don'ts
 
 ### Do:
-- **Do** use sun for primary fills only, sky for every form hover/focus outline, royal for cues on frost.
-- **Do** keep headlines uppercase 900 and short; keep all other text sentence case.
-- **Do** give every new section a seam in its own ground colour and alternate navy and frost grounds.
-- **Do** keep the hero to one focal point: headline, promise, at most two buttons, the pool band.
-- **Do** tune the pool through `CFG`, and keep the net working by itself until touched.
-- **Do** keep the phone-first sizes: 56px buttons, 46px chips, 44px minimum tap targets.
+- **Do** alternate full-bleed paper and navy bands and let the colour change separate sections.
+- **Do** use Sun Yellow only as a fill with Ink on it; use Sun Ink when the accent has to be text on paper.
+- **Do** set headings, buttons, labels, rows and phone numbers in Cal Sans at weight 400, and running text in the system stack at 16/1.7.
+- **Do** give inputs and chips the Field Tint fill on the white card, and outline them in Focus Royal on hover and focus.
+- **Do** keep tap targets at 44px or more (buttons 56px, chips 48px, fields 52px, rows 64px).
+- **Do** keep the hero to an eyebrow, the H1, one promise line and at most two buttons, with the phone number in the header.
+- **Do** keep all motion off under `prefers-reduced-motion`, with everything visible at rest.
 
 ### Don't:
-- **Don't** highlight a service row; only its arrow changes on hover.
-- **Don't** show accents at rest on interactive cues; they arrive on hover.
-- **Don't** add a Call button under the hero, a second phone number on the first screen, or a sticky bottom bar.
-- **Don't** put towns or non-interactive labels in pills or chips; use plain dot-separated text like the pool-types line.
-- **Don't** lay sheens, glints or ruler-straight "nature" lines over the scene; every effect must read as the real thing.
-- **Don't** add animation beyond the pool, the seams and control feedback. If this audience is ever confirmed 40+, the older-audience rules apply: draw the pool once as a still and stop the seams.
+- **Don't** put white or paper text on the sun, or sun text on paper.
+- **Don't** add shadows to cards, buttons or the header; the floating text circle is the only lifted element.
+- **Don't** letter-animate any heading other than the hero H1, and don't add a second motion style beyond the one 12px fade-up.
+- **Don't** add a second webfont or a bold Cal Sans.
+- **Don't** add eyebrow pills beyond the three that exist, or style one like a button.
+- **Don't** let the line texture go above about 4% white or onto a light band.
+- **Don't** turn the floating circle into a bottom bar, or show it while the booking form is on screen.

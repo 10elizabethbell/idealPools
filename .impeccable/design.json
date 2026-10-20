@@ -1,6 +1,6 @@
 {
   "schemaVersion": 2,
-  "generatedAt": "2026-10-20T00:01:29+00:00",
+  "generatedAt": "2026-10-20T01:22:31+00:00",
   "title": "Design System: Ideal Pools, LLC",
   "extensions": {
     "colorMeta": {
@@ -9,184 +9,124 @@
         "displayName": "Sun Yellow",
         "canonical": "#ffc83d",
         "tonalRamp": [
-          "oklch(15% 0.120 85.8)",
+          "oklch(15% 0.119 85.8)",
           "oklch(26% 0.158 85.8)",
           "oklch(37% 0.158 85.8)",
           "oklch(48% 0.158 85.8)",
           "oklch(59% 0.158 85.8)",
           "oklch(70% 0.158 85.8)",
           "oklch(82% 0.158 85.8)",
-          "oklch(95% 0.120 85.8)"
+          "oklch(95% 0.119 85.8)"
         ]
       },
       "sun-hover": {
         "role": "primary",
-        "displayName": "Sun Yellow Hover",
+        "displayName": "Sun Hover",
         "canonical": "#ffd76b",
         "tonalRamp": [
-          "oklch(15% 0.120 89.2)",
+          "oklch(15% 0.100 89.2)",
           "oklch(26% 0.134 89.2)",
           "oklch(37% 0.134 89.2)",
           "oklch(48% 0.134 89.2)",
           "oklch(59% 0.134 89.2)",
           "oklch(70% 0.134 89.2)",
           "oklch(82% 0.134 89.2)",
-          "oklch(95% 0.120 89.2)"
+          "oklch(95% 0.100 89.2)"
         ]
       },
-      "royal": {
-        "role": "secondary",
-        "displayName": "Royal Blue",
-        "canonical": "#1a63c9",
+      "sun-ink": {
+        "role": "primary",
+        "displayName": "Sun Ink",
+        "canonical": "#8a5a00",
         "tonalRamp": [
-          "oklch(15% 0.120 258.4)",
-          "oklch(26% 0.174 258.4)",
-          "oklch(37% 0.174 258.4)",
-          "oklch(48% 0.174 258.4)",
-          "oklch(59% 0.174 258.4)",
-          "oklch(70% 0.174 258.4)",
-          "oklch(82% 0.174 258.4)",
-          "oklch(95% 0.120 258.4)"
-        ]
-      },
-      "sky": {
-        "role": "secondary",
-        "displayName": "Sky Blue",
-        "canonical": "#7fd0f5",
-        "tonalRamp": [
-          "oklch(15% 0.095 229.0)",
-          "oklch(26% 0.095 229.0)",
-          "oklch(37% 0.095 229.0)",
-          "oklch(48% 0.095 229.0)",
-          "oklch(59% 0.095 229.0)",
-          "oklch(70% 0.095 229.0)",
-          "oklch(82% 0.095 229.0)",
-          "oklch(95% 0.095 229.0)"
-        ]
-      },
-      "pool": {
-        "role": "tertiary",
-        "displayName": "Pool Blue",
-        "canonical": "#1aa0dc",
-        "tonalRamp": [
-          "oklch(15% 0.120 235.4)",
-          "oklch(26% 0.137 235.4)",
-          "oklch(37% 0.137 235.4)",
-          "oklch(48% 0.137 235.4)",
-          "oklch(59% 0.137 235.4)",
-          "oklch(70% 0.137 235.4)",
-          "oklch(82% 0.137 235.4)",
-          "oklch(95% 0.120 235.4)"
+          "oklch(15% 0.081 73.3)",
+          "oklch(26% 0.108 73.3)",
+          "oklch(37% 0.108 73.3)",
+          "oklch(48% 0.108 73.3)",
+          "oklch(59% 0.108 73.3)",
+          "oklch(70% 0.108 73.3)",
+          "oklch(82% 0.108 73.3)",
+          "oklch(95% 0.081 73.3)"
         ]
       },
       "navy": {
-        "role": "neutral",
-        "displayName": "Logo Navy",
+        "role": "secondary",
+        "displayName": "Logo Royal Navy",
+        "canonical": "#134a8e",
+        "tonalRamp": [
+          "oklch(15% 0.094 256.3)",
+          "oklch(26% 0.126 256.3)",
+          "oklch(37% 0.126 256.3)",
+          "oklch(48% 0.126 256.3)",
+          "oklch(59% 0.126 256.3)",
+          "oklch(70% 0.126 256.3)",
+          "oklch(82% 0.126 256.3)",
+          "oklch(95% 0.094 256.3)"
+        ]
+      },
+      "deep": {
+        "role": "secondary",
+        "displayName": "Band Navy",
         "canonical": "#0b2a4a",
         "tonalRamp": [
-          "oklch(15% 0.069 252.3)",
+          "oklch(15% 0.052 252.3)",
           "oklch(26% 0.069 252.3)",
           "oklch(37% 0.069 252.3)",
           "oklch(48% 0.069 252.3)",
           "oklch(59% 0.069 252.3)",
           "oklch(70% 0.069 252.3)",
           "oklch(82% 0.069 252.3)",
-          "oklch(95% 0.069 252.3)"
+          "oklch(95% 0.052 252.3)"
         ]
       },
-      "navy-2": {
-        "role": "neutral",
-        "displayName": "Booking Navy",
-        "canonical": "#0e355e",
+      "focus": {
+        "role": "secondary",
+        "displayName": "Focus Royal",
+        "canonical": "#1a63c9",
         "tonalRamp": [
-          "oklch(15% 0.085 252.9)",
-          "oklch(26% 0.085 252.9)",
-          "oklch(37% 0.085 252.9)",
-          "oklch(48% 0.085 252.9)",
-          "oklch(59% 0.085 252.9)",
-          "oklch(70% 0.085 252.9)",
-          "oklch(82% 0.085 252.9)",
-          "oklch(95% 0.085 252.9)"
-        ]
-      },
-      "navy-deep": {
-        "role": "neutral",
-        "displayName": "Deep Navy",
-        "canonical": "#081f38",
-        "tonalRamp": [
-          "oklch(15% 0.056 252.8)",
-          "oklch(26% 0.056 252.8)",
-          "oklch(37% 0.056 252.8)",
-          "oklch(48% 0.056 252.8)",
-          "oklch(59% 0.056 252.8)",
-          "oklch(70% 0.056 252.8)",
-          "oklch(82% 0.056 252.8)",
-          "oklch(95% 0.056 252.8)"
-        ]
-      },
-      "frost": {
-        "role": "neutral",
-        "displayName": "Frost",
-        "canonical": "#eef5fb",
-        "tonalRamp": [
-          "oklch(15% 0.011 243.7)",
-          "oklch(26% 0.011 243.7)",
-          "oklch(37% 0.011 243.7)",
-          "oklch(48% 0.011 243.7)",
-          "oklch(59% 0.011 243.7)",
-          "oklch(70% 0.011 243.7)",
-          "oklch(82% 0.011 243.7)",
-          "oklch(95% 0.011 243.7)"
-        ]
-      },
-      "frost-2": {
-        "role": "neutral",
-        "displayName": "Frost Deep",
-        "canonical": "#dcebf6",
-        "tonalRamp": [
-          "oklch(15% 0.022 239.4)",
-          "oklch(26% 0.022 239.4)",
-          "oklch(37% 0.022 239.4)",
-          "oklch(48% 0.022 239.4)",
-          "oklch(59% 0.022 239.4)",
-          "oklch(70% 0.022 239.4)",
-          "oklch(82% 0.022 239.4)",
-          "oklch(95% 0.022 239.4)"
+          "oklch(15% 0.130 258.4)",
+          "oklch(26% 0.160 258.4)",
+          "oklch(37% 0.160 258.4)",
+          "oklch(48% 0.160 258.4)",
+          "oklch(59% 0.160 258.4)",
+          "oklch(70% 0.160 258.4)",
+          "oklch(82% 0.160 258.4)",
+          "oklch(95% 0.130 258.4)"
         ]
       },
       "ink": {
         "role": "neutral",
         "displayName": "Ink",
-        "canonical": "#0d2441",
+        "canonical": "#0b2a4a",
         "tonalRamp": [
-          "oklch(15% 0.062 255.5)",
-          "oklch(26% 0.062 255.5)",
-          "oklch(37% 0.062 255.5)",
-          "oklch(48% 0.062 255.5)",
-          "oklch(59% 0.062 255.5)",
-          "oklch(70% 0.062 255.5)",
-          "oklch(82% 0.062 255.5)",
-          "oklch(95% 0.062 255.5)"
+          "oklch(15% 0.052 252.3)",
+          "oklch(26% 0.069 252.3)",
+          "oklch(37% 0.069 252.3)",
+          "oklch(48% 0.069 252.3)",
+          "oklch(59% 0.069 252.3)",
+          "oklch(70% 0.069 252.3)",
+          "oklch(82% 0.069 252.3)",
+          "oklch(95% 0.052 252.3)"
         ]
       },
-      "ink-soft": {
+      "paper": {
         "role": "neutral",
-        "displayName": "Ink Soft",
-        "canonical": "#3c5672",
+        "displayName": "Paper",
+        "canonical": "#f4f6fb",
         "tonalRamp": [
-          "oklch(15% 0.056 251.0)",
-          "oklch(26% 0.056 251.0)",
-          "oklch(37% 0.056 251.0)",
-          "oklch(48% 0.056 251.0)",
-          "oklch(59% 0.056 251.0)",
-          "oklch(70% 0.056 251.0)",
-          "oklch(82% 0.056 251.0)",
-          "oklch(95% 0.056 251.0)"
+          "oklch(15% 0.005 268.5)",
+          "oklch(26% 0.007 268.5)",
+          "oklch(37% 0.007 268.5)",
+          "oklch(48% 0.007 268.5)",
+          "oklch(59% 0.007 268.5)",
+          "oklch(70% 0.007 268.5)",
+          "oklch(82% 0.007 268.5)",
+          "oklch(95% 0.005 268.5)"
         ]
       },
-      "on-navy": {
+      "card": {
         "role": "neutral",
-        "displayName": "White",
+        "displayName": "Card White",
         "canonical": "#ffffff",
         "tonalRamp": [
           "oklch(15% 0.000 89.9)",
@@ -199,270 +139,376 @@
           "oklch(95% 0.000 89.9)"
         ]
       },
-      "on-navy-soft": {
+      "field": {
         "role": "neutral",
-        "displayName": "Mist",
-        "canonical": "#c4d9ee",
+        "displayName": "Field Tint",
+        "canonical": "#e6ecf5",
         "tonalRamp": [
-          "oklch(15% 0.037 248.2)",
-          "oklch(26% 0.037 248.2)",
-          "oklch(37% 0.037 248.2)",
-          "oklch(48% 0.037 248.2)",
-          "oklch(59% 0.037 248.2)",
-          "oklch(70% 0.037 248.2)",
-          "oklch(82% 0.037 248.2)",
-          "oklch(95% 0.037 248.2)"
+          "oklch(15% 0.010 258.3)",
+          "oklch(26% 0.014 258.3)",
+          "oklch(37% 0.014 258.3)",
+          "oklch(48% 0.014 258.3)",
+          "oklch(59% 0.014 258.3)",
+          "oklch(70% 0.014 258.3)",
+          "oklch(82% 0.014 258.3)",
+          "oklch(95% 0.010 258.3)"
         ]
       },
-      "error-line": {
-        "role": "error",
-        "displayName": "Error Coral Line",
-        "canonical": "#ff9b8a",
+      "body": {
+        "role": "neutral",
+        "displayName": "Body Slate",
+        "canonical": "#28394d",
         "tonalRamp": [
-          "oklch(15% 0.120 30.4)",
-          "oklch(26% 0.123 30.4)",
-          "oklch(37% 0.123 30.4)",
-          "oklch(48% 0.123 30.4)",
-          "oklch(59% 0.123 30.4)",
-          "oklch(70% 0.123 30.4)",
-          "oklch(82% 0.123 30.4)",
-          "oklch(95% 0.120 30.4)"
+          "oklch(15% 0.031 253.0)",
+          "oklch(26% 0.042 253.0)",
+          "oklch(37% 0.042 253.0)",
+          "oklch(48% 0.042 253.0)",
+          "oklch(59% 0.042 253.0)",
+          "oklch(70% 0.042 253.0)",
+          "oklch(82% 0.042 253.0)",
+          "oklch(95% 0.031 253.0)"
         ]
       },
-      "error-text": {
-        "role": "error",
-        "displayName": "Error Coral Text",
-        "canonical": "#ffb4a6",
+      "soft": {
+        "role": "neutral",
+        "displayName": "Soft Slate",
+        "canonical": "#4a5a6c",
         "tonalRamp": [
-          "oklch(15% 0.090 30.8)",
-          "oklch(26% 0.090 30.8)",
-          "oklch(37% 0.090 30.8)",
-          "oklch(48% 0.090 30.8)",
-          "oklch(59% 0.090 30.8)",
-          "oklch(70% 0.090 30.8)",
-          "oklch(82% 0.090 30.8)",
-          "oklch(95% 0.090 30.8)"
+          "oklch(15% 0.027 251.6)",
+          "oklch(26% 0.036 251.6)",
+          "oklch(37% 0.036 251.6)",
+          "oklch(48% 0.036 251.6)",
+          "oklch(59% 0.036 251.6)",
+          "oklch(70% 0.036 251.6)",
+          "oklch(82% 0.036 251.6)",
+          "oklch(95% 0.027 251.6)"
+        ]
+      },
+      "on-dark": {
+        "role": "neutral",
+        "displayName": "On-Dark",
+        "canonical": "#f4f7fb",
+        "tonalRamp": [
+          "oklch(15% 0.005 255.5)",
+          "oklch(26% 0.006 255.5)",
+          "oklch(37% 0.006 255.5)",
+          "oklch(48% 0.006 255.5)",
+          "oklch(59% 0.006 255.5)",
+          "oklch(70% 0.006 255.5)",
+          "oklch(82% 0.006 255.5)",
+          "oklch(95% 0.005 255.5)"
+        ]
+      },
+      "on-dark-soft": {
+        "role": "neutral",
+        "displayName": "On-Dark Soft",
+        "canonical": "#c9d8ec",
+        "tonalRamp": [
+          "oklch(15% 0.024 255.6)",
+          "oklch(26% 0.032 255.6)",
+          "oklch(37% 0.032 255.6)",
+          "oklch(48% 0.032 255.6)",
+          "oklch(59% 0.032 255.6)",
+          "oklch(70% 0.032 255.6)",
+          "oklch(82% 0.032 255.6)",
+          "oklch(95% 0.024 255.6)"
+        ]
+      },
+      "error": {
+        "role": "neutral",
+        "displayName": "Error Red",
+        "canonical": "#b3261e",
+        "tonalRamp": [
+          "oklch(15% 0.134 28.7)",
+          "oklch(26% 0.160 28.7)",
+          "oklch(37% 0.160 28.7)",
+          "oklch(48% 0.160 28.7)",
+          "oklch(59% 0.160 28.7)",
+          "oklch(70% 0.160 28.7)",
+          "oklch(82% 0.160 28.7)",
+          "oklch(95% 0.134 28.7)"
         ]
       }
     },
     "typographyMeta": {
       "display": {
         "displayName": "Display",
-        "purpose": "Hero headline only; uppercase, max 11ch."
+        "purpose": "Hero H1 only; letter bounce-in."
       },
       "headline": {
         "displayName": "Headline",
-        "purpose": "One uppercase section heading per section."
+        "purpose": "Section H2s."
+      },
+      "callout": {
+        "displayName": "Callout",
+        "purpose": "Big tap-to-call number in the close band."
       },
       "title": {
         "displayName": "Title",
-        "purpose": "Service rows (22px desktop) and step headings; sentence case."
+        "purpose": "Service rows on navy and the Facebook card."
+      },
+      "action": {
+        "displayName": "Action",
+        "purpose": "Button labels; also header phone, form labels, wordmark."
+      },
+      "lede": {
+        "displayName": "Lede",
+        "purpose": "Intro paragraph under an H2."
       },
       "body": {
         "displayName": "Body",
-        "purpose": "Paragraphs and hero promise."
+        "purpose": "Running text, inputs, chips; never below 16px on a field."
       },
       "label": {
         "displayName": "Label",
-        "purpose": "Buttons, form labels, header phone number."
+        "purpose": "Eyebrow pill text."
+      }
+    },
+    "roundedMeta": {
+      "field": {
+        "value": "10px",
+        "purpose": "Inputs, textarea, message preview."
       },
-      "small": {
-        "displayName": "Small",
-        "purpose": "Chips, notes, errors, footer."
+      "focus": {
+        "value": "6px",
+        "purpose": "Corner of the global focus outline on links and text (intentional one-off)."
+      },
+      "panel": {
+        "value": "16px",
+        "purpose": "Ready panel nested inside the form card (intentional one-off, steps down from the card)."
+      },
+      "feature": {
+        "value": "20px",
+        "purpose": "Facebook card in About (intentional one-off)."
+      },
+      "card": {
+        "value": "24px",
+        "purpose": "Booking form card."
+      },
+      "pill": {
+        "value": "999px",
+        "role": "pill",
+        "purpose": "Buttons, chips, eyebrow."
+      },
+      "circle": {
+        "value": "50%",
+        "purpose": "Logo badge, arrow circles, floating text circle."
       }
     },
     "shadows": [
       {
-        "name": "button-lift",
-        "value": "0 6px 14px -6px rgba(3,14,30,.55)",
-        "purpose": "Sun buttons only."
-      },
-      {
-        "name": "badge-drop",
-        "value": "0 24px 40px -18px rgba(2,12,28,.75)",
-        "purpose": "Round logo badge (desktop hero, phone About)."
-      },
-      {
-        "name": "card-drop",
-        "value": "0 14px 30px -16px rgba(0,0,0,.6)",
-        "purpose": "Facebook card."
+        "name": "float-lift",
+        "value": "0 10px 28px rgba(6,22,42,.3)",
+        "purpose": "Floating text circle only; the one lifted element (intentional one-off)."
       }
     ],
     "motion": [
       {
-        "name": "control",
-        "value": ".15s-.2s ease (background, color, border, transform)",
-        "purpose": "Button, chip, field and arrow feedback."
+        "name": "letter-in",
+        "value": "1s cubic-bezier(.34,1.56,.64,1), stagger 20ms, from opacity 0 translateX(50px)",
+        "purpose": "Hero H1 bounce-in only."
+      },
+      {
+        "name": "rise",
+        "value": "opacity/transform .4s ease-out, from translateY(12px)",
+        "purpose": "One fade-up for blocks starting below the first screen."
+      },
+      {
+        "name": "float-in",
+        "value": "transform .35s cubic-bezier(.2,.8,.2,1), from translateY(120px)",
+        "purpose": "Floating text circle show/hide."
+      },
+      {
+        "name": "state",
+        "value": ".2s",
+        "purpose": "Button and arrow colour changes."
+      },
+      {
+        "name": "field-state",
+        "value": ".15s",
+        "purpose": "Input and chip border/fill changes."
       },
       {
         "name": "press",
-        "value": "transform: scale(.98)",
+        "value": "transform scale(.98) .12s",
         "purpose": "Button press."
-      },
-      {
-        "name": "chip-splash",
-        "value": "550ms cubic-bezier(.2,.7,.3,1), ring scales to (1.35,1.6) and fades",
-        "purpose": "Chip ticked, including via service row (700ms delay after scroll)."
-      },
-      {
-        "name": "seam-wave",
-        "value": "SPEED 1.6, AMP 7px, three summed sines, phase 1.7 per seam",
-        "purpose": "Continuously moving waterlines between sections."
-      },
-      {
-        "name": "pool-net",
-        "value": "auto 120px/s; idle 3.5s returns to auto; scoop above 30px/s; leaf respawn 3-7s; ripple damp 0.984",
-        "purpose": "Hero canvas tunables (CFG block)."
-      },
-      {
-        "name": "reduced-motion",
-        "value": "one still frame; brief wake on touch; no splash; no smooth scroll",
-        "purpose": "prefers-reduced-motion: reduce."
       }
     ],
     "breakpoints": [
       {
-        "name": "row",
-        "value": "640px"
+        "name": "narrow-max",
+        "value": "380px"
       },
       {
-        "name": "desk",
+        "name": "tablet",
+        "value": "760px"
+      },
+      {
+        "name": "desktop",
         "value": "1024px"
-      },
-      {
-        "name": "pool-grid-desk",
-        "value": "700px (canvas cell size and leaf count only)"
       }
-    ]
+    ],
+    "textures": [
+      {
+        "name": "line-texture",
+        "value": "repeating-linear-gradient(135deg,transparent 0 22px,rgba(255,255,255,.035) 22px 23px)",
+        "purpose": "Hero and footer only; about 4% white or fainter."
+      }
+    ],
+    "layout": {
+      "container": "1160px",
+      "gutter": "20px / 40px from 760px",
+      "section": "64px / 96px from 760px",
+      "hero": "56px 68px / 96px 112px from 760px"
+    }
   },
   "components": [
     {
-      "name": "Sun Button",
+      "name": "Primary Button",
       "kind": "button",
-      "refersTo": "button-sun",
-      "description": "Primary action: Check availability, Text this to Ideal Pools.",
-      "html": "<div class=\"ds-navy\"><button class=\"ds-btn ds-btn-sun\">Check availability</button></div>",
-      "css": ".ds-navy{background:#0b2a4a;padding:24px} .ds-btn{display:inline-flex;align-items:center;justify-content:center;min-height:56px;padding:0 24px;border-radius:999px;font-family:-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;font-weight:800;font-size:17px;border:2px solid transparent;cursor:pointer;transition:background-color .2s,color .2s,border-color .2s,transform .15s} .ds-btn:active{transform:scale(.98)} .ds-btn:focus-visible{outline:3px solid #ffc83d;outline-offset:3px} .ds-btn-sun{background:#ffc83d;border-color:#ffc83d;color:#0d2441;box-shadow:0 6px 14px -6px rgba(3,14,30,.55)} .ds-btn-sun:hover{background:#ffd76b;border-color:#ffd76b}"
+      "refersTo": "button-primary",
+      "description": "Sun fill, Ink label: Check availability, Text this to Ideal Pools.",
+      "html": "<div class=\"ds-navy\"><a class=\"ds-btn ds-btn-primary\" href=\"#\">Check availability</a></div>",
+      "css": ":host{--paper:#f4f6fb;--card:#fff;--field:#e6ecf5;--ink:#0b2a4a;--soft:#4a5a6c;--navy:#134a8e;--deep:#0b2a4a;--on-dark:#f4f7fb;--on-dark-soft:#c9d8ec;--sun:#ffc83d;--sun-2:#ffd76b;--sun-ink:#8a5a00;--focus:#1a63c9;--error:#b3261e;--display:'Cal Sans','Avenir Next','Segoe UI',system-ui,sans-serif;--text:-apple-system,BlinkMacSystemFont,'Segoe UI','Helvetica Neue',Arial,sans-serif} .ds-navy{background:var(--navy);padding:24px;display:flex;gap:12px;flex-wrap:wrap} .ds-btn{display:inline-flex;align-items:center;justify-content:center;gap:10px;min-height:56px;padding:0 26px;border-radius:999px;font:400 18px/1 var(--display);cursor:pointer;border:2px solid transparent;text-decoration:none;transition:background-color .2s,color .2s,border-color .2s,transform .12s} .ds-btn:active{transform:scale(.98)} .ds-btn-primary{background:var(--sun);color:var(--ink);border-color:var(--sun)} .ds-btn-primary:hover{background:var(--sun-2);border-color:var(--sun-2)} .ds-btn-primary:focus-visible{outline:3px solid var(--sun);outline-offset:3px}"
+    },
+    {
+      "name": "Ghost Button",
+      "kind": "button",
+      "refersTo": "button-ghost",
+      "description": "Secondary hero action on navy: Message us on Facebook.",
+      "html": "<div class=\"ds-navy\"><a class=\"ds-btn ds-btn-ghost\" href=\"#\">Message us on Facebook</a></div>",
+      "css": ":host{--paper:#f4f6fb;--card:#fff;--field:#e6ecf5;--ink:#0b2a4a;--soft:#4a5a6c;--navy:#134a8e;--deep:#0b2a4a;--on-dark:#f4f7fb;--on-dark-soft:#c9d8ec;--sun:#ffc83d;--sun-2:#ffd76b;--sun-ink:#8a5a00;--focus:#1a63c9;--error:#b3261e;--display:'Cal Sans','Avenir Next','Segoe UI',system-ui,sans-serif;--text:-apple-system,BlinkMacSystemFont,'Segoe UI','Helvetica Neue',Arial,sans-serif} .ds-navy{background:var(--navy);padding:24px;display:flex;gap:12px;flex-wrap:wrap} .ds-btn{display:inline-flex;align-items:center;justify-content:center;gap:10px;min-height:56px;padding:0 26px;border-radius:999px;font:400 18px/1 var(--display);cursor:pointer;border:2px solid transparent;text-decoration:none;transition:background-color .2s,color .2s,border-color .2s,transform .12s} .ds-btn:active{transform:scale(.98)} .ds-btn-ghost{background:transparent;color:var(--on-dark);border-color:rgba(244,247,251,.7)} .ds-btn-ghost:hover{border-color:#fff;background:rgba(255,255,255,.1)} .ds-btn-ghost:focus-visible{outline:3px solid var(--sun);outline-offset:3px}"
     },
     {
       "name": "Line Button",
       "kind": "button",
       "refersTo": "button-line",
-      "description": "Secondary action on navy: Message us on Facebook, Copy message.",
-      "html": "<div class=\"ds-navy\"><button class=\"ds-btn ds-btn-line\">Message us on Facebook</button></div>",
-      "css": ".ds-navy{background:#0b2a4a;padding:24px} .ds-btn{display:inline-flex;align-items:center;justify-content:center;min-height:56px;padding:0 24px;border-radius:999px;font-family:-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;font-weight:800;font-size:17px;border:2px solid rgba(255,255,255,.7);background:transparent;color:#fff;cursor:pointer;transition:color .2s,border-color .2s,transform .15s} .ds-btn:hover{border-color:#ffc83d;color:#ffc83d} .ds-btn:active{transform:scale(.98)} .ds-btn:focus-visible{outline:3px solid #ffc83d;outline-offset:3px}"
+      "description": "Outlined action on light: Copy message, Send it on Messenger.",
+      "html": "<div class=\"ds-paper\"><button class=\"ds-btn ds-btn-line\" type=\"button\">Copy message</button></div>",
+      "css": ":host{--paper:#f4f6fb;--card:#fff;--field:#e6ecf5;--ink:#0b2a4a;--soft:#4a5a6c;--navy:#134a8e;--deep:#0b2a4a;--on-dark:#f4f7fb;--on-dark-soft:#c9d8ec;--sun:#ffc83d;--sun-2:#ffd76b;--sun-ink:#8a5a00;--focus:#1a63c9;--error:#b3261e;--display:'Cal Sans','Avenir Next','Segoe UI',system-ui,sans-serif;--text:-apple-system,BlinkMacSystemFont,'Segoe UI','Helvetica Neue',Arial,sans-serif} .ds-paper{background:var(--paper);padding:24px;display:flex;gap:12px;flex-wrap:wrap} .ds-btn{display:inline-flex;align-items:center;justify-content:center;gap:10px;min-height:56px;padding:0 26px;border-radius:999px;font:400 18px/1 var(--display);cursor:pointer;border:2px solid transparent;text-decoration:none;transition:background-color .2s,color .2s,border-color .2s,transform .12s} .ds-btn:active{transform:scale(.98)} .ds-btn-line{background:transparent;color:var(--ink);border-color:var(--ink)} .ds-btn-line:hover{background:rgba(11,42,74,.06)} .ds-btn-line:focus-visible{outline:3px solid var(--focus);outline-offset:3px;border-radius:999px}"
+    },
+    {
+      "name": "Text Input",
+      "kind": "input",
+      "refersTo": "input",
+      "description": "Tinted borderless field on the white form card, Cal Sans label.",
+      "html": "<div class=\"ds-card\"><label class=\"ds-label\" for=\"ds-n\">Your name</label><input class=\"ds-input\" id=\"ds-n\" type=\"text\" placeholder=\"(555) 555-5555\"></div>",
+      "css": ":host{--paper:#f4f6fb;--card:#fff;--field:#e6ecf5;--ink:#0b2a4a;--soft:#4a5a6c;--navy:#134a8e;--deep:#0b2a4a;--on-dark:#f4f7fb;--on-dark-soft:#c9d8ec;--sun:#ffc83d;--sun-2:#ffd76b;--sun-ink:#8a5a00;--focus:#1a63c9;--error:#b3261e;--display:'Cal Sans','Avenir Next','Segoe UI',system-ui,sans-serif;--text:-apple-system,BlinkMacSystemFont,'Segoe UI','Helvetica Neue',Arial,sans-serif} .ds-card{background:var(--card);border-radius:24px;padding:24px;display:grid;gap:8px;max-width:420px} .ds-label{font:400 17px/1.2 var(--display);color:var(--ink)} .ds-input{width:100%;box-sizing:border-box;font:16px/1.4 var(--text);color:var(--ink);background:var(--field);border:2px solid transparent;border-radius:10px;padding:13px 14px;min-height:52px;caret-color:var(--navy);transition:border-color .15s} .ds-input::placeholder{color:var(--soft)} .ds-input:hover,.ds-input:focus{outline:none;border-color:var(--focus)}"
     },
     {
       "name": "Choice Chips",
       "kind": "chip",
       "refersTo": "chip",
-      "description": "Form choices (checkbox/radio) on booking navy; sky when selected.",
-      "html": "<div class=\"ds-book\"><div class=\"ds-chips\"><label class=\"ds-chip\"><input type=\"radio\" name=\"t\" checked><span>Above-ground</span></label><label class=\"ds-chip\"><input type=\"radio\" name=\"t\"><span>In-ground</span></label><label class=\"ds-chip\"><input type=\"radio\" name=\"t\"><span>Not sure</span></label></div></div>",
-      "css": ".ds-book{background:#0e355e;padding:24px;font-family:-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif} .ds-chips{display:flex;flex-wrap:wrap;gap:10px} .ds-chip{position:relative} .ds-chip input{position:absolute;opacity:0;width:1px;height:1px} .ds-chip span{display:inline-flex;align-items:center;min-height:46px;padding:0 18px;border-radius:999px;border:2px solid rgba(255,255,255,.35);color:#fff;font-weight:700;font-size:15px;cursor:pointer;transition:background-color .15s,border-color .15s,color .15s} .ds-chip span:hover{border-color:#7fd0f5} .ds-chip input:focus-visible+span{outline:2px solid #7fd0f5;outline-offset:2px;border-color:#7fd0f5} .ds-chip input:checked+span{background:#7fd0f5;border-color:#7fd0f5;color:#0d2441} .ds-chip input:checked+span:hover{border-color:#fff}"
-    },
-    {
-      "name": "Text Field",
-      "kind": "input",
-      "refersTo": "input",
-      "description": "White field on booking navy with bold label above; sky hover/focus, coral error.",
-      "html": "<div class=\"ds-book\"><label class=\"ds-label\" for=\"ds-n\">Your name</label><input class=\"ds-input\" id=\"ds-n\" type=\"text\"></div>",
-      "css": ".ds-book{background:#0e355e;padding:24px;font-family:-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;display:grid;gap:8px} .ds-label{color:#fff;font-weight:800;font-size:17px} .ds-input{width:100%;font-family:inherit;font-size:17px;color:#0d2441;background:#fff;border:2px solid transparent;border-radius:12px;padding:13px 14px;min-height:52px;transition:border-color .15s} .ds-input:hover{border-color:#7fd0f5} .ds-input:focus{outline:2px solid #7fd0f5;outline-offset:2px;border-color:#7fd0f5}"
-    },
-    {
-      "name": "Service Row",
-      "kind": "custom",
-      "refersTo": "service-row",
-      "description": "Tappable service list row; only the arrow highlights on hover/focus.",
-      "html": "<div class=\"ds-frost\"><ul class=\"ds-rows\"><li><a class=\"ds-row\" href=\"#\"><span>Pool closings &amp; winterization</span><span class=\"ds-arrow\"><svg viewBox=\"0 0 24 24\" width=\"18\" height=\"18\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\" aria-hidden=\"true\"><path d=\"M5 12h14M13 6l6 6-6 6\"/></svg></span></a></li><li><a class=\"ds-row\" href=\"#\"><span>Pool openings</span><span class=\"ds-arrow\"><svg viewBox=\"0 0 24 24\" width=\"18\" height=\"18\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\" aria-hidden=\"true\"><path d=\"M5 12h14M13 6l6 6-6 6\"/></svg></span></a></li></ul></div>",
-      "css": ".ds-frost{background:#eef5fb;padding:24px;font-family:-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif} .ds-rows{list-style:none;margin:0;padding:0;border-top:1px solid rgba(13,36,65,.14)} .ds-rows li{border-bottom:1px solid rgba(13,36,65,.14)} .ds-row{display:flex;align-items:center;justify-content:space-between;gap:16px;min-height:60px;padding:10px 2px;text-decoration:none;color:#0d2441;font-weight:700;font-size:20px} .ds-row:hover,.ds-row:focus-visible{outline:none;background:none;box-shadow:none} .ds-arrow{display:grid;place-items:center;width:40px;height:40px;border-radius:50%;background:#dcebf6;color:#0d2441;flex:none;transition:background-color .2s,color .2s,transform .2s} .ds-row:hover .ds-arrow,.ds-row:focus-visible .ds-arrow{background:#1a63c9;color:#fff;transform:translateX(2px)} .ds-row:focus-visible .ds-arrow{outline:3px solid #1a63c9;outline-offset:3px}"
+      "description": "Pill chips for services, pool type and timing; Ink fill when selected.",
+      "html": "<div class=\"ds-card\"><div class=\"ds-chips\"><input type=\"checkbox\" id=\"ds-c1\" checked><label for=\"ds-c1\">Closing</label><input type=\"checkbox\" id=\"ds-c2\"><label for=\"ds-c2\">Opening</label><input type=\"checkbox\" id=\"ds-c3\"><label for=\"ds-c3\">Leak detection</label></div></div>",
+      "css": ":host{--paper:#f4f6fb;--card:#fff;--field:#e6ecf5;--ink:#0b2a4a;--soft:#4a5a6c;--navy:#134a8e;--deep:#0b2a4a;--on-dark:#f4f7fb;--on-dark-soft:#c9d8ec;--sun:#ffc83d;--sun-2:#ffd76b;--sun-ink:#8a5a00;--focus:#1a63c9;--error:#b3261e;--display:'Cal Sans','Avenir Next','Segoe UI',system-ui,sans-serif;--text:-apple-system,BlinkMacSystemFont,'Segoe UI','Helvetica Neue',Arial,sans-serif} .ds-card{background:var(--card);border-radius:24px;padding:24px} .ds-chips{display:flex;flex-wrap:wrap;gap:10px} .ds-chips input{position:absolute;width:1px;height:1px;opacity:0;margin:0} .ds-chips label{display:inline-flex;align-items:center;min-height:48px;padding:0 18px;border-radius:999px;background:var(--field);border:2px solid transparent;font:16px/1 var(--text);color:var(--ink);cursor:pointer;transition:border-color .15s,background-color .15s,color .15s} .ds-chips label:hover{border-color:var(--focus)} .ds-chips input:checked+label{background:var(--ink);color:#fff} .ds-chips input:focus-visible+label{outline:3px solid var(--focus);outline-offset:2px}"
     },
     {
       "name": "Header",
       "kind": "nav",
-      "refersTo": "",
-      "description": "Round logo mark + uppercase wordmark left, tap-to-call number top-right.",
-      "html": "<header class=\"ds-top\"><a class=\"ds-brand\" href=\"#\"><span class=\"ds-mark\"></span><span class=\"ds-word\">Ideal<br>Pools</span></a><a class=\"ds-call\" href=\"#\"><svg viewBox=\"0 0 24 24\" width=\"20\" height=\"20\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\" aria-hidden=\"true\"><path d=\"M5 4h4l2 5-2.5 1.5a11 11 0 0 0 5 5L15 13l5 2v4a2 2 0 0 1-2 2A16 16 0 0 1 3 6a2 2 0 0 1 2-2\"/></svg>(848) 480-3729</a></header>",
-      "css": ".ds-top{display:flex;align-items:center;justify-content:space-between;gap:12px;padding:14px 16px;background:#0b2a4a;font-family:-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif} .ds-brand{display:flex;align-items:center;gap:10px;text-decoration:none;color:#fff} .ds-mark{width:52px;height:52px;border-radius:50%;background:radial-gradient(circle at 50% 40%,#ffc83d 0 18%,#1a63c9 19% 62%,#0b2a4a 63%);box-shadow:inset 0 0 0 3px #fff} .ds-word{font-weight:900;text-transform:uppercase;font-size:15px;line-height:1;letter-spacing:.02em} .ds-call{display:inline-flex;align-items:center;gap:8px;min-height:44px;color:#fff;font-weight:800;font-size:17px;text-decoration:none;font-variant-numeric:tabular-nums} .ds-call svg{color:#ffc83d} .ds-call:hover{color:#ffc83d} .ds-call:focus-visible{outline:3px solid #ffc83d;outline-offset:3px}"
+      "refersTo": "header",
+      "description": "Slim paper bar: round logo and Cal Sans wordmark left, tap-to-call top right.",
+      "html": "<header class=\"ds-top\"><a class=\"ds-brand\" href=\"#\"><span class=\"ds-logo\"></span><span><b>Ideal Pools</b><small>LLC</small></span></a><a class=\"ds-tel\" href=\"#\"><svg viewBox=\"0 0 24 24\" width=\"18\" height=\"18\"><path d=\"M5 3h3.5l1.8 4.6-2.3 1.5a11 11 0 0 0 6 6l1.5-2.3L20 14.5V18a2 2 0 0 1-2.2 2A16 16 0 0 1 3 5.2 2 2 0 0 1 5 3z\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2.2\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/></svg>(848) 480-3729</a></header>",
+      "css": ":host{--paper:#f4f6fb;--card:#fff;--field:#e6ecf5;--ink:#0b2a4a;--soft:#4a5a6c;--navy:#134a8e;--deep:#0b2a4a;--on-dark:#f4f7fb;--on-dark-soft:#c9d8ec;--sun:#ffc83d;--sun-2:#ffd76b;--sun-ink:#8a5a00;--focus:#1a63c9;--error:#b3261e;--display:'Cal Sans','Avenir Next','Segoe UI',system-ui,sans-serif;--text:-apple-system,BlinkMacSystemFont,'Segoe UI','Helvetica Neue',Arial,sans-serif} .ds-top{background:var(--paper);color:var(--ink);display:flex;align-items:center;justify-content:space-between;gap:12px;min-height:68px;padding:0 20px} .ds-brand{display:flex;align-items:center;gap:10px;min-height:44px;text-decoration:none;color:inherit} .ds-logo{width:44px;height:44px;border-radius:50%;background:var(--navy)} .ds-brand b{display:block;font:400 21px/1 var(--display)} .ds-brand small{display:block;font:600 11px/1 var(--text);letter-spacing:.08em;text-transform:uppercase;color:var(--soft);margin-top:5px} .ds-tel{display:inline-flex;align-items:center;gap:8px;min-height:44px;font:400 17px/1 var(--display);color:inherit;text-decoration:none;white-space:nowrap} .ds-tel svg{color:var(--sun-ink)} .ds-tel:hover{color:var(--sun-ink)} .ds-tel:focus-visible{outline:3px solid var(--focus);outline-offset:3px;border-radius:6px}"
+    },
+    {
+      "name": "Service Rows",
+      "kind": "custom",
+      "refersTo": "service-row",
+      "description": "Linked rows on navy; only the arrow circle changes, filling with sun on hover.",
+      "html": "<div class=\"ds-navy-band\"><ul class=\"ds-rows\"><li><a class=\"ds-row\" href=\"#\">Pool closings &amp; winterization<span class=\"ds-arrow\"><svg viewBox=\"0 0 24 24\" width=\"18\" height=\"18\"><path d=\"M5 12h14M13 6l6 6-6 6\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2.6\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/></svg></span></a></li><li><a class=\"ds-row\" href=\"#\">Leak detection<span class=\"ds-arrow\"><svg viewBox=\"0 0 24 24\" width=\"18\" height=\"18\"><path d=\"M5 12h14M13 6l6 6-6 6\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2.6\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/></svg></span></a></li></ul></div>",
+      "css": ":host{--paper:#f4f6fb;--card:#fff;--field:#e6ecf5;--ink:#0b2a4a;--soft:#4a5a6c;--navy:#134a8e;--deep:#0b2a4a;--on-dark:#f4f7fb;--on-dark-soft:#c9d8ec;--sun:#ffc83d;--sun-2:#ffd76b;--sun-ink:#8a5a00;--focus:#1a63c9;--error:#b3261e;--display:'Cal Sans','Avenir Next','Segoe UI',system-ui,sans-serif;--text:-apple-system,BlinkMacSystemFont,'Segoe UI','Helvetica Neue',Arial,sans-serif} .ds-navy-band{background:var(--navy);padding:24px} .ds-rows{list-style:none;margin:0;padding:0;border-top:1px solid rgba(255,255,255,.14)} .ds-rows li{border-bottom:1px solid rgba(255,255,255,.14)} .ds-row{display:flex;align-items:center;justify-content:space-between;gap:16px;min-height:64px;padding:10px 0;text-decoration:none;color:var(--on-dark);font:400 22px/1.2 var(--display)} .ds-row:focus-visible{outline:none} .ds-arrow{width:44px;height:44px;flex:none;border-radius:50%;display:grid;place-items:center;background:rgba(255,255,255,.1);color:var(--on-dark);transition:background-color .2s,color .2s} .ds-row:hover .ds-arrow{background:var(--sun);color:var(--ink)} .ds-row:focus-visible .ds-arrow{background:var(--sun);color:var(--ink);outline:3px solid var(--sun);outline-offset:3px}"
     },
     {
       "name": "Facebook Card",
       "kind": "card",
       "refersTo": "facebook-card",
-      "description": "Proof link in About; repeated as a plain footer link.",
-      "html": "<div class=\"ds-navy\"><a class=\"ds-fb\" href=\"#\"><svg viewBox=\"0 0 24 24\" width=\"34\" height=\"34\" aria-hidden=\"true\"><path fill=\"#fff\" d=\"M24 12a12 12 0 1 0-13.9 11.9v-8.4H7.1V12h3V9.4c0-3 1.8-4.7 4.5-4.7 1.3 0 2.7.2 2.7.2v3h-1.5c-1.5 0-2 .9-2 1.9V12h3.4l-.5 3.5h-2.9v8.4A12 12 0 0 0 24 12\"/></svg><span>Visit our Facebook to see more.</span><svg viewBox=\"0 0 24 24\" width=\"22\" height=\"22\" class=\"ds-go\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\" aria-hidden=\"true\"><path d=\"M5 12h14M13 6l6 6-6 6\"/></svg></a></div>",
-      "css": ".ds-navy{background:#0b2a4a;padding:24px;font-family:-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif} .ds-fb{display:flex;align-items:center;gap:16px;padding:18px 20px;border-radius:14px;background:#1877f2;color:#fff;text-decoration:none;font-weight:800;font-size:20px;line-height:1.25;box-shadow:0 14px 30px -16px rgba(0,0,0,.6);transition:background-color .2s,transform .15s} .ds-fb:hover{background:#2d86f7} .ds-fb:active{transform:scale(.99)} .ds-fb:focus-visible{outline:3px solid #ffc83d;outline-offset:3px} .ds-go{margin-left:auto}"
+      "description": "White single-row link card in About, 20px radius; only the arrow changes.",
+      "html": "<div class=\"ds-paper\"><a class=\"ds-fb\" href=\"#\"><span>Visit our Facebook to see more.</span><span class=\"ds-arrow\"><svg viewBox=\"0 0 24 24\" width=\"18\" height=\"18\"><path d=\"M5 12h14M13 6l6 6-6 6\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2.6\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/></svg></span></a></div>",
+      "css": ":host{--paper:#f4f6fb;--card:#fff;--field:#e6ecf5;--ink:#0b2a4a;--soft:#4a5a6c;--navy:#134a8e;--deep:#0b2a4a;--on-dark:#f4f7fb;--on-dark-soft:#c9d8ec;--sun:#ffc83d;--sun-2:#ffd76b;--sun-ink:#8a5a00;--focus:#1a63c9;--error:#b3261e;--display:'Cal Sans','Avenir Next','Segoe UI',system-ui,sans-serif;--text:-apple-system,BlinkMacSystemFont,'Segoe UI','Helvetica Neue',Arial,sans-serif} .ds-paper{background:var(--paper);padding:24px;display:flex;gap:12px;flex-wrap:wrap} .ds-fb{display:flex;align-items:center;justify-content:space-between;gap:14px;min-height:72px;padding:14px 16px 14px 22px;border-radius:20px;background:var(--card);color:var(--ink);text-decoration:none;font:400 20px/1.2 var(--display);max-width:440px;width:100%} .ds-fb:focus-visible{outline:none} .ds-arrow{width:44px;height:44px;flex:none;border-radius:50%;display:grid;place-items:center;background:rgba(11,42,74,.07);color:var(--ink);transition:background-color .2s,color .2s} .ds-fb:hover .ds-arrow{background:var(--sun)} .ds-fb:focus-visible .ds-arrow{background:var(--sun);outline:3px solid var(--focus);outline-offset:3px}"
     },
     {
-      "name": "Waterline Seam",
+      "name": "Floating Text Circle",
       "kind": "custom",
-      "refersTo": "",
-      "description": "Wave edge opening each section, filled in the section ground with a 2.5px line; animated in the build by three summed sines.",
-      "html": "<div class=\"ds-seamwrap\"><svg class=\"ds-seam\" viewBox=\"0 0 1440 48\" preserveAspectRatio=\"none\" aria-hidden=\"true\"><path d=\"M0 22C180 12 360 32 540 22S900 10 1080 22 1320 30 1440 20L1440 48L0 48Z\" fill=\"#eef5fb\"/><path d=\"M0 22C180 12 360 32 540 22S900 10 1080 22 1320 30 1440 20\" fill=\"none\" stroke=\"#7fd0f5\" stroke-width=\"2.5\" vector-effect=\"non-scaling-stroke\"/></svg><div class=\"ds-band\">Section content</div></div>",
-      "css": ".ds-seamwrap{background:#0b2a4a;padding-top:24px;font-family:-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif} .ds-seam{display:block;width:100%;height:34px} .ds-band{background:#eef5fb;color:#0d2441;padding:16px 24px 32px;font-weight:700}"
+      "refersTo": "text-circle",
+      "description": "60px sun circle, bottom right, opens sms:; the only shadowed element.",
+      "html": "<div class=\"ds-paper\" style=\"justify-content:flex-end\"><a class=\"ds-float\" href=\"#\" aria-label=\"Text Ideal Pools\"><svg viewBox=\"0 0 24 24\" width=\"26\" height=\"26\"><path d=\"M4 5h16v11H9l-5 4z\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2.2\" stroke-linecap=\"round\" stroke-linejoin=\"round\"/></svg></a></div>",
+      "css": ":host{--paper:#f4f6fb;--card:#fff;--field:#e6ecf5;--ink:#0b2a4a;--soft:#4a5a6c;--navy:#134a8e;--deep:#0b2a4a;--on-dark:#f4f7fb;--on-dark-soft:#c9d8ec;--sun:#ffc83d;--sun-2:#ffd76b;--sun-ink:#8a5a00;--focus:#1a63c9;--error:#b3261e;--display:'Cal Sans','Avenir Next','Segoe UI',system-ui,sans-serif;--text:-apple-system,BlinkMacSystemFont,'Segoe UI','Helvetica Neue',Arial,sans-serif} .ds-paper{background:var(--paper);padding:24px;display:flex;gap:12px;flex-wrap:wrap} .ds-float{width:60px;height:60px;border-radius:50%;display:grid;place-items:center;background:var(--sun);color:var(--ink);box-shadow:0 10px 28px rgba(6,22,42,.3);transition:transform .35s cubic-bezier(.2,.8,.2,1)} .ds-float:focus-visible{outline:3px solid var(--focus);outline-offset:3px}"
+    },
+    {
+      "name": "Eyebrow Pill",
+      "kind": "chip",
+      "refersTo": "eyebrow",
+      "description": "Owner-mandated exception: quiet 14px label pill with a sun dot above three headings only; no hover, no arrow.",
+      "html": "<div class=\"ds-paper\"><p class=\"ds-eyebrow\">Last-minute is fine</p></div><div class=\"ds-navy\"><p class=\"ds-eyebrow ds-eyebrow-dark\">Opening to closing</p></div>",
+      "css": ":host{--paper:#f4f6fb;--card:#fff;--field:#e6ecf5;--ink:#0b2a4a;--soft:#4a5a6c;--navy:#134a8e;--deep:#0b2a4a;--on-dark:#f4f7fb;--on-dark-soft:#c9d8ec;--sun:#ffc83d;--sun-2:#ffd76b;--sun-ink:#8a5a00;--focus:#1a63c9;--error:#b3261e;--display:'Cal Sans','Avenir Next','Segoe UI',system-ui,sans-serif;--text:-apple-system,BlinkMacSystemFont,'Segoe UI','Helvetica Neue',Arial,sans-serif} .ds-paper{background:var(--paper);padding:24px;display:flex;gap:12px;flex-wrap:wrap} .ds-navy{background:var(--navy);padding:24px;display:flex;gap:12px;flex-wrap:wrap} .ds-eyebrow{margin:0;display:inline-flex;align-items:center;gap:10px;font:500 14px/1 var(--text);letter-spacing:.02em;color:var(--ink);background:rgba(11,42,74,.06);padding:9px 14px;border-radius:999px} .ds-eyebrow::before{content:'';width:7px;height:7px;border-radius:50%;background:var(--sun)} .ds-eyebrow-dark{color:var(--on-dark);background:rgba(255,255,255,.12)}"
     }
   ],
   "narrative": {
-    "northStar": "The Pool at Closing Time",
-    "overview": "The page is the pool on the last warm weekend: logo-navy ground, a real pool edge (stone coping, blue waterline tile), clear water with moving light, autumn leaves on the surface, and a skimmer net working them off. Every section boundary is a moving waterline, so the whole scroll reads as going down through water bands. The palette comes straight from the logo badge (navy band, royal and sky blue, yellow sun, white lettering); the frost-white light bands come from the closing-season flyer.\n\nThe voice is the type, not the face: heavy (900) uppercase headlines on the system sans stack, sentence-case body and labels. The system stack is deliberate house style for this build (fast in Facebook's in-app browser, no font requests). Density is phone-first and generous: 56px buttons, 17px body, one long single column that splits into two-column grids at 1024px.\n\nThis build was code-led: no image generation and no concept-roll seed key exists for it. The direction contract lives as the HTML comment at the top of `<body>` in `index.html`; this file records what shipped. Future edits are also bound by the pitch-site finishing rules (`~/.claude/skills/pitch-site/references/finishing-rules.md`); the ones that touch this system are cited inline below.",
+    "northStar": "The Calm Band",
+    "overview": "The page is a stack of full-bleed bands that alternate light and dark, so every new section is obvious on a phone without a single divider: paper header, navy hero, paper About, navy services, paper booking form, navy close, deep-navy footer. All the colour comes from the logo badge. Its royal blue, deepened, makes the main dark band. Its navy band makes the deepest one, with a faint diagonal-line texture. Its sun is the one warm note, and it only ever appears as a fill.\n\nThis is the pitch-site calm band house style (after lpmr.co.uk) applied to Ideal Pools. Shapes are soft and borderless: a 24px card, full pills, tinted fields with no border. One display webfont (Cal Sans) carries every heading and action, and the system stack carries running text at 16/1.7. Motion is limited to three moments: the hero H1 bounces in letter by letter, content below the first screen fades up 12px once, and a floating sun-yellow text circle slides in after the hero. The hero is a plain navy band because no real job photos exist yet. A real photo under a navy overlay replaces it once one fits the band at both 390px and 1440px.\n\nThere are no shadows apart from the floating circle, no gradients apart from the line texture, and no imagery apart from the logo badge.",
     "keyCharacteristics": [
-      "Logo-derived palette: navy grounds, sun-yellow primary action, royal/sky for cues and form focus.",
-      "Heavy uppercase display, sentence-case everything else, system sans.",
-      "One living hero (canvas pool) plus moving SVG waterline seams; nothing else animates beyond control feedback.",
-      "Pill buttons and chips, circle markers, softly rounded cards; flat surfaces otherwise.",
-      "Contact flows by text message (SMS composed from the form) with Messenger as fallback."
+      "Full-bleed paper and navy bands alternate down the page; the section boundary is the colour change.",
+      "The sun yellow is a fill (buttons, the text circle, the eyebrow dot, a hovered arrow). Any text on it is ink.",
+      "One display face (Cal Sans, weight 400) for headings, buttons, labels and phone numbers; system sans for everything else.",
+      "Soft, borderless shapes: 24px cards, full pills, 10px tinted fields.",
+      "Flat throughout. Depth comes from tone, and the floating circle is the only thing with a shadow.",
+      "Three motion moments, all switched off under reduced motion."
     ],
     "rules": [
       {
-        "name": "The Accent-On-Hover Rule",
-        "body": "Accents appear on interaction, not at rest: the service arrow is neutral frost until hovered, links turn sun only on hover (finishing rules: \"Accent color on hover, not by default\").",
+        "name": "The Sun Is A Fill Rule",
+        "body": "The sun yellow fills; it does not write on light. Text on a sun fill is Ink. When the accent has to be text on paper, it is Sun Ink. White on sun and sun on paper both fail contrast at about 2.2:1.",
         "section": "colors"
       },
       {
-        "name": "The One Form Accent Rule",
-        "body": "Inside the form every control outlines in sky on hover and focus. Never sun there; sun is already the button fill.",
+        "name": "The Accent Phrase Rule",
+        "body": "In a heading, only the last phrase takes the accent colour (\"safe all winter.\", \"all types of pools.\"): Sun on navy, Sun Ink on paper. At most one accent phrase per heading.",
         "section": "colors"
       },
       {
-        "name": "The Shout-Only-Headlines Rule",
-        "body": "Uppercase is for h1/h2 and the wordmark. Body, labels, chips, rows and step titles stay sentence case.",
+        "name": "The One Display Face Rule",
+        "body": "Cal Sans is the only webfont and appears only at weight 400. Hierarchy comes from size and colour, never from a bold display weight or a second display family.",
         "section": "typography"
       },
       {
-        "name": "The Header Number Rule",
-        "body": "The phone number lives top-right in the header as a `tel:` link and is the only number on the first screen; no Call button under the hero title, at most two hero buttons (finishing rules: contact buttons).",
+        "name": "The Display Talks Rule",
+        "body": "Anything the user reads as a call or a thing to tap (buttons, rows, labels, phone numbers) is set in Cal Sans. Explanations and fine print are set in the system face.",
+        "section": "typography"
+      },
+      {
+        "name": "The Band Is The Divider Rule",
+        "body": "Sections are separated by a change of band colour, never by rules, borders or cards floating on one shared ground. The only hairlines are the dividers between service rows on navy (white at 14%).",
         "section": "layout"
       },
       {
-        "name": "The Real-Material Rule",
-        "body": "Depth inside the pool is physical: blurred leaf and net shadows that shift with the water slope, shade under the coping. No sheens, films or glints (finishing rules: \"Every effect must read as a real thing\").",
+        "name": "The One Floating Thing Rule",
+        "body": "Only the fixed text circle casts a shadow. Cards, buttons, the header and hover states stay flat. Hover handlers on the Facebook card and the service rows explicitly cancel any shadow.",
         "section": "elevation"
       },
       {
-        "name": "The Arrow-Only Rule",
-        "body": "A tappable row never gets an outline, border, ring or tint. Only its arrow highlights (finishing rules, quoted from Ellie).",
-        "section": "components"
-      },
-      {
-        "name": "The Moving Waterline Rule",
-        "body": "Section changes are waterlines, never straight rules or slanted cuts. Seams stay clear of text (finishing rules: nothing runs through text).",
-        "section": "components"
+        "name": "The Faint Lines Rule",
+        "body": "The diagonal-line texture (135deg, transparent for 22px then white at 3.5% for 1px) only appears on the dark bands: the hero and the footer. It stays at about 4% white or fainter so it never reads as lines through text.",
+        "section": "elevation"
       }
     ],
     "dos": [
-      "**Do** use sun for primary fills only, sky for every form hover/focus outline, royal for cues on frost.",
-      "**Do** keep headlines uppercase 900 and short; keep all other text sentence case.",
-      "**Do** give every new section a seam in its own ground colour and alternate navy and frost grounds.",
-      "**Do** keep the hero to one focal point: headline, promise, at most two buttons, the pool band.",
-      "**Do** tune the pool through `CFG`, and keep the net working by itself until touched.",
-      "**Do** keep the phone-first sizes: 56px buttons, 46px chips, 44px minimum tap targets."
+      "**Do** alternate full-bleed paper and navy bands and let the colour change separate sections.",
+      "**Do** use Sun Yellow only as a fill with Ink on it; use Sun Ink when the accent has to be text on paper.",
+      "**Do** set headings, buttons, labels, rows and phone numbers in Cal Sans at weight 400, and running text in the system stack at 16/1.7.",
+      "**Do** give inputs and chips the Field Tint fill on the white card, and outline them in Focus Royal on hover and focus.",
+      "**Do** keep tap targets at 44px or more (buttons 56px, chips 48px, fields 52px, rows 64px).",
+      "**Do** keep the hero to an eyebrow, the H1, one promise line and at most two buttons, with the phone number in the header.",
+      "**Do** keep all motion off under `prefers-reduced-motion`, with everything visible at rest."
     ],
     "donts": [
-      "**Don't** highlight a service row; only its arrow changes on hover.",
-      "**Don't** show accents at rest on interactive cues; they arrive on hover.",
-      "**Don't** add a Call button under the hero, a second phone number on the first screen, or a sticky bottom bar.",
-      "**Don't** put towns or non-interactive labels in pills or chips; use plain dot-separated text like the pool-types line.",
-      "**Don't** lay sheens, glints or ruler-straight \"nature\" lines over the scene; every effect must read as the real thing.",
-      "**Don't** add animation beyond the pool, the seams and control feedback. If this audience is ever confirmed 40+, the older-audience rules apply: draw the pool once as a still and stop the seams."
+      "**Don't** put white or paper text on the sun, or sun text on paper.",
+      "**Don't** add shadows to cards, buttons or the header; the floating text circle is the only lifted element.",
+      "**Don't** letter-animate any heading other than the hero H1, and don't add a second motion style beyond the one 12px fade-up.",
+      "**Don't** add a second webfont or a bold Cal Sans.",
+      "**Don't** add eyebrow pills beyond the three that exist, or style one like a button.",
+      "**Don't** let the line texture go above about 4% white or onto a light band.",
+      "**Don't** turn the floating circle into a bottom bar, or show it while the booking form is on screen."
     ]
   }
 }

@@ -3,7 +3,7 @@
 **Live:** https://10elizabethbell.github.io/idealPools/ · **Repo:** https://github.com/10elizabethbell/idealPools · **Built:** 2026-10-19 from Muse brief (run 2026-10-19, Ocean County group pool-closing post); restyled to the calm band style the same day · **Call Sheet:** site URL set
 
 ## What's built
-- One phone-first page (`index.html`, ~30KB, no frameworks or tracking; Cal Sans from Google Fonts for headings) plus `img/` (logo in 3 sizes, favicon, home-screen icon, 1200x630 link preview).
+- One phone-first page (`index.html`, ~33KB, no frameworks or tracking; Cal Sans from Google Fonts for headings) plus `img/` (logo in 3 sizes, favicon, home-screen icon, 1200x630 link preview).
 - **Calm band style:** off-white paper and navy bands, coloured from the logo. The bands are royal blue deepened to #134a8e and the logo's navy band #0b2a4a with the faint line texture. The logo's sun yellow is the one accent, used as a fill with navy text on it.
 - **Hero:** a plain textured navy band (no photo; see gaps). It has the eyebrow "Last-minute pool closings", "Your pool, *safe all winter.*" bouncing in letter by letter, "It's not too late. Message us today to ask about availability." and two buttons: Check availability (filled) and Message us on Facebook (outlined, opens Messenger via m.me). On desktop the logo badge sits on the right.
 - **Sections:**
