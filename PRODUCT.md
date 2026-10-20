@@ -2,7 +2,7 @@
 
 ## Platform
 - Platform: web
-- Stack: static single-file HTML/CSS/JS (no frameworks, no tracking), hosted on GitHub Pages
+- Stack: static single-file HTML/CSS/JS (no frameworks, no tracking), hosted on GitHub Pages; Cal Sans from Google Fonts for headings (calm band house style)
 
 ## Users
 - Pool owners (above-ground and in-ground) who need their pool closed for winter, often late in the season. Source: Facebook group post in "Ocean county small businesses and services." (2026-10-19).

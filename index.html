@@ -24,14 +24,13 @@
 :root{
   /* off-white paper, the logo's two blues, the logo's sun as the one warm accent */
   --paper:#f4f6fb;       /* page ground */
-  --light:#e1e9f4;       /* light band, a step down from paper */
   --card:#ffffff;
   --field:#e6ecf5;       /* inputs and chips on the white form card */
   --ink:#0b2a4a;         /* headings, text on yellow */
   --body:#28394d;        /* running text on light */
   --soft:#4a5a6c;        /* secondary text on light */
   --navy:#134a8e;        /* logo royal blue, deepened: hero, services, close */
-  --deep:#0b2a4a;        /* logo's navy band: how it works, footer (line texture) */
+  --deep:#0b2a4a;        /* logo's navy band: footer (line texture) */
   --on-dark:#f4f7fb;
   --on-dark-soft:#c9d8ec;
   --sun:#ffc83d;         /* the logo's sun: fills only; text on it is --ink */
@@ -63,7 +62,6 @@ p{margin:0}
 /* ---------- Bands ---------- */
 section{padding:64px 0}
 .on-paper{background:var(--paper)}
-.on-light{background:var(--light)}
 .on-navy{background:var(--navy);color:var(--on-dark-soft)}
 .on-deep{background-color:var(--deep);background-image:var(--texture);color:var(--on-dark-soft)}
 .on-navy h2,.on-deep h2,.on-navy h3,.on-deep h3{color:var(--on-dark)}
@@ -131,13 +129,6 @@ section{padding:64px 0}
 .row:hover,.row:focus-visible{outline:none;background:none;box-shadow:none}
 .on-navy .arrow{background:rgba(255,255,255,.1);color:var(--on-dark)}
 .row:focus-visible .arrow{background:var(--sun);color:var(--ink);outline:3px solid var(--sun);outline-offset:3px}
-
-/* ---------- How it works ---------- */
-.steps{list-style:none;margin:36px 0 0;padding:0;display:grid;gap:24px;counter-reset:s}
-.steps li{display:grid;grid-template-columns:48px 1fr;gap:16px;align-items:start;counter-increment:s}
-.steps li::before{content:counter(s);width:48px;height:48px;border-radius:50%;display:grid;place-items:center;background:var(--sun);color:var(--ink);font:400 20px/1 var(--display)}
-.steps b{display:block;font:400 21px/1.2 var(--display);color:var(--ink);margin-top:4px}
-.steps span{display:block;margin-top:4px}
 
 /* ---------- Form ---------- */
 .ask .wrap{display:grid;gap:28px}
@@ -211,10 +202,9 @@ html:not(.js) .float{display:none}
 @media (min-width:1024px){
   .hero .wrap{grid-template-columns:1fr auto;gap:48px}
   .hero .badge{display:block;width:360px;height:auto;border-radius:50%;clip-path:circle(48.5%)}
-  .about .wrap{display:grid;grid-template-columns:1.2fr 1fr;column-gap:64px;align-items:start}
+  .about .lede{max-width:46ch}
   .about-badge{display:none}
-  .about .fb{margin-top:0}
-  .services .wrap{display:grid;grid-template-columns:1fr 1.3fr;column-gap:64px;align-items:start}
+  .services .wrap{display:grid;grid-template-columns:1fr 1.6fr;column-gap:64px;align-items:start}
   .services .head{position:sticky;top:40px}
   .rows{margin-top:0;grid-template-columns:1fr 1fr;column-gap:40px}
   .rows li:nth-child(2){border-top:0}
@@ -222,8 +212,6 @@ html:not(.js) .float{display:none}
   .ask .head{position:sticky;top:40px}
   .close .wrap{display:grid;grid-template-columns:1fr auto;gap:48px;align-items:end}
   .bigtel{margin-top:0}
-  .how .steps{grid-template-columns:repeat(3,1fr);gap:40px}
-  .steps b{font-size:22px}
 }
 /* hover styles only where there is a real pointer, so taps don't leave them stuck on */
 @media (hover:hover){
@@ -253,7 +241,7 @@ THESIS: A new pool company with ten years behind it, shown with calm order (the 
 OWN-WORLD: Off-white paper, the logo's royal blue deepened (#134a8e) and its navy band (#0b2a4a, faint diagonal lines) as the dark bands, the logo's sun yellow as the one warm accent (fills only; #8a5a00 when it has to be text on light). Cal Sans display, system body at 16/1.7.
 STORY: A pool owner sees it isn't too late, believes this crew knows pools and will close theirs carefully, and checks availability by text or Messenger in under a minute.
 FIRST VIEWPORT: Paper header with the logo and name left, tap-to-call number top right. Navy hero with the line texture: eyebrow "Last-minute pool closings", "Your pool, safe all winter.", one promise line, two pill buttons (Check availability, Message us on Facebook). On desktop the logo badge sits to the right.
-FORM: calm band system without photos (none of their real work exists online yet); the earlier pool-and-skimmer world is in git history (commit 7560319).
+FORM: the calm band house style Ellie mandated for every pitch site on 2026-10-19, so no concept roll ran; plain navy hero because none of their real work exists online yet. The earlier pool-and-skimmer world is in git history (commit 7560319).
 FINISH: unreviewed and undocumented is unfinished; this build ends with the finish review, the verdict, DESIGN.md, and every shipping raster carrying its provenance
 -->
 <svg width="0" height="0" style="position:absolute" aria-hidden="true">
@@ -274,7 +262,7 @@ FINISH: unreviewed and undocumented is unfinished; this build ends with the fini
     <div class="hero-copy">
       <p class="eyebrow">Last-minute pool closings</p>
       <h1 id="h1">Your pool, <span class="accent">safe all winter.</span></h1>
-      <p class="promise">It's not too late. We'll find you a day before the freeze.</p>
+      <p class="promise">It's not too late. Message us today to ask about availability.</p>
       <div class="actions">
         <a class="btn btn-primary" href="#ask">Check availability</a>
         <a class="btn btn-ghost" href="https://m.me/61572061220492" rel="noopener"><svg aria-hidden="true"><use href="#i-chat"/></svg>Message us on Facebook</a>
@@ -322,23 +310,12 @@ FINISH: unreviewed and undocumented is unfinished; this build ends with the fini
   </div>
 </section>
 
-<section class="on-light how" aria-labelledby="h-how">
-  <div class="wrap">
-    <h2 id="h-how" class="rise">Booking takes a minute.</h2>
-    <ol class="steps">
-      <li class="rise"><div><b>Tell us about your pool.</b><span>What kind it is, where it is, and when you'd like it done.</span></div></li>
-      <li class="rise"><div><b>We get back to you with a day.</b><span>Last-minute is fine. That's what we're here for.</span></div></li>
-      <li class="rise"><div><b>We do it right.</b><span>We treat your pool and equipment like our own.</span></div></li>
-    </ol>
-  </div>
-</section>
-
 <section class="on-paper ask" id="ask" aria-labelledby="h-ask">
   <div class="wrap">
     <div class="head rise">
       <p class="eyebrow">Last-minute is fine</p>
       <h2 id="h-ask">Check availability</h2>
-      <p class="lede">Tell us about your pool and we'll get back to you with a day.</p>
+      <p class="lede">Tell us about your pool and when you'd like it done. We'll text you back.</p>
     </div>
     <form id="bookForm" class="rise" novalidate>
       <fieldset class="field" id="f-svc" aria-describedby="e-svc">
@@ -413,7 +390,7 @@ FINISH: unreviewed and undocumented is unfinished; this build ends with the fini
   <div class="wrap">
     <div class="rise">
       <h2 id="h-close">Ideal Pools, LLC</h2>
-      <p class="who">New in 2026. More than ten years in pools.</p>
+      <p class="who">Closings, openings, liners and repairs, for every type of pool.</p>
     </div>
     <a class="bigtel rise" href="tel:+18484803729"><svg aria-hidden="true"><use href="#i-phone"/></svg>(848) 480-3729</a>
   </div>

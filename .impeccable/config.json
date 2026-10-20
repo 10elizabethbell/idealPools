@@ -2,6 +2,34 @@
   "detector": {
     "ignoreRules": [],
     "ignoreFiles": [],
-    "ignoreValues": []
+    "ignoreValues": [
+      {
+        "rule": "repeating-stripes-gradient",
+        "value": "*",
+        "files": [
+          "index.html"
+        ],
+        "createdAt": "2026-10-20T01:14:03.699Z",
+        "reason": "Calm band style's sanctioned faint line texture (pitch-site calm-photo-style.md item 2, Ellie 2026-10-19), ~3.5% white"
+      },
+      {
+        "rule": "cramped-padding",
+        "value": "*",
+        "files": [
+          "index.html"
+        ],
+        "createdAt": "2026-10-20T01:14:03.764Z",
+        "reason": "Hits are the hero band (padding lives on its .wrap child) and the services hairline divider list (rows carry their own 10px padding)"
+      },
+      {
+        "rule": "flat-type-hierarchy",
+        "value": "*",
+        "files": [
+          "index.html"
+        ],
+        "createdAt": "2026-10-20T01:14:03.829Z",
+        "reason": "Flagged steps are small UI text (14-20px: eyebrow, labels, chips, notes); Cal Sans display headings at 30-80px carry the hierarchy"
+      }
+    ]
   }
 }
